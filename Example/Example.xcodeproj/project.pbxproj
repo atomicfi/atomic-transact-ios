@@ -43,6 +43,7 @@
 		BFAFC5E926E9611C00794554 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BFAFC5EB26E962B100794554 /* TransactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactData.swift; sourceTree = "<group>"; };
 		BFAFC5ED26E965A000794554 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BFF466CA26EE857C00BFCF3F /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		BF8710CD26D59C3000D60708 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				BFF466CA26EE857C00BFCF3F /* Example.entitlements */,
 				BF8710CE26D59C3000D60708 /* ExampleApp.swift */,
 				BFAFC5E926E9611C00794554 /* TabBarView.swift */,
 				BFAFC5ED26E965A000794554 /* MainView.swift */,
@@ -309,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -320,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomicfi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -341,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomicfi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
