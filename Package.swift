@@ -17,12 +17,6 @@ let package = Package(
 		// Dependencies declare other packages that this package depends on.
 	],
 	targets: [
-		.target(
-			name: "AtomicTransact",
-			dependencies: ["AtomicTransactBinary"],
-			path: "Sources/AtomicTransact"
-//			publicHeadersPath: ""
-		),
 		.binaryTarget(
 			name: "AtomicTransactBinary",
 			path: "Sources/AtomicTransactBinary/AtomicTransact.xcframework")
