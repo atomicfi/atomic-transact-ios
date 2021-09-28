@@ -43,12 +43,6 @@ struct MainView: View {
 		}
 		.atomicTransact(
 			isPresented: $showingTransact,
-			config: AtomicConfig(publicToken: "MY PRODUCT TOKEN", product: .deposit),
-			onCompletion: { result in
-				
-			})
-		.atomicTransact(
-			isPresented: $showingTransact,
 			config: AtomicConfig(
 				publicToken: data.publicToken,
 				product: productType,

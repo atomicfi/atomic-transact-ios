@@ -11,14 +11,14 @@ let package = Package(
 		// Products define the executables and libraries a package produces, and make them visible to other packages.
 		.library(
 			name: "AtomicTransact",
-			targets: ["AtomicTransactBinary"])
+			targets: ["AtomicTransact"])
 	],
 	dependencies: [
 		// Dependencies declare other packages that this package depends on.
 	],
 	targets: [
 		.binaryTarget(
-			name: "AtomicTransactBinary",
-			path: "Sources/AtomicTransactBinary/AtomicTransact.xcframework")
+			name: "AtomicTransact",
+			path: "artifacts/AtomicTransact.xcframework")
 	]
 )

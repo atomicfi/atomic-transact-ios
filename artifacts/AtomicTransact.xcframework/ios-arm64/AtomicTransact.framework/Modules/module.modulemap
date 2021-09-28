@@ -1,0 +1,14 @@
+framework module TransactSupport {
+	header "OnePasswordExtension.h"
+	header "DiffMatchPatch.h"
+	export *
+}
+
+framework module AtomicTransact {
+	umbrella header "AtomicTransact.h"
+}
+
+module AtomicTransact.Swift {
+    header "AtomicTransact-Swift.h"
+    requires objc
+}

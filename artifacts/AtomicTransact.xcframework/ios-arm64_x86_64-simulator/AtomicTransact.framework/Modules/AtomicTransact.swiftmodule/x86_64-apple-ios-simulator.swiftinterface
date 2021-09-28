@@ -1,0 +1,139 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
+@_exported import AtomicTransact
+import Combine
+import Compression
+import Foundation
+import Swift
+import SwiftUI
+import TransactSupport
+import UIKit
+import WebKit
+import _Concurrency
+public struct AtomicConfig : Swift.Codable {
+  public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  public struct Theme : Swift.Codable {
+    public let brandColor: Swift.String
+    public let overlayColor: Swift.String
+    public init(brandColor: Swift.String, overlayColor: Swift.String)
+    public init(brandColor: UIKit.UIColor, overlayColor: UIKit.UIColor)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct Distribution : Swift.Codable {
+    public enum DistributionType : Swift.String, Swift.Codable {
+      case total
+      case fixed
+      case percent
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum ActionType : Swift.String, Swift.Codable {
+      case create
+      case update
+      case delete
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var type: AtomicTransact.AtomicConfig.Distribution.DistributionType
+    public var amount: Swift.Double
+    public var action: AtomicTransact.AtomicConfig.Distribution.ActionType?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public enum ProductType : Swift.String, Swift.Codable {
+    case deposit
+    case verify
+    case identify
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Deeplink : Swift.Codable {
+    public enum Step {
+      case searchCompany
+      case searchPayroll
+      case loginCompany(companyId: Swift.String)
+      case loginPayroll(connectorId: Swift.String, companyName: Swift.String)
+      public var id: Swift.String {
+        get
+      }
+    }
+    public var step: Swift.String
+    public var companyId: Swift.String?
+    public var connectorId: Swift.String?
+    public var companyName: Swift.String?
+    public init(step: AtomicTransact.AtomicConfig.Deeplink.Step)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public let publicToken: Swift.String
+  public let product: AtomicTransact.AtomicConfig.ProductType
+  public let additionalProduct: AtomicTransact.AtomicConfig.ProductType?
+  public let linkedAccount: Swift.String?
+  public var theme: AtomicTransact.AtomicConfig.Theme?
+  public var distribution: AtomicTransact.AtomicConfig.Distribution?
+  public var language: Swift.String
+  public var deeplink: AtomicTransact.AtomicConfig.Deeplink?
+  public var metadata: [Swift.String : Swift.String]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum TransactResponse {
+  public struct ResponseData {
+    public var data: [Swift.String : Any]
+    public var taskId: Swift.String? {
+      get
+    }
+    public var handoff: Swift.String? {
+      get
+    }
+    public var reason: Swift.String? {
+      get
+    }
+  }
+  case finished(response: AtomicTransact.TransactResponse.ResponseData)
+  case closed(response: AtomicTransact.TransactResponse.ResponseData)
+  case error(error: AtomicTransact.TransactError)
+}
+public enum TransactError : Swift.Error {
+  case unableToConnectToTransact
+  case invalidConfig
+  public static func == (a: AtomicTransact.TransactError, b: AtomicTransact.TransactError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Atomic {
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+}
+extension SwiftUI.View {
+  public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
+  
+}
+public enum TransactURL {
+  case production
+  case sandbox
+  case custom(path: Swift.String)
+}
+extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.Equatable {}
+extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.Hashable {}
+extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.RawRepresentable {}
+extension AtomicTransact.AtomicConfig.Distribution.ActionType : Swift.Equatable {}
+extension AtomicTransact.AtomicConfig.Distribution.ActionType : Swift.Hashable {}
+extension AtomicTransact.AtomicConfig.Distribution.ActionType : Swift.RawRepresentable {}
+extension AtomicTransact.AtomicConfig.ProductType : Swift.Equatable {}
+extension AtomicTransact.AtomicConfig.ProductType : Swift.Hashable {}
+extension AtomicTransact.AtomicConfig.ProductType : Swift.RawRepresentable {}
+extension AtomicTransact.TransactError : Swift.Equatable {}
+extension AtomicTransact.TransactError : Swift.Hashable {}
