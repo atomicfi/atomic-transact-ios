@@ -5,6 +5,7 @@
 import Combine
 import Compression
 import Foundation
+import Security
 import Swift
 import SwiftUI
 import TransactSupport
@@ -118,7 +119,7 @@ public enum Atomic {
   public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
 }
 extension SwiftUI.View {
-  public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
+  public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: @escaping () -> (AtomicTransact.AtomicConfig), transactURL: AtomicTransact.TransactURL = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
   
 }
 public enum TransactURL {
