@@ -1,8 +1,20 @@
 # Transact iOS SDK
 
-The Atomic Transact iOS SDK is distributed using the Swift Package Manager. Inside Xcode, go Project Settings -> Project -> Package Dependencies and click the + to add a new Package. Enter the Package URL `https://github.com/atomicfi/TransactiOSSDK`. 
+The Atomic Transact iOS SDK can be installed either with the Swift Package Manager or through CocoaPods. 
+
+### Swift Package Manager
+
+Inside Xcode, go Project Settings -> Project -> Package Dependencies and click the + to add a new Package. Enter the Package URL `https://github.com/atomicfi/TransactiOSSDK`. 
 
 ![](Images/SPMExample.png)
+
+### CocoaPods
+
+Add the following to your Podfile:
+
+```ruby
+pod 'TransactiOSSDK'
+```
 
 # Usage
 
