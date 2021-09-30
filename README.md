@@ -58,7 +58,9 @@ struct MyView: View {
 		...
 		.atomicTransact(
 			isPresented: $showingTransact,
-			config: AtomicConfig(publicToken: "MY PRODUCT TOKEN", product: .deposit),
+			config: {
+                AtomicConfig(publicToken: "MY PRODUCT TOKEN", product: .deposit)
+            },
 			onCompletion: { result in
 				switch result {
 				case .finished(let response):
