@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FvX6Z4OZI5njdugUuw4VS9AGTLE=
+		4LvUAWdQmT0/xIBAGNp/2qzf0lA=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qU0wAxqwGtAxK6cM+9BeKSh2ra8=
+		+Au4gpj0olFSfy/Gyv/7wWFTeiQ=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		qU0wAxqwGtAxK6cM+9BeKSh2ra8=
+		+Au4gpj0olFSfy/Gyv/7wWFTeiQ=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5Ukruj+MxPN1YZClRmFywHvEeYo=
+		5ma6jV/dVuGnJoaafQn3g3DJ7lQ=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		5Ukruj+MxPN1YZClRmFywHvEeYo=
+		5ma6jV/dVuGnJoaafQn3g3DJ7lQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sWenRG8pUgF4c31ccESN2ulNumOZge4bXLlqQi0RaYI=
+			Z890YLH+OsLnkNxUG3/lpQXoMqpaqa4VYjqkpiNwfic=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64.swiftdoc</key>
@@ -146,7 +146,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sWenRG8pUgF4c31ccESN2ulNumOZge4bXLlqQi0RaYI=
+			Z890YLH+OsLnkNxUG3/lpQXoMqpaqa4VYjqkpiNwfic=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nE9+nAKHCA/ECMeNMpVs7G5vYMH+iWA51B4o2jVtalo=
+			FNTPyAUprzEZJDSRcytgss+I8Mmg1o74BaTTFjSnrGY=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64.swiftdoc</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nE9+nAKHCA/ECMeNMpVs7G5vYMH+iWA51B4o2jVtalo=
+			FNTPyAUprzEZJDSRcytgss+I8Mmg1o74BaTTFjSnrGY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
