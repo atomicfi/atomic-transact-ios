@@ -19,7 +19,7 @@ struct TabBarView: View {
 	@SceneStorage("SelectedTab") var selectedTab = Tabs.home
 	@StateObject var data = TransactData()
 	
-    var body: some View {
+	var body: some View {
 		TabView(selection: $selectedTab) {
 			MainView(data: data)
 				.tabItem({ Label("Home", systemImage: "house") })
@@ -29,7 +29,7 @@ struct TabBarView: View {
 				.tabItem({ Label("Settings", systemImage: "gear") })
 				.tag(Tabs.settings)
 		}
-    }
+	}
 }
 
 

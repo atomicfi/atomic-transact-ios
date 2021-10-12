@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF54A0AB27162D3A00A8AD5A /* AtomicTransact in Frameworks */ = {isa = PBXBuildFile; productRef = BF54A0AA27162D3A00A8AD5A /* AtomicTransact */; };
 		BF8710CF26D59C3000D60708 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8710CE26D59C3000D60708 /* ExampleApp.swift */; };
 		BF8710D126D59C3000D60708 /* TransactSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8710D026D59C3000D60708 /* TransactSettingsView.swift */; };
 		BF8710D326D59C3100D60708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8710D226D59C3100D60708 /* Assets.xcassets */; };
 		BF8710D626D59C3100D60708 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8710D526D59C3100D60708 /* Preview Assets.xcassets */; };
-		BFAFC5E726E9605200794554 /* AtomicTransact.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAFC5E526E9604B00794554 /* AtomicTransact.xcframework */; };
-		BFAFC5E826E9605200794554 /* AtomicTransact.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFAFC5E526E9604B00794554 /* AtomicTransact.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFAFC5EA26E9611C00794554 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC5E926E9611C00794554 /* TabBarView.swift */; };
 		BFAFC5EC26E962B100794554 /* TransactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC5EB26E962B100794554 /* TransactData.swift */; };
 		BFAFC5EE26E965A000794554 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC5ED26E965A000794554 /* MainView.swift */; };
@@ -25,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BFAFC5E826E9605200794554 /* AtomicTransact.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +37,6 @@
 		BF8710D226D59C3100D60708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8710D526D59C3100D60708 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8710D726D59C3100D60708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFAFC5E526E9604B00794554 /* AtomicTransact.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AtomicTransact.xcframework; path = ../Sources/AtomicTransactBinary/AtomicTransact.xcframework; sourceTree = "<group>"; };
 		BFAFC5E926E9611C00794554 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BFAFC5EB26E962B100794554 /* TransactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactData.swift; sourceTree = "<group>"; };
 		BFAFC5ED26E965A000794554 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -51,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFAFC5E726E9605200794554 /* AtomicTransact.xcframework in Frameworks */,
+				BF54A0AB27162D3A00A8AD5A /* AtomicTransact in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +99,6 @@
 		BF8710DE26D59C4900D60708 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BFAFC5E526E9604B00794554 /* AtomicTransact.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +121,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
+				BF54A0AA27162D3A00A8AD5A /* AtomicTransact */,
 			);
 			productName = Example;
 			productReference = BF8710CB26D59C3000D60708 /* Example.app */;
@@ -153,6 +150,9 @@
 				Base,
 			);
 			mainGroup = BF8710C226D59C3000D60708;
+			packageReferences = (
+				BF54A0A927162D3A00A8AD5A /* XCRemoteSwiftPackageReference "TransactiOSSDK" */,
+			);
 			productRefGroup = BF8710CC26D59C3000D60708 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -374,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF54A0A927162D3A00A8AD5A /* XCRemoteSwiftPackageReference "TransactiOSSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/atomicfi/TransactiOSSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF54A0AA27162D3A00A8AD5A /* AtomicTransact */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF54A0A927162D3A00A8AD5A /* XCRemoteSwiftPackageReference "TransactiOSSDK" */;
+			productName = AtomicTransact;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF8710C326D59C3000D60708 /* Project object */;
 }
