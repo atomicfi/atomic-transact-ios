@@ -15,7 +15,7 @@ struct MainView: View {
 	@State var productType = AtomicConfig.ProductType.deposit
 	@State var showingTransact = false
 	
-    var body: some View {
+	var body: some View {
 		NavigationView {
 			Form {
 				Section {
@@ -43,14 +43,15 @@ struct MainView: View {
 		}
 		.atomicTransact(
 			isPresented: $showingTransact,
-			config: AtomicConfig(
-				publicToken: data.publicToken,
-				product: productType,
-				theme: .init(brandColor: UIColor(data.brandColor), overlayColor: UIColor(data.overlayColor)),
-				deeplink: .init(step: .searchCompany)),
+			config: {
+				AtomicConfig(
+					publicToken: data.publicToken,
+					product: productType,
+					theme: .init(brandColor: UIColor(data.brandColor), overlayColor: UIColor(data.overlayColor)))
+			},
 			transactURL: data.transactURL,
 			presentsFullscreen: data.showFullscreen)
-    }
+	}
 }
 
 
