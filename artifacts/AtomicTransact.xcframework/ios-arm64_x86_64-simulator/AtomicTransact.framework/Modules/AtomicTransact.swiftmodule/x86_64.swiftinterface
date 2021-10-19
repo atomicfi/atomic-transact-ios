@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
 @_exported import AtomicTransact
 import Combine
@@ -115,8 +115,36 @@ public enum TransactError : Swift.Error {
     get
   }
 }
+public struct TransactInteraction : Swift.CustomStringConvertible {
+  public var name: Swift.String
+  public var data: [Swift.String : Any]
+  public var description: Swift.String {
+    get
+  }
+  public var language: Swift.String? {
+    get
+  }
+  public var customer: Swift.String? {
+    get
+  }
+  public var product: AtomicTransact.AtomicConfig.ProductType? {
+    get
+  }
+  public var additionalProduct: AtomicTransact.AtomicConfig.ProductType? {
+    get
+  }
+  public var company: Swift.String? {
+    get
+  }
+  public var payroll: Swift.String? {
+    get
+  }
+}
 public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
+    get
+  }
 }
 extension SwiftUI.View {
   public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: @escaping () -> (AtomicTransact.AtomicConfig), transactURL: AtomicTransact.TransactURL = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
