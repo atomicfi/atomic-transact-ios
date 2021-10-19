@@ -5,6 +5,7 @@
 import Combine
 import Compression
 import Foundation
+import SafariServices
 import Security
 import Swift
 import SwiftUI

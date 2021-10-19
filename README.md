@@ -30,7 +30,9 @@ import AtomicTransact
 ...
 
 let config = AtomicConfig(publicToken: "MY PRODUCT TOKEN", product: .deposit)
-Atomic.presentTransact(from: self, config: config, transactURL: .sandbox) { result in
+Atomic.presentTransact(from: self, config: config, transactURL: .sandbox, onInteraction: { interaction in
+		print("Interaction event: \(interaction)")
+	}, onCompletion: { result in
 	switch result {
 	case .finished(let response):
 		print("Finished with response: \(response)")
@@ -38,7 +40,7 @@ Atomic.presentTransact(from: self, config: config, transactURL: .sandbox) { resu
 		print("Closed with response: \(response)")
 	case .error(let error):
 		print("Transact returned with error: \(error)")
-	}
+	})
 }
 
 ```
@@ -71,5 +73,8 @@ struct MyView: View {
 					print("Transact returned with error: \(error)")
 				}
 			})
+			.onReceive(Atomic.interactions) { interaction in
+				print(interaction)
+			}
 
 ```
