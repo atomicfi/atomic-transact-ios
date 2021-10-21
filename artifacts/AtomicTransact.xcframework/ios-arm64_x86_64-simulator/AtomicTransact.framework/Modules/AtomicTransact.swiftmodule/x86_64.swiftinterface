@@ -13,6 +13,12 @@ import TransactSupport
 import UIKit
 import WebKit
 import _Concurrency
+public struct TransactDataRequest {
+  public var taskId: Swift.String
+  public var userId: Swift.String
+  public var fields: [Swift.String]
+  public var data: [Swift.String : Any]
+}
 public struct AtomicConfig : Swift.Codable {
   public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil)
   public struct Theme : Swift.Codable {
@@ -142,8 +148,11 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
   }
 }
 public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
+    get
+  }
+  public static var dataRequests: Combine.AnyPublisher<AtomicTransact.TransactDataRequest, Swift.Never> {
     get
   }
 }
