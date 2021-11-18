@@ -21,6 +21,7 @@ public struct TransactDataRequest {
 }
 public struct AtomicConfig : Swift.Codable {
   public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(demo: AtomicTransact.AtomicConfig.DemoMode, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
   public struct Theme : Swift.Codable {
     public let brandColor: Swift.String
     public let overlayColor: Swift.String
@@ -84,6 +85,28 @@ public struct AtomicConfig : Swift.Codable {
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
+  public struct DemoMode : Swift.Codable {
+    public var enabled: Swift.Bool
+    public struct Customer : Swift.Codable {
+      public var name: Swift.String
+      public struct Brand : Swift.Codable {
+        public var logo: Swift.String
+        public var color: Swift.String
+        public init(logo: Swift.String, color: Swift.String)
+        public init(logo: Swift.String, color: UIKit.UIColor)
+        public func encode(to encoder: Swift.Encoder) throws
+        public init(from decoder: Swift.Decoder) throws
+      }
+      public var brand: AtomicTransact.AtomicConfig.DemoMode.Customer.Brand
+      public init(name: Swift.String, brand: AtomicTransact.AtomicConfig.DemoMode.Customer.Brand)
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
+    }
+    public var customer: AtomicTransact.AtomicConfig.DemoMode.Customer?
+    public init(customer: AtomicTransact.AtomicConfig.DemoMode.Customer? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
   public struct Search : Swift.Codable {
     public var tags: [Swift.String]?
     public var excludedTags: [Swift.String]?
@@ -98,7 +121,8 @@ public struct AtomicConfig : Swift.Codable {
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
-  public let publicToken: Swift.String
+  public let publicToken: Swift.String?
+  public let demo: AtomicTransact.AtomicConfig.DemoMode?
   public let product: AtomicTransact.AtomicConfig.ProductType
   public let additionalProduct: AtomicTransact.AtomicConfig.ProductType?
   public let linkedAccount: Swift.String?
