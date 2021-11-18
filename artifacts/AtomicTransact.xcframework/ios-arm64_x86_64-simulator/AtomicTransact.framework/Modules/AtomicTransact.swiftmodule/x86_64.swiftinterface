@@ -20,7 +20,7 @@ public struct TransactDataRequest {
   public var data: [Swift.String : Any]
 }
 public struct AtomicConfig : Swift.Codable {
-  public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
   public struct Theme : Swift.Codable {
     public let brandColor: Swift.String
     public let overlayColor: Swift.String
@@ -84,6 +84,20 @@ public struct AtomicConfig : Swift.Codable {
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
+  public struct Search : Swift.Codable {
+    public var tags: [Swift.String]?
+    public var excludedTags: [Swift.String]?
+    public init(tags: [Swift.String]? = nil, excludedTags: [Swift.String]? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct Experiments : Swift.Codable {
+    public var fractionalDeposits: Swift.Bool?
+    public var unemploymentCarousel: Swift.Bool?
+    public init(fractionalDeposits: Swift.Bool? = nil, unemploymentCarousel: Swift.Bool? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
   public let publicToken: Swift.String
   public let product: AtomicTransact.AtomicConfig.ProductType
   public let additionalProduct: AtomicTransact.AtomicConfig.ProductType?
@@ -93,6 +107,9 @@ public struct AtomicConfig : Swift.Codable {
   public var language: Swift.String
   public var deeplink: AtomicTransact.AtomicConfig.Deeplink?
   public var metadata: [Swift.String : Swift.String]?
+  public var search: AtomicTransact.AtomicConfig.Search?
+  public var handoff: [Swift.String]?
+  public var experiments: AtomicTransact.AtomicConfig.Experiments?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
