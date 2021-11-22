@@ -189,7 +189,7 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
   }
 }
 public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, transactURL: AtomicTransact.TransactURL = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
     get
   }
@@ -198,10 +198,10 @@ public enum Atomic {
   }
 }
 extension SwiftUI.View {
-  public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: @escaping () -> (AtomicTransact.AtomicConfig), transactURL: AtomicTransact.TransactURL = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
+  public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: @escaping () -> (AtomicTransact.AtomicConfig), environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
   
 }
-public enum TransactURL {
+public enum TransactEnvironment {
   case production
   case sandbox
   case custom(path: Swift.String)
