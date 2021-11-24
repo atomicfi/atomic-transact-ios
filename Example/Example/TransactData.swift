@@ -26,7 +26,7 @@ class TransactData: ObservableObject {
 	@Published var brandColor = Color.blue
 	@Published var overlayColor = Color.gray
 	
-	var transactURL: TransactURL {
+	var environment: TransactEnvironment {
 		switch urlOption {
 		case .production: return .production
 		case .sandbox: return .sandbox

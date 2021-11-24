@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "TransactiOSSDK",
-        "repositoryURL": "https://github.com/atomicfi/TransactiOSSDK",
+        "repositoryURL": "https://github.com/atomicfi/atomic-transact-ios",
         "state": {
           "branch": null,
-          "revision": "322121d51eee53d5b84e58374bdcf37b885f7378",
-          "version": "1.0.1"
+          "revision": "69a0dfe1d562a6260457d8d8a03b725ee0bb5b73",
+          "version": "2.0.2"
         }
       }
     ]

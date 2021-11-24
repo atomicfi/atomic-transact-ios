@@ -49,7 +49,7 @@ struct MainView: View {
 					product: productType,
 					theme: .init(brandColor: UIColor(data.brandColor), overlayColor: UIColor(data.overlayColor)))
 			},
-			transactURL: data.transactURL,
+			environment: data.environment,
 			presentsFullscreen: data.showFullscreen)
 	}
 }
