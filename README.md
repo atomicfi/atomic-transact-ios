@@ -2,4 +2,4 @@
 
 iOS SDK for Atomic Transact.
 
-See our [documentation](https://docs.atomicfi.com/reference/transact-sdk#libraries__swift) for additional information.
+See our [documentation](https://docs.atomicfi.com/reference/transact-sdk#libraries__ios) for additional information.
