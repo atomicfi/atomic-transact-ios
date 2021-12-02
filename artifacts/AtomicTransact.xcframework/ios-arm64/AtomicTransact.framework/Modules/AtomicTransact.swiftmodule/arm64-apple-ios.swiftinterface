@@ -20,13 +20,24 @@ public struct TransactDataRequest {
   public var data: [Swift.String : Any]
 }
 public struct AtomicConfig : Swift.Codable {
-  public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
-  public init(demo: AtomicTransact.AtomicConfig.DemoMode, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(demo: AtomicTransact.AtomicConfig.DemoMode, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
   public struct Theme : Swift.Codable {
-    public let brandColor: Swift.String
-    public let overlayColor: Swift.String
-    public init(brandColor: Swift.String, overlayColor: Swift.String)
-    public init(brandColor: UIKit.UIColor, overlayColor: UIKit.UIColor)
+    public let brandColor: Swift.String?
+    public let overlayColor: Swift.String?
+    public let dark: Swift.Bool?
+    public init(brandColor: Swift.String?, overlayColor: Swift.String?, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
+    public init(brandColor: UIKit.UIColor? = nil, overlayColor: UIKit.UIColor? = nil, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
+    public enum ColorScheme {
+      case light
+      case dark
+      case system
+      public static func == (a: AtomicTransact.AtomicConfig.Theme.ColorScheme, b: AtomicTransact.AtomicConfig.Theme.ColorScheme) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
@@ -206,6 +217,8 @@ public enum TransactEnvironment {
   case sandbox
   case custom(path: Swift.String)
 }
+extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Equatable {}
+extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.RawRepresentable {}
