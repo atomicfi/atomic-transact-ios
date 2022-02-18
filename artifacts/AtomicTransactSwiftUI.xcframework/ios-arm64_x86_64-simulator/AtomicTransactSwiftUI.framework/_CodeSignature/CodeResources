@@ -4,18 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/AtomicTransact.framework/AtomicTransact</key>
-		<data>
-		dSh111N8LeQcY6zsvmeqlNHutXk=
-		</data>
-		<key>Frameworks/AtomicTransact.framework/Info.plist</key>
-		<data>
-		QiMfik7eDKpz/8IfPp0FQMOZdWk=
-		</data>
-		<key>Frameworks/AtomicTransact.framework/_CodeSignature/CodeResources</key>
-		<data>
-		gkMZ+WeSVTuuJLncwZQmCVoJrDU=
-		</data>
 		<key>Headers/AtomicTransactSwiftUI-Swift.h</key>
 		<data>
 		facKCLB0NsGAJ0m5Za97PbUY3R8=
@@ -83,27 +71,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/AtomicTransact.framework/AtomicTransact</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kG6I/6+d2Fc6PtjT/xxszv1kWnzhWeTfKgq2h0d77GQ=
-			</data>
-		</dict>
-		<key>Frameworks/AtomicTransact.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XWgdSRUQyf7K6Oe8IyE7vzi2v0sbgfzFAjA80+L41Jw=
-			</data>
-		</dict>
-		<key>Frameworks/AtomicTransact.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MfRwcOD4kgY2raIjKD+imUPgKKiIi14yO6DnisxHUyg=
-			</data>
-		</dict>
 		<key>Headers/AtomicTransactSwiftUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>

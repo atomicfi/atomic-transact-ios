@@ -14,7 +14,7 @@ let package = Package(
 			targets: ["AtomicTransact"]),
 		.library(
 			name: "AtomicTransactSwiftUI",
-			targets: ["AtomicTransactSwiftUI", "AtomicTransact"]),
+			targets: ["AtomicTransactSwiftUI", "AtomicTransact"])
 	],
 	dependencies: [
 		// Dependencies declare other packages that this package depends on.

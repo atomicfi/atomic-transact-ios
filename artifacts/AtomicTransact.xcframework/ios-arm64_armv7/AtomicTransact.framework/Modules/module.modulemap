@@ -6,6 +6,8 @@ framework module TransactSupport {
 
 framework module AtomicTransact {
 	umbrella header "AtomicTransact.h"
+	header "OnePasswordExtension.h"
+	header "DiffMatchPatch.h"
 }
 
 module AtomicTransact.Swift {
