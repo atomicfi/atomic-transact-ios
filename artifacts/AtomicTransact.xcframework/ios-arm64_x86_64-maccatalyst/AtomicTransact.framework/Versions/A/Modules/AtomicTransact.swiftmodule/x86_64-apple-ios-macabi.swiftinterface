@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
-// swift-module-flags: -target x86_64-apple-ios14.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
 @_exported import AtomicTransact
 import Combine
 import Compression
@@ -8,7 +8,6 @@ import Foundation
 import SafariServices
 import Security
 import Swift
-import SwiftUI
 import TransactSupport
 import UIKit
 import WebKit
@@ -16,12 +15,22 @@ import _Concurrency
 public struct TransactDataRequest {
   public var taskId: Swift.String
   public var userId: Swift.String
+  public var identifier: Swift.String
   public var fields: [Swift.String]
   public var data: [Swift.String : Any]
 }
-public struct AtomicConfig : Swift.Codable {
+public struct AtomicConfig : Swift.Encodable {
+  public init(publicToken: Swift.String, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(demo: AtomicTransact.AtomicConfig.DemoMode, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  @available(*, deprecated, message: "Use `tasks` instead of `product`")
   public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
-  public init(demo: AtomicTransact.AtomicConfig.DemoMode, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public struct Task : Swift.Codable {
+    public let product: AtomicTransact.AtomicConfig.ProductType
+    public let distribution: AtomicTransact.AtomicConfig.Distribution?
+    public init(product: AtomicTransact.AtomicConfig.ProductType, distribution: AtomicTransact.AtomicConfig.Distribution? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
   public struct Theme : Swift.Codable {
     public let brandColor: Swift.String?
     public let overlayColor: Swift.String?
@@ -65,6 +74,7 @@ public struct AtomicConfig : Swift.Codable {
     public var type: AtomicTransact.AtomicConfig.Distribution.DistributionType
     public var amount: Swift.Double
     public var action: AtomicTransact.AtomicConfig.Distribution.ActionType?
+    public init(type: AtomicTransact.AtomicConfig.Distribution.DistributionType, amount: Swift.Double, action: AtomicTransact.AtomicConfig.Distribution.ActionType? = nil)
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
@@ -133,8 +143,9 @@ public struct AtomicConfig : Swift.Codable {
     public init(from decoder: Swift.Decoder) throws
   }
   public let publicToken: Swift.String?
+  public var tasks: [AtomicTransact.AtomicConfig.Task]?
   public let demo: AtomicTransact.AtomicConfig.DemoMode?
-  public let product: AtomicTransact.AtomicConfig.ProductType
+  public let product: AtomicTransact.AtomicConfig.ProductType?
   public let additionalProduct: AtomicTransact.AtomicConfig.ProductType?
   public let linkedAccount: Swift.String?
   public var theme: AtomicTransact.AtomicConfig.Theme?
@@ -146,7 +157,6 @@ public struct AtomicConfig : Swift.Codable {
   public var handoff: [Swift.String]?
   public var experiments: AtomicTransact.AtomicConfig.Experiments?
   public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
 }
 public enum TransactResponse {
   public struct ResponseData {
@@ -200,22 +210,45 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
   }
 }
 public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .automatic, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  @available(iOS 13.0, *)
   public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
     get
   }
+  @available(iOS 13.0, *)
   public static var dataRequests: Combine.AnyPublisher<AtomicTransact.TransactDataRequest, Swift.Never> {
     get
   }
 }
-extension SwiftUI.View {
-  public func atomicTransact(isPresented: SwiftUI.Binding<Swift.Bool>, config: @escaping () -> (AtomicTransact.AtomicConfig), environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUI.View
-  
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseTransactViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) public var config: AtomicTransact.AtomicConfig!
+  @_Concurrency.MainActor(unsafe) public var transactPath: Swift.String
+  @_Concurrency.MainActor(unsafe) public var onInteraction: ((AtomicTransact.TransactInteraction) -> ())?
+  @_Concurrency.MainActor(unsafe) public var onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())?
+  @_Concurrency.MainActor(unsafe) public var onCompletion: ((AtomicTransact.TransactResponse) -> ())?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public class TransactViewController : AtomicTransact.BaseTransactViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 public enum TransactEnvironment {
   case production
   case sandbox
   case custom(path: Swift.String)
+  public var path: Swift.String {
+    get
+  }
 }
 extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Hashable {}
