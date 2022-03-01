@@ -171,6 +171,9 @@ public enum TransactResponse {
     public var reason: Swift.String? {
       get
     }
+    public var identifier: Swift.String {
+      get
+    }
   }
   case finished(response: AtomicTransact.TransactResponse.ResponseData)
   case closed(response: AtomicTransact.TransactResponse.ResponseData)
@@ -187,6 +190,7 @@ public enum TransactError : Swift.Error {
 }
 public struct TransactInteraction : Swift.CustomStringConvertible {
   public var name: Swift.String
+  public var identifier: Swift.String
   public var value: [Swift.String : Any]
   public var description: Swift.String {
     get
