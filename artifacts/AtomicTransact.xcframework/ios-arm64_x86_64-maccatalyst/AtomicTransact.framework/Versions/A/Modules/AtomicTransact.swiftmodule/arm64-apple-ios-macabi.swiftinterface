@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
 @_exported import AtomicTransact
 import Combine
@@ -159,7 +159,7 @@ public struct AtomicConfig : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public enum TransactResponse {
+public enum TransactResponse : Swift.CustomStringConvertible {
   public struct ResponseData {
     public var data: [Swift.String : Any]
     public var taskId: Swift.String? {
@@ -178,6 +178,10 @@ public enum TransactResponse {
   case finished(response: AtomicTransact.TransactResponse.ResponseData)
   case closed(response: AtomicTransact.TransactResponse.ResponseData)
   case error(error: AtomicTransact.TransactError)
+  case transactDismissed
+  public var description: Swift.String {
+    get
+  }
 }
 public enum TransactError : Swift.Error {
   case unableToConnectToTransact
@@ -224,6 +228,7 @@ public enum Atomic {
   public static var dataRequests: Combine.AnyPublisher<AtomicTransact.TransactDataRequest, Swift.Never> {
     get
   }
+  public static func dismissTransact()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseTransactViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) public var config: AtomicTransact.AtomicConfig!
