@@ -13,7 +13,7 @@ import UIKit
 import WebKit
 import _Concurrency
 public struct TransactDataRequest {
-  public var taskId: Swift.String
+  public var taskId: Swift.String?
   public var userId: Swift.String
   public var identifier: Swift.String
   public var fields: [Swift.String]
