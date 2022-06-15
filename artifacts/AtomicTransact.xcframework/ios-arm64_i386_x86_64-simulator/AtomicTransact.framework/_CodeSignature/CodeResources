@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ov4t+lS+zxbJEy2W47ElYlK40IQ=
+		0wzftvlzShaLC73MC/YHjcanskQ=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wXyIcs8fyKIpgCM8vc5SX/yxTW8=
+		+3L8KjFTX96LAiV5h+bktCcXgys=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,19 +58,11 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IBkm35tOOnz5PH18iUfmm+KIln0=
+		JMvvDxnlgKZuLOIxB9R97ta3UrI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		4C7oIourt4ulxZD+YymqQ9C63IA=
-		</data>
-		<key>Toolbar.nib/objects-11.0+.nib</key>
-		<data>
-		//rdgtBW84eW3rZ9+ciR45UKTxQ=
-		</data>
-		<key>Toolbar.nib/runtime.nib</key>
-		<data>
-		yR7iFcrPAVdsAbyb8KmzuXIKLEQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -145,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ov4t+lS+zxbJEy2W47ElYlK40IQ=
+			0wzftvlzShaLC73MC/YHjcanskQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jt5ufcqNoC20rXG6BQ1SqQWA+tE8JCFmvFvsvU0wiSk=
+			4cIGNYb22kIPL5/oAXN3zBVj3Yrz5J11zsRimw6+M0w=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -178,11 +170,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wXyIcs8fyKIpgCM8vc5SX/yxTW8=
+			+3L8KjFTX96LAiV5h+bktCcXgys=
 			</data>
 			<key>hash2</key>
 			<data>
-			yptHopYPJ+b7YXU3jfImefSr4evXnQdGbM36xxJAHrA=
+			lcVL2+a6B2RzDXm9pyi7P0ScDahFYalb/p6z/5TtyrQ=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -211,11 +203,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IBkm35tOOnz5PH18iUfmm+KIln0=
+			JMvvDxnlgKZuLOIxB9R97ta3UrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			p6d/ji26hGfQzmfUUR235UlBsI6JfrnP6OGn6UQjsP0=
+			udRXOmmneD2crLzby4XT0ce/bEQYOomXe8rsqNO8F+c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -227,28 +219,6 @@
 			<key>hash2</key>
 			<data>
 			cr7jM8uOTipn+owR8OIoNKcHhe09fH+tdAxdPirF56c=
-			</data>
-		</dict>
-		<key>Toolbar.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			//rdgtBW84eW3rZ9+ciR45UKTxQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			34EMQ6k2AUN+On9Ham9pO96z4W0ulUs4djeb15aRWUk=
-			</data>
-		</dict>
-		<key>Toolbar.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yR7iFcrPAVdsAbyb8KmzuXIKLEQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			YqstbG/+aEpoZG1gLpQ+r/1UTYmye/8TrsMkoE+5mJE=
 			</data>
 		</dict>
 	</dict>
