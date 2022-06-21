@@ -12,7 +12,6 @@ import TransactSupport
 import UIKit
 import WebKit
 import _Concurrency
-import os.log
 import os
 public struct TransactDataRequest {
   public var taskId: Swift.String?
