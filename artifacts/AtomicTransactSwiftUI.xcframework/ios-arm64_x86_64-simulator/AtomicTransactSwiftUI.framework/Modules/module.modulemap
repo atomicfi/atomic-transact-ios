@@ -6,6 +6,6 @@ framework module AtomicTransactSwiftUI {
 }
 
 module AtomicTransactSwiftUI.Swift {
-    header "AtomicTransactSwiftUI-Swift.h"
-    requires objc
+  header "AtomicTransactSwiftUI-Swift.h"
+  requires objc
 }

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AtomicTransactSwiftUI-Swift.h</key>
 		<data>
-		9+g5lgObWPpBGZ3SkNnuwtrSu2c=
+		lXBt/MaUrMTMz2m5h+Etu/j8sIM=
 		</data>
 		<key>Headers/AtomicTransactSwiftUI.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kwgOAmhCGxMgd4sUqF4Vnntapb0=
+		MVuUP255Qtb6qn8xMjGUuvr/zng=
+		</data>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		Hj4pUbMlqzIwWmouhMfUMiFATqI=
+		</data>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		ozY71UPO9xZFp4YZegcM/dYtsdU=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OjpSIQeK4Hriea5YVDEeMykp9NU=
+		3tlEHKR7woJcE62aOcnC+MLTtO4=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		x3k2M7R30gGV1vAecmT7BCmLFho=
+		ozY71UPO9xZFp4YZegcM/dYtsdU=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		emCAaCHaNVBDoHBf9x1TUjTm7s4=
+		TWnteVm87oFyoFrWjSmVk8jqD44=
+		</data>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		Hj4pUbMlqzIwWmouhMfUMiFATqI=
+		</data>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		lzZ3s0FDokrV+NpJVkIC9PfDie8=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8ZJ6frRoUNdzZEdjy+/PY8q86OE=
+		ykebWsXm+RmUdTmArgx9ARAIDUQ=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/S9RX9t4p8s/I7KHScGqGqKwrAI=
+		lzZ3s0FDokrV+NpJVkIC9PfDie8=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Qw4Me6Q3bR/7pasOWNXhPYuuZzw=
+		8AqnNWOPIP1yOAruXTYBpgU6rIo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		D81BjZ0Wm7nHxZe1Z717S0NFSrs=
+		vqvmXwJqBAmSuOuEGz4uI7/k5iA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t1hObBGl9e8aySeYDhvYEnROgetIz6Or9l4RLQEHjPE=
+			sqf7NdxiUGiwVbgtu6yp1Xxpq+ncjC5HxlDHsabCFd8=
 			</data>
 		</dict>
 		<key>Headers/AtomicTransactSwiftUI.h</key>
@@ -61,53 +77,81 @@
 			dSvlKTyGeWSX2ctACP6aA9AkE6ukkelRvQ2BP3R/FXw=
 			</data>
 		</dict>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iRkmoVvy/3yCR7sTW//xmtWZ2Y3CQCPLV/XCCaGzmbI=
+			</data>
+		</dict>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			koaJPwXgtIMO6pzJstLrK4A9g/XfPB7EZbc8y2GKfdc=
+			</data>
+		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qsgf2r2BTC4KAnaueYl7Cki7hgGnubGLXb2phrsIRYI=
+			CRe/qTbaLTqBBeNUZ1cRJq9XerK4A9e10WahtG0bLFM=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2Ihpo0p1wMEmFcHi8QQh3xYR386eFFCL7SMizLjl/s=
+			koaJPwXgtIMO6pzJstLrK4A9g/XfPB7EZbc8y2GKfdc=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIUL0NnAIdaDrY2JXpqGj/ig+f8slv+Zb85s34W714M=
+			1yGZetzrqRGUJNV3kfiMMBiAnc6aw3h4/mfz5E4j+OM=
+			</data>
+		</dict>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iRkmoVvy/3yCR7sTW//xmtWZ2Y3CQCPLV/XCCaGzmbI=
+			</data>
+		</dict>
+		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JFpXkLRheW9I3FIe0gleg/IFgc/gd+gjK/iZa5rmS5o=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vjVHGzKkePSxnAzviHzz9PdOMaGqjOBTN3yWyvJNeec=
+			+iBWr97HI83T6v/IvWuK2PEap5jA59l4203qvQIyo6c=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			icV4waJ3WhKln3+7KMo5t7jg2k+hRICUmquWyyQ7AjI=
+			JFpXkLRheW9I3FIe0gleg/IFgc/gd+gjK/iZa5rmS5o=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4unmYnw6XD1qQCVqkcyhGnOpKzc8C0IFUfASk/tJvdI=
+			rX7hDm2/xurWC6jNzGkU5n6Jp5nyMvRQRUyNnPN9xMo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qxg+DVGY3G3Qf/UsSQkvHbNpkykr8nlKscSvu/0FTWI=
+			zw/5Ux2x5Tm1dOFslx5TjVkBcMAxVhLwiMKT9kO/3xQ=
 			</data>
 		</dict>
 	</dict>
