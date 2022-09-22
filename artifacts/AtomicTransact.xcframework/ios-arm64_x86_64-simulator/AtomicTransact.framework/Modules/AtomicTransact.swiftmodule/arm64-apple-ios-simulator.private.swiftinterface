@@ -145,6 +145,11 @@ public struct AtomicConfig : Swift.Codable {
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
+  public struct Platform : Swift.Codable {
+    public func encode() -> Any?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
   public let publicToken: Swift.String?
   public var tasks: [AtomicTransact.AtomicConfig.Task]?
   public let demo: AtomicTransact.AtomicConfig.DemoMode?

@@ -5597,6 +5597,115 @@
             ]
           },
           {
+            "kind": "TypeDecl",
+            "name": "Platform",
+            "printedName": "Platform",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14AtomicTransact0A6ConfigV8PlatformV6encodeypSgyF",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8PlatformV6encodeypSgyF",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Platform",
+                    "printedName": "AtomicTransact.AtomicConfig.Platform",
+                    "usr": "s:14AtomicTransact0A6ConfigV8PlatformV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14AtomicTransact0A6ConfigV8PlatformV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8PlatformV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14AtomicTransact0A6ConfigV8PlatformV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8PlatformV6encode2toys7Encoder_p_tKF",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14AtomicTransact0A6ConfigV8PlatformV",
+            "mangledName": "$s14AtomicTransact0A6ConfigV8PlatformV",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
             "kind": "Var",
             "name": "publicToken",
             "printedName": "publicToken",
@@ -10637,28 +10746,35 @@
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15757,
+      "offset": 15698,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16976,
+      "offset": 15782,
+      "length": 7,
+      "value": "\"2.6.3\""
+    },
+    {
+      "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 17095,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16983,
+      "offset": 17102,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16990,
+      "offset": 17109,
       "length": 4,
       "value": "\"en\""
     },
