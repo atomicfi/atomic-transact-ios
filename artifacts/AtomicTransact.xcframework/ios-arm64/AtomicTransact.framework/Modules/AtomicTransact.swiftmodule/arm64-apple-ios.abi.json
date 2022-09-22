@@ -1484,11 +1484,11 @@
                 "mangledName": "$s14AtomicTransact0A6ConfigV5ThemeV4darkSbSgvp",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
+                  "HasInitialValue",
                   "HasStorage",
                   "AccessControl",
                   "RawDocComment"
                 ],
-                "isLet": true,
                 "hasStorage": true,
                 "accessors": [
                   {
@@ -1517,6 +1517,56 @@
                     "moduleName": "AtomicTransact",
                     "implicit": true,
                     "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV5ThemeV4darkSbSgvs",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV5ThemeV4darkSbSgvs",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV5ThemeV4darkSbSgvM",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV5ThemeV4darkSbSgvM",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "_modify"
                   }
                 ]
               },
@@ -1751,6 +1801,46 @@
                     "usr": "s:14AtomicTransact0A6ConfigV5ThemeV11ColorSchemeO6systemyA2GmF",
                     "mangledName": "$s14AtomicTransact0A6ConfigV5ThemeV11ColorSchemeO6systemyA2GmF",
                     "moduleName": "AtomicTransact"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "isDarkMode",
+                    "printedName": "isDarkMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0A6ConfigV5ThemeV11ColorSchemeO10isDarkModeSbvp",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV5ThemeV11ColorSchemeO10isDarkModeSbvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0A6ConfigV5ThemeV11ColorSchemeO10isDarkModeSbvg",
+                        "mangledName": "$s14AtomicTransact0A6ConfigV5ThemeV11ColorSchemeO10isDarkModeSbvg",
+                        "moduleName": "AtomicTransact",
+                        "accessorKind": "get"
+                      }
+                    ]
                   },
                   {
                     "kind": "Function",
@@ -5601,6 +5691,27 @@
             "name": "Platform",
             "printedName": "Platform",
             "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Platform",
+                    "printedName": "AtomicTransact.AtomicConfig.Platform",
+                    "usr": "s:14AtomicTransact0A6ConfigV8PlatformV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14AtomicTransact0A6ConfigV8PlatformVAEycfc",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8PlatformVAEycfc",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
               {
                 "kind": "Function",
                 "name": "encode",
@@ -10711,70 +10822,70 @@
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8708,
+      "offset": 8715,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8736,
+      "offset": 8743,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8763,
+      "offset": 8770,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8791,
+      "offset": 8798,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13649,
+      "offset": 13656,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15698,
+      "offset": 15705,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15782,
+      "offset": 15789,
       "length": 7,
       "value": "\"2.6.3\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17095,
+      "offset": 17125,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17102,
+      "offset": 17132,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17109,
+      "offset": 17139,
       "length": 4,
       "value": "\"en\""
     },

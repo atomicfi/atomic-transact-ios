@@ -37,13 +37,16 @@ public struct AtomicConfig : Swift.Codable {
   public struct Theme : Swift.Codable {
     public let brandColor: Swift.String?
     public let overlayColor: Swift.String?
-    public let dark: Swift.Bool?
+    public var dark: Swift.Bool?
     public init(brandColor: Swift.String?, overlayColor: Swift.String?, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
     public init(brandColor: UIKit.UIColor? = nil, overlayColor: UIKit.UIColor? = nil, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
     public enum ColorScheme {
       case light
       case dark
       case system
+      public var isDarkMode: Swift.Bool {
+        get
+      }
       public static func == (a: AtomicTransact.AtomicConfig.Theme.ColorScheme, b: AtomicTransact.AtomicConfig.Theme.ColorScheme) -> Swift.Bool
       public func hash(into hasher: inout Swift.Hasher)
       public var hashValue: Swift.Int {
@@ -146,6 +149,7 @@ public struct AtomicConfig : Swift.Codable {
     public init(from decoder: Swift.Decoder) throws
   }
   public struct Platform : Swift.Codable {
+    public init()
     public func encode() -> Any?
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
