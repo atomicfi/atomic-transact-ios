@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AtomicTransactSwiftUI-Swift.h</key>
 		<data>
-		lXBt/MaUrMTMz2m5h+Etu/j8sIM=
+		t2wEX5AMVen8eFZCnhBubGV6NiU=
 		</data>
 		<key>Headers/AtomicTransactSwiftUI.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lju67NJeOb4deJkHiWoZhHws/+Y=
+		K8wr/IZG8GyGNZw5ulvL+iKcFUQ=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ozY71UPO9xZFp4YZegcM/dYtsdU=
+		o22xu27DaWYmb5FY+e20j0Oncm0=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3tlEHKR7woJcE62aOcnC+MLTtO4=
+		NWK+PoxVT3b2NcK7kh3bWLuvKsc=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ozY71UPO9xZFp4YZegcM/dYtsdU=
+		o22xu27DaWYmb5FY+e20j0Oncm0=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TWnteVm87oFyoFrWjSmVk8jqD44=
+		vqtJvJFxPFKpL5CvjySuqcMtXBs=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lzZ3s0FDokrV+NpJVkIC9PfDie8=
+		xPcppUjfX5br5cWFIucM6PxRakA=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ykebWsXm+RmUdTmArgx9ARAIDUQ=
+		mpUPBMqrgqOtyPLnNBIQD4Nvpps=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lzZ3s0FDokrV+NpJVkIC9PfDie8=
+		xPcppUjfX5br5cWFIucM6PxRakA=
 		</data>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8AqnNWOPIP1yOAruXTYBpgU6rIo=
+		uU5T3NPI3q8s94bpIMRFbkZ/6M4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,13 +65,21 @@
 	<dict>
 		<key>Headers/AtomicTransactSwiftUI-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			t2wEX5AMVen8eFZCnhBubGV6NiU=
+			</data>
 			<key>hash2</key>
 			<data>
-			sqf7NdxiUGiwVbgtu6yp1Xxpq+ncjC5HxlDHsabCFd8=
+			40v6zPgmz0zxlLAjwp/n6BcoQhTqYvrp1iHHJCYoKXM=
 			</data>
 		</dict>
 		<key>Headers/AtomicTransactSwiftUI.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			yO/LmARwrdkRSqGcv4ZZml0ksPI=
+			</data>
 			<key>hash2</key>
 			<data>
 			dSvlKTyGeWSX2ctACP6aA9AkE6ukkelRvQ2BP3R/FXw=
@@ -79,6 +87,10 @@
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Hj4pUbMlqzIwWmouhMfUMiFATqI=
+			</data>
 			<key>hash2</key>
 			<data>
 			iRkmoVvy/3yCR7sTW//xmtWZ2Y3CQCPLV/XCCaGzmbI=
@@ -86,34 +98,54 @@
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			o22xu27DaWYmb5FY+e20j0Oncm0=
+			</data>
 			<key>hash2</key>
 			<data>
-			koaJPwXgtIMO6pzJstLrK4A9g/XfPB7EZbc8y2GKfdc=
+			qi4Vz1ogpGi3OrXUXNPFr6VbFW7cM1F7Gs1hNBjJ6P4=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NWK+PoxVT3b2NcK7kh3bWLuvKsc=
+			</data>
 			<key>hash2</key>
 			<data>
-			CRe/qTbaLTqBBeNUZ1cRJq9XerK4A9e10WahtG0bLFM=
+			FrSbun+vOoFhLuzLSk/9XC9MioAYikhIBAp91CPrzC8=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			o22xu27DaWYmb5FY+e20j0Oncm0=
+			</data>
 			<key>hash2</key>
 			<data>
-			koaJPwXgtIMO6pzJstLrK4A9g/XfPB7EZbc8y2GKfdc=
+			qi4Vz1ogpGi3OrXUXNPFr6VbFW7cM1F7Gs1hNBjJ6P4=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vqtJvJFxPFKpL5CvjySuqcMtXBs=
+			</data>
 			<key>hash2</key>
 			<data>
-			1yGZetzrqRGUJNV3kfiMMBiAnc6aw3h4/mfz5E4j+OM=
+			4MX/SoPM/euBm/Hch1b3Xr636diE6gKShovPNxDI61g=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Hj4pUbMlqzIwWmouhMfUMiFATqI=
+			</data>
 			<key>hash2</key>
 			<data>
 			iRkmoVvy/3yCR7sTW//xmtWZ2Y3CQCPLV/XCCaGzmbI=
@@ -121,34 +153,54 @@
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xPcppUjfX5br5cWFIucM6PxRakA=
+			</data>
 			<key>hash2</key>
 			<data>
-			JFpXkLRheW9I3FIe0gleg/IFgc/gd+gjK/iZa5rmS5o=
+			lWvxmspPaVEXWopzodkk+CZLPdmwmslXtFYUvwkkT8k=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mpUPBMqrgqOtyPLnNBIQD4Nvpps=
+			</data>
 			<key>hash2</key>
 			<data>
-			+iBWr97HI83T6v/IvWuK2PEap5jA59l4203qvQIyo6c=
+			y8mmlX4MOU6D5l1n5Mih20KQ8O49ju2Tl1QoPSK/iSE=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xPcppUjfX5br5cWFIucM6PxRakA=
+			</data>
 			<key>hash2</key>
 			<data>
-			JFpXkLRheW9I3FIe0gleg/IFgc/gd+gjK/iZa5rmS5o=
+			lWvxmspPaVEXWopzodkk+CZLPdmwmslXtFYUvwkkT8k=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransactSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uU5T3NPI3q8s94bpIMRFbkZ/6M4=
+			</data>
 			<key>hash2</key>
 			<data>
-			rX7hDm2/xurWC6jNzGkU5n6Jp5nyMvRQRUyNnPN9xMo=
+			/hmKmevFauUNutIORYJQGH5iOU15rdJQnhA8g1+xomI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vqvmXwJqBAmSuOuEGz4uI7/k5iA=
+			</data>
 			<key>hash2</key>
 			<data>
 			zw/5Ux2x5Tm1dOFslx5TjVkBcMAxVhLwiMKT9kO/3xQ=
