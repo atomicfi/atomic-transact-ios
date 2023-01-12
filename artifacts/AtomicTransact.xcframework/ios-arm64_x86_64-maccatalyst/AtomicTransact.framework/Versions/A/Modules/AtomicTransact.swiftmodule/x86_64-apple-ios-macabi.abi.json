@@ -1113,14 +1113,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProductType",
-                    "printedName": "AtomicTransact.AtomicConfig.ProductType",
-                    "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.AtomicConfig.ProductType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProductType",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                        "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOvp",
-                "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOvp",
+                "usr": "s:14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOSgvp",
+                "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOSgvp",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
                   "HasStorage",
@@ -1137,14 +1145,83 @@
                     "children": [
                       {
                         "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductType",
+                            "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                            "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOSgvg",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "operation",
+                "printedName": "operation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.AtomicConfig.ProductType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
                         "name": "ProductType",
                         "printedName": "AtomicTransact.AtomicConfig.ProductType",
                         "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
                       }
                     ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0A6ConfigV4TaskV9operationAC11ProductTypeOSgvp",
+                "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV9operationAC11ProductTypeOSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductType",
+                            "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                            "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
                     "declKind": "Accessor",
-                    "usr": "s:14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOvg",
-                    "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV7productAC11ProductTypeOvg",
+                    "usr": "s:14AtomicTransact0A6ConfigV4TaskV9operationAC11ProductTypeOSgvg",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV9operationAC11ProductTypeOSgvg",
                     "moduleName": "AtomicTransact",
                     "implicit": true,
                     "accessorKind": "get"
@@ -1215,7 +1292,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(product:distribution:)",
+                "printedName": "init(product:operation:distribution:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1225,9 +1302,33 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProductType",
-                    "printedName": "AtomicTransact.AtomicConfig.ProductType",
-                    "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.AtomicConfig.ProductType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProductType",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                        "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.AtomicConfig.ProductType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProductType",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                        "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1246,8 +1347,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:14AtomicTransact0A6ConfigV4TaskV7product12distributionAeC11ProductTypeO_AC12DistributionVSgtcfc",
-                "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV7product12distributionAeC11ProductTypeO_AC12DistributionVSgtcfc",
+                "usr": "s:14AtomicTransact0A6ConfigV4TaskV7product9operation12distributionAeC11ProductTypeOSg_AkC12DistributionVSgtcfc",
+                "mangledName": "$s14AtomicTransact0A6ConfigV4TaskV7product9operation12distributionAeC11ProductTypeOSg_AkC12DistributionVSgtcfc",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
                   "AccessControl",
@@ -10822,70 +10923,70 @@
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8715,
+      "offset": 9031,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8743,
+      "offset": 9059,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8770,
+      "offset": 9086,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8798,
+      "offset": 9114,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 13656,
+      "offset": 13972,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15705,
+      "offset": 16021,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 15789,
+      "offset": 16105,
       "length": 8,
       "value": "\"2.6.14\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17126,
+      "offset": 17442,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17133,
+      "offset": 17449,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17140,
+      "offset": 17456,
       "length": 4,
       "value": "\"en\""
     },
