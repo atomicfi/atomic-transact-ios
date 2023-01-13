@@ -24,7 +24,7 @@ class TransactData: ObservableObject {
 	@AppStorage("showFullscreen") var showFullscreen = false
 	@AppStorage("PublicToken") var publicToken = ""
 	@Published var brandColor = Color.blue
-	@Published var overlayColor = Color.gray
+	@Published var overlayColor = Color.black
 	
 	var environment: TransactEnvironment {
 		switch urlOption {
