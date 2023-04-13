@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AtomicTransact
@@ -32,8 +32,8 @@ public struct AtomicConfig : Swift.Codable {
     public let operation: AtomicTransact.AtomicConfig.ProductType?
     public let distribution: AtomicTransact.AtomicConfig.Distribution?
     public init(product: AtomicTransact.AtomicConfig.ProductType? = nil, operation: AtomicTransact.AtomicConfig.ProductType? = nil, distribution: AtomicTransact.AtomicConfig.Distribution? = nil)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Theme : Swift.Codable {
     public let brandColor: Swift.String?
@@ -54,8 +54,8 @@ public struct AtomicConfig : Swift.Codable {
         get
       }
     }
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Distribution : Swift.Codable {
     public enum DistributionType : Swift.String, Swift.Codable {
@@ -82,8 +82,8 @@ public struct AtomicConfig : Swift.Codable {
     public var amount: Swift.Double
     public var action: AtomicTransact.AtomicConfig.Distribution.ActionType?
     public init(type: AtomicTransact.AtomicConfig.Distribution.DistributionType, amount: Swift.Double, action: AtomicTransact.AtomicConfig.Distribution.ActionType? = nil)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public enum ProductType : Swift.String, Swift.Codable {
     case deposit
@@ -110,8 +110,8 @@ public struct AtomicConfig : Swift.Codable {
     public var connectorId: Swift.String?
     public var companyName: Swift.String?
     public init(step: AtomicTransact.AtomicConfig.Deeplink.Step)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct DemoMode : Swift.Codable {
     public var enabled: Swift.Bool
@@ -122,38 +122,38 @@ public struct AtomicConfig : Swift.Codable {
         public var color: Swift.String
         public init(logo: Swift.String, color: Swift.String)
         public init(logo: Swift.String, color: UIKit.UIColor)
-        public func encode(to encoder: any Swift.Encoder) throws
-        public init(from decoder: any Swift.Decoder) throws
+        public func encode(to encoder: Swift.Encoder) throws
+        public init(from decoder: Swift.Decoder) throws
       }
       public var brand: AtomicTransact.AtomicConfig.DemoMode.Customer.Brand
       public init(name: Swift.String, brand: AtomicTransact.AtomicConfig.DemoMode.Customer.Brand)
-      public func encode(to encoder: any Swift.Encoder) throws
-      public init(from decoder: any Swift.Decoder) throws
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
     }
     public var customer: AtomicTransact.AtomicConfig.DemoMode.Customer?
     public init(customer: AtomicTransact.AtomicConfig.DemoMode.Customer? = nil)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Search : Swift.Codable {
     public var tags: [Swift.String]?
     public var excludedTags: [Swift.String]?
     public init(tags: [Swift.String]? = nil, excludedTags: [Swift.String]? = nil)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Experiments : Swift.Codable {
     public var fractionalDeposits: Swift.Bool?
     public var unemploymentCarousel: Swift.Bool?
     public init(fractionalDeposits: Swift.Bool? = nil, unemploymentCarousel: Swift.Bool? = nil)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Platform : Swift.Codable {
     public init()
     public func encode() -> Any?
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public let publicToken: Swift.String?
   public var tasks: [AtomicTransact.AtomicConfig.Task]?
@@ -169,8 +169,8 @@ public struct AtomicConfig : Swift.Codable {
   public var search: AtomicTransact.AtomicConfig.Search?
   public var handoff: [Swift.String]?
   public var experiments: AtomicTransact.AtomicConfig.Experiments?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum TransactResponse : Swift.CustomStringConvertible {
   public struct ResponseData {
@@ -250,7 +250,7 @@ public enum Atomic {
   @_Concurrency.MainActor(unsafe) public var onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())?
   @_Concurrency.MainActor(unsafe) public var onCompletion: ((AtomicTransact.TransactResponse) -> ())?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
