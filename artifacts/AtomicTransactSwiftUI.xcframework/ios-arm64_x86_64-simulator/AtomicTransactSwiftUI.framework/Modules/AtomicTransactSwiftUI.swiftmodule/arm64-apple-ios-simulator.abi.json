@@ -187,14 +187,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransactSwiftUI\/TransactSheetView.swift",
+      "filePath": "\/Users\/vagrant\/git\/AtomicTransactSwiftUI\/TransactSheetView.swift",
       "kind": "BooleanLiteral",
       "offset": 343,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransactSwiftUI\/AtomicSwiftUI.swift",
+      "filePath": "\/Users\/vagrant\/git\/AtomicTransactSwiftUI\/AtomicSwiftUI.swift",
       "kind": "BooleanLiteral",
       "offset": 970,
       "length": 5,
