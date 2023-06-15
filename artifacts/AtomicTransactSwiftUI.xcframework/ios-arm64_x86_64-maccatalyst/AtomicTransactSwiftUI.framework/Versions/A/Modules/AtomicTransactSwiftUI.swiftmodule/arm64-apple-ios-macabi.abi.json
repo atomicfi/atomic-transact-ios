@@ -64,16 +64,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
+                "name": "ModifiedContent",
+                "printedName": "SwiftUI.ModifiedContent<τ_0_0, AtomicTransactSwiftUI.TransactSheetView>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactSheetView",
+                    "printedName": "AtomicTransactSwiftUI.TransactSheetView",
+                    "usr": "s:21AtomicTransactSwiftUI0B9SheetViewV"
                   }
-                ]
+                ],
+                "usr": "s:7SwiftUI15ModifiedContentV"
               },
               {
                 "kind": "TypeNominal",
@@ -187,14 +193,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransactSwiftUI\/TransactSheetView.swift",
+      "filePath": "\/Users\/vagrant\/git\/AtomicTransactSwiftUI\/TransactSheetView.swift",
       "kind": "BooleanLiteral",
       "offset": 343,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransactSwiftUI\/AtomicSwiftUI.swift",
+      "filePath": "\/Users\/vagrant\/git\/AtomicTransactSwiftUI\/AtomicSwiftUI.swift",
       "kind": "BooleanLiteral",
       "offset": 970,
       "length": 5,
