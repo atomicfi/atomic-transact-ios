@@ -10967,7 +10967,7 @@
       "kind": "StringLiteral",
       "offset": 16105,
       "length": 7,
-      "value": "\"2.8.1\""
+      "value": "\"3.0.0\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
@@ -11070,42 +11070,42 @@
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1120,
+      "offset": 1124,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1158,
+      "offset": 1162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Dictionary",
-      "offset": 1210,
+      "offset": 1214,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Array",
-      "offset": 1295,
+      "offset": 1299,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8206,
+      "offset": 10116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8632,
+      "offset": 10542,
       "length": 5,
       "value": "false"
     },
