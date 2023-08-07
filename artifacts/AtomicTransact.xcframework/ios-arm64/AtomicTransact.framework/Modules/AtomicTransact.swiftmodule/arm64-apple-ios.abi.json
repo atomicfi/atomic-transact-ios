@@ -10967,7 +10967,7 @@
       "kind": "StringLiteral",
       "offset": 16105,
       "length": 7,
-      "value": "\"3.0.1\""
+      "value": "\"3.0.3\""
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
@@ -11105,14 +11105,14 @@
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10170,
+      "offset": 10208,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/seanhill\/dev\/atomic\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10596,
+      "offset": 10634,
       "length": 5,
       "value": "false"
     },
