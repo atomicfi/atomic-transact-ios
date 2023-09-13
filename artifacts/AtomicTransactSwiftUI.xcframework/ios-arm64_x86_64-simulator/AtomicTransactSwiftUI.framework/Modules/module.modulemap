@@ -1,7 +1,7 @@
 framework module AtomicTransactSwiftUI {
   umbrella header "AtomicTransactSwiftUI.h"
-
   export *
+
   module * { export * }
 }
 
