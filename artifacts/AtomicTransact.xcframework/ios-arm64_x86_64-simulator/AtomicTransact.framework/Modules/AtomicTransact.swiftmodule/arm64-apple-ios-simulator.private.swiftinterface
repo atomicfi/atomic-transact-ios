@@ -23,10 +23,10 @@ public struct TransactDataRequest {
   public var data: [Swift.String : Any]
 }
 public struct AtomicConfig : Swift.Codable {
-  public init(publicToken: Swift.String, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
-  public init(demo: AtomicTransact.AtomicConfig.DemoMode, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(publicToken: Swift.String, scope: AtomicTransact.AtomicConfig.ScopeType, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(demo: AtomicTransact.AtomicConfig.DemoMode, scope: AtomicTransact.AtomicConfig.ScopeType, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
   @available(*, deprecated, message: "Use `tasks` instead of `product`")
-  public init(publicToken: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
+  public init(publicToken: Swift.String, scope: AtomicTransact.AtomicConfig.ScopeType, product: AtomicTransact.AtomicConfig.ProductType, additionalProduct: AtomicTransact.AtomicConfig.ProductType? = nil, linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), distribution: AtomicTransact.AtomicConfig.Distribution? = nil, language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
   public struct Task : Swift.Codable {
     public let product: AtomicTransact.AtomicConfig.ProductType?
     public let operation: AtomicTransact.AtomicConfig.ProductType?
@@ -81,14 +81,28 @@ public struct AtomicConfig : Swift.Codable {
     public var type: AtomicTransact.AtomicConfig.Distribution.DistributionType
     public var amount: Swift.Double
     public var action: AtomicTransact.AtomicConfig.Distribution.ActionType?
+    public var canUpdate: Swift.Bool?
     public init(type: AtomicTransact.AtomicConfig.Distribution.DistributionType, amount: Swift.Double, action: AtomicTransact.AtomicConfig.Distribution.ActionType? = nil)
+    public init(type: AtomicTransact.AtomicConfig.Distribution.DistributionType, amount: Swift.Double, action: AtomicTransact.AtomicConfig.Distribution.ActionType? = nil, canUpdate: Swift.Bool?)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
   public enum ProductType : Swift.String, Swift.Codable {
     case deposit
     case verify
-    case identify
+    case enroll
+    case `switch`
+    case present
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ScopeType : Swift.String, Swift.Codable {
+    case userLink
+    case employerLink
+    case payLink
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -101,6 +115,7 @@ public struct AtomicConfig : Swift.Codable {
       case searchPayroll
       case loginCompany(companyId: Swift.String)
       case loginPayroll(connectorId: Swift.String, companyName: Swift.String)
+      case addCard
       public var id: Swift.String {
         get
       }
@@ -161,6 +176,7 @@ public struct AtomicConfig : Swift.Codable {
   public let product: AtomicTransact.AtomicConfig.ProductType?
   public let additionalProduct: AtomicTransact.AtomicConfig.ProductType?
   public let linkedAccount: Swift.String?
+  public let scope: AtomicTransact.AtomicConfig.ScopeType?
   public var theme: AtomicTransact.AtomicConfig.Theme?
   public var distribution: AtomicTransact.AtomicConfig.Distribution?
   public var language: Swift.String
@@ -250,6 +266,7 @@ public enum Atomic {
   @_Concurrency.MainActor(unsafe) public var onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())?
   @_Concurrency.MainActor(unsafe) public var onCompletion: ((AtomicTransact.TransactResponse) -> ())?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -284,5 +301,8 @@ extension AtomicTransact.AtomicConfig.Distribution.ActionType : Swift.RawReprese
 extension AtomicTransact.AtomicConfig.ProductType : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.ProductType : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.ProductType : Swift.RawRepresentable {}
+extension AtomicTransact.AtomicConfig.ScopeType : Swift.Equatable {}
+extension AtomicTransact.AtomicConfig.ScopeType : Swift.Hashable {}
+extension AtomicTransact.AtomicConfig.ScopeType : Swift.RawRepresentable {}
 extension AtomicTransact.TransactError : Swift.Equatable {}
 extension AtomicTransact.TransactError : Swift.Hashable {}
