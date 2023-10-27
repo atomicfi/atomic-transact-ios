@@ -82,14 +82,15 @@ public struct AtomicConfig : Swift.Codable {
     public var type: AtomicTransact.AtomicConfig.Distribution.DistributionType
     public var amount: Swift.Double
     public var action: AtomicTransact.AtomicConfig.Distribution.ActionType?
+    public var canUpdate: Swift.Bool?
     public init(type: AtomicTransact.AtomicConfig.Distribution.DistributionType, amount: Swift.Double, action: AtomicTransact.AtomicConfig.Distribution.ActionType? = nil)
+    public init(type: AtomicTransact.AtomicConfig.Distribution.DistributionType, amount: Swift.Double, action: AtomicTransact.AtomicConfig.Distribution.ActionType? = nil, canUpdate: Swift.Bool?)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
   public enum ProductType : Swift.String, Swift.Codable {
     case deposit
     case verify
-    case identify
     case enroll
     case `switch`
     case present
@@ -115,6 +116,7 @@ public struct AtomicConfig : Swift.Codable {
       case searchPayroll
       case loginCompany(companyId: Swift.String)
       case loginPayroll(connectorId: Swift.String, companyName: Swift.String)
+      case addCard
       public var id: Swift.String {
         get
       }
