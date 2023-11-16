@@ -12311,7 +12311,7 @@
       "kind": "StringLiteral",
       "offset": 21462,
       "length": 7,
-      "value": "\"3.0.6\""
+      "value": "\"3.1.2\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Data\/AtomicConfig.swift",
@@ -13170,147 +13170,154 @@
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4697,
+      "offset": 4507,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4748,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4973,
+      "offset": 5024,
       "length": 24,
       "value": "\"atomic-transact-finish\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5021,
+      "offset": 5072,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "Dictionary",
-      "offset": 5131,
+      "offset": 5182,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5176,
+      "offset": 5227,
       "length": 33,
       "value": "\"Finish. Return: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5208,
+      "offset": 5259,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5241,
+      "offset": 5292,
       "length": 30,
       "value": "\"atomic-transact-data-request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5387,
+      "offset": 5438,
       "length": 26,
       "value": "\"DATA REQUEST: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5412,
+      "offset": 5463,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5573,
+      "offset": 5624,
       "length": 23,
       "value": "\"atomic-transact-close\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5620,
+      "offset": 5671,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "Dictionary",
-      "offset": 5728,
+      "offset": 5779,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5773,
+      "offset": 5824,
       "length": 32,
       "value": "\"Close. Return: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5804,
+      "offset": 5855,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5837,
+      "offset": 5888,
       "length": 29,
       "value": "\"atomic-transact-interaction\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5935,
+      "offset": 5986,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5981,
+      "offset": 6032,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6028,
+      "offset": 6079,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6314,
+      "offset": 6365,
       "length": 26,
       "value": "\"atomic-transact-open-url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6409,
+      "offset": 6460,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6517,
+      "offset": 6568,
       "length": 4,
       "value": "true"
     },
@@ -13429,1883 +13436,1890 @@
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4292,
+      "offset": 4404,
       "length": 62,
       "value": "\"window.SUPPORTS_NATIVE_AUTHENTICATION = true\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4399,
+      "offset": 4511,
       "length": 22,
       "value": "\"Great news \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4420,
+      "offset": 4532,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4599,
+      "offset": 4711,
       "length": 26,
       "value": "\"sdk-did-enter-background\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4832,
+      "offset": 4944,
       "length": 26,
       "value": "\"sdk-did-enter-foreground\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5606,
+      "offset": 5858,
       "length": 13,
       "value": "\"rrweb-event\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5693,
+      "offset": 5945,
       "length": 13,
       "value": "\"dom-changed\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5780,
+      "offset": 6032,
       "length": 14,
       "value": "\"internal-log\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5868,
+      "offset": 6120,
       "length": 21,
       "value": "\"internal-close-auth\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5963,
+      "offset": 6215,
       "length": 30,
       "value": "\"internal-intercepted-request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6067,
+      "offset": 6319,
       "length": 28,
       "value": "\"internal-on-document-start\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6169,
+      "offset": 6421,
       "length": 26,
       "value": "\"internal-on-document-end\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6269,
+      "offset": 6521,
       "length": 39,
       "value": "\"internal-javascript-evaluate-response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6382,
+      "offset": 6634,
       "length": 18,
       "value": "\"internal-message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6576,
+      "offset": 6828,
       "length": 114,
       "value": "\"window.webkit?.messageHandlers['internal-on-document-start'].postMessage({ type: 'internal-on-document-start' })\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6743,
+      "offset": 6995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6803,
+      "offset": 7055,
       "length": 110,
       "value": "\"window.webkit?.messageHandlers['internal-on-document-end'].postMessage({ type: 'internal-on-document-end' })\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6964,
+      "offset": 7216,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7353,
+      "offset": 7605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Array",
-      "offset": 7556,
+      "offset": 7808,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8094,
+      "offset": 8346,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8557,
+      "offset": 8809,
       "length": 24,
       "value": "\"setting up auth checks\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9279,
+      "offset": 9531,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9306,
+      "offset": 9558,
       "length": 39,
       "value": "\"URL monitor change \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9344,
+      "offset": 9596,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9393,
+      "offset": 9645,
       "length": 16,
       "value": "\"sdk-update-url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9423,
+      "offset": 9675,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9725,
+      "offset": 9977,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10146,
+      "offset": 10398,
       "length": 24,
       "value": "\"sdk-user-authenticated\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10388,
+      "offset": 10640,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10400,
+      "offset": 10652,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10442,
+      "offset": 10694,
       "length": 216,
       "value": "\"    Array.from(document.querySelectorAll('input')).some(input =>\n        input.value?.includes('test-good') || input.value?.includes('test-feels-so-good')\n    )\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10776,
+      "offset": 11028,
       "length": 7,
       "value": "\"mocky\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10788,
+      "offset": 11040,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10978,
+      "offset": 11230,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11041,
+      "offset": 11293,
       "length": 10,
       "value": "\"sdk-demo\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11812,
+      "offset": 12064,
       "length": 30,
       "value": "\"Atomic Transact Sync Process\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11904,
+      "offset": 12156,
       "length": 44,
       "value": "\"Background sync process needs to end early\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12111,
+      "offset": 12296,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12627,
+      "offset": 12929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12697,
+      "offset": 12999,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12784,
+      "offset": 13086,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12795,
+      "offset": 13097,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12872,
+      "offset": 13174,
       "length": 441,
       "value": "\"\tconst asyncFunction\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12914,
+      "offset": 13216,
       "length": 1,
       "value": "\" = async () => {\n\t\t\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12949,
+      "offset": 13251,
       "length": 1,
       "value": "\"\n\t}\n\t\n\tconst resultFunction\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13000,
+      "offset": 13302,
       "length": 1,
       "value": "\" = (response) => {\n\t\twindow.webkit.messageHandlers[\"internal-javascript-evaluate-response\"].postMessage({\n\t\t\ttype: \"internal-javascript-evaluate-response\", id: \"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13172,
+      "offset": 13474,
       "length": 11,
       "value": "\"\", response\n\t\t})\n\t};\n\tasyncFunction\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13231,
+      "offset": 13533,
       "length": 1,
       "value": "\"().then(resultFunction\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13268,
+      "offset": 13570,
       "length": 1,
       "value": "\").catch(resultFunction\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13305,
+      "offset": 13607,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13608,
+      "offset": 13910,
       "length": 32,
       "value": "\"com.atomicfi.AtomicTransactiOS\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13648,
+      "offset": 13950,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13779,
+      "offset": 14081,
       "length": 4,
       "value": "\"{}\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Array",
-      "offset": 13896,
+      "offset": 14198,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14003,
+      "offset": 14305,
       "length": 34,
       "value": "\"Dispatch Transact Event: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14036,
+      "offset": 14338,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14093,
+      "offset": 14395,
       "length": 159,
       "value": "\"var event = new CustomEvent('sdk-native-event', {\n\tdetail: { name: \"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14178,
+      "offset": 14480,
       "length": 21,
       "value": "\"\", payload: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14197,
+      "offset": 14499,
       "length": 1,
       "value": "\" }\n});\ndocument.body.dispatchEvent(event);\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14421,
+      "offset": 14723,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14539,
+      "offset": 14841,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14949,
+      "offset": 15251,
       "length": 23,
       "value": "\"sanitizeFullDOMScript\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15010,
+      "offset": 15312,
       "length": 17,
       "value": "\"Do the dom pull\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15276,
+      "offset": 15578,
       "length": 29,
       "value": "\"attachDOMPullListenerScript\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15383,
+      "offset": 15685,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Array",
-      "offset": 15762,
+      "offset": 16064,
       "length": 154,
       "value": "[\"gusto.com\", \"google.com\", \"youtube.com\", \"intuit.com\", \"xero.com\", \"okta.com\", \"microsoftonline.com\", \"onelogin.com\", \"pingone.com\", \"pingidentity.com\"]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15990,
+      "offset": 16292,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16044,
+      "offset": 16346,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16062,
+      "offset": 16364,
       "length": 45,
       "value": "\"Website failed allowlist validation: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16106,
+      "offset": 16408,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16141,
+      "offset": 16443,
       "length": 11,
       "value": "\"sdk-error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16166,
+      "offset": 16468,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16174,
+      "offset": 16476,
       "length": 18,
       "value": "\"navigation-error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16194,
+      "offset": 16496,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16204,
+      "offset": 16506,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16512,
+      "offset": 16814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17078,
+      "offset": 17380,
       "length": 13,
       "value": "\"dom-changed\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17121,
+      "offset": 17423,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17233,
+      "offset": 17535,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17261,
+      "offset": 17563,
       "length": 13,
       "value": "\"rrweb-event\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17316,
+      "offset": 17618,
       "length": 7,
       "value": "\"event\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17373,
+      "offset": 17675,
       "length": 17,
       "value": "\"sdk-rrweb-event\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17404,
+      "offset": 17706,
       "length": 7,
       "value": "\"event\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17536,
+      "offset": 17838,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17564,
+      "offset": 17866,
       "length": 14,
       "value": "\"internal-log\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17618,
+      "offset": 17920,
       "length": 5,
       "value": "\"log\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17673,
+      "offset": 17975,
       "length": 9,
       "value": "\"sdk-log\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17696,
+      "offset": 17998,
       "length": 5,
       "value": "\"log\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17824,
+      "offset": 18126,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17852,
+      "offset": 18154,
       "length": 18,
       "value": "\"internal-message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17914,
+      "offset": 18216,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17951,
+      "offset": 18253,
       "length": 39,
       "value": "\"Received message event \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17989,
+      "offset": 18291,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18038,
+      "offset": 18340,
       "length": 13,
       "value": "\"sdk-message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18065,
+      "offset": 18367,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18201,
+      "offset": 18503,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18229,
+      "offset": 18531,
       "length": 30,
       "value": "\"internal-intercepted-request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18303,
+      "offset": 18605,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18362,
+      "offset": 18664,
       "length": 25,
       "value": "\"sdk-intercepted-request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18401,
+      "offset": 18703,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18537,
+      "offset": 18839,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18565,
+      "offset": 18867,
       "length": 28,
       "value": "\"internal-on-document-start\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18642,
+      "offset": 18944,
       "length": 23,
       "value": "\"sdk-on-document-start\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18782,
+      "offset": 19084,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18810,
+      "offset": 19112,
       "length": 26,
       "value": "\"internal-on-document-end\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 18885,
+      "offset": 19187,
       "length": 21,
       "value": "\"sdk-on-document-end\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19023,
+      "offset": 19325,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19051,
+      "offset": 19353,
       "length": 21,
       "value": "\"internal-close-auth\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19115,
+      "offset": 19417,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19173,
+      "offset": 19475,
       "length": 16,
       "value": "\"sdk-close-auth\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19203,
+      "offset": 19505,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19355,
+      "offset": 19657,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19387,
+      "offset": 19689,
       "length": 39,
       "value": "\"internal-javascript-evaluate-response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19453,
+      "offset": 19755,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19728,
+      "offset": 20030,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19822,
+      "offset": 20124,
       "length": 32,
       "value": "\"com.atomicfi.AtomicTransactiOS\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19862,
+      "offset": 20164,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19964,
+      "offset": 20266,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20010,
+      "offset": 20312,
       "length": 11,
       "value": "\"auth-poll\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20072,
+      "offset": 20374,
       "length": 24,
       "value": "\"check-vpn-connectivity\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20153,
+      "offset": 20455,
       "length": 20,
       "value": "\"evaluate-on-device\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20232,
+      "offset": 20534,
       "length": 24,
       "value": "\"native-network-request\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20312,
+      "offset": 20614,
       "length": 17,
       "value": "\"native-navigate\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20386,
+      "offset": 20688,
       "length": 13,
       "value": "\"native-show\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20452,
+      "offset": 20754,
       "length": 13,
       "value": "\"native-hide\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20518,
+      "offset": 20820,
       "length": 13,
       "value": "\"storage-put\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20586,
+      "offset": 20888,
       "length": 13,
       "value": "\"storage-get\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20656,
+      "offset": 20958,
       "length": 16,
       "value": "\"haptic-success\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20700,
+      "offset": 21002,
       "length": 14,
       "value": "\"haptic-error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20740,
+      "offset": 21042,
       "length": 12,
       "value": "\"haptic-tap\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20800,
+      "offset": 21102,
       "length": 18,
       "value": "\"haptic-selection\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20848,
+      "offset": 21150,
       "length": 27,
       "value": "\"show-assistant-title-text\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20934,
+      "offset": 21236,
       "length": 27,
       "value": "\"hide-assistant-title-text\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20996,
+      "offset": 21298,
       "length": 10,
       "value": "\"add-card\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21026,
+      "offset": 21328,
       "length": 12,
       "value": "\"card-added\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21277,
+      "offset": 21579,
       "length": 15,
       "value": "\"securityLevel\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21338,
+      "offset": 21640,
       "length": 10,
       "value": "\"startURL\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21404,
+      "offset": 21706,
       "length": 11,
       "value": "\"userAgent\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21473,
+      "offset": 21775,
       "length": 13,
       "value": "\"userScripts\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21583,
+      "offset": 21885,
       "length": 21,
       "value": "\"runAuthInBackground\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21667,
+      "offset": 21969,
       "length": 20,
       "value": "\"keepAliveAfterAuth\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21730,
+      "offset": 22032,
       "length": 9,
       "value": "\"helpers\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21794,
+      "offset": 22096,
       "length": 19,
       "value": "\"autofillAssistant\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21880,
+      "offset": 22182,
       "length": 31,
       "value": "\"authIsCompleteEvaluatorScript\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21968,
+      "offset": 22270,
       "length": 12,
       "value": "\"sdkScripts\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22100,
+      "offset": 22402,
       "length": 11,
       "value": "\"high-risk\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22662,
+      "offset": 22964,
       "length": 8,
       "value": "\"vpnURL\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22815,
+      "offset": 23117,
       "length": 23,
       "value": "\"com.atomicfi.transact\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22872,
+      "offset": 23174,
       "length": 18,
       "value": "\"vpn-connectivity\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22917,
+      "offset": 23219,
       "length": 45,
       "value": "\"--VPN-- GO BABY \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22961,
+      "offset": 23263,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23014,
+      "offset": 23316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23331,
+      "offset": 23633,
       "length": 41,
       "value": "\"I have already notified of connectivity\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23481,
+      "offset": 23783,
       "length": 22,
       "value": "\"--VPN-- VPN RESPONSE\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23538,
+      "offset": 23840,
       "length": 59,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23596,
+      "offset": 23898,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23632,
+      "offset": 23934,
       "length": 54,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23685,
+      "offset": 23987,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23782,
+      "offset": 24084,
       "length": 21,
       "value": "\"--VPN-- VPN ERROR 1\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23842,
+      "offset": 24144,
       "length": 54,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23895,
+      "offset": 24197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23947,
+      "offset": 24249,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24010,
+      "offset": 24312,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24166,
+      "offset": 24468,
       "length": 54,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24219,
+      "offset": 24521,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24259,
+      "offset": 24561,
       "length": 59,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24317,
+      "offset": 24619,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24471,
+      "offset": 24773,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24491,
+      "offset": 24793,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24551,
+      "offset": 24853,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24618,
+      "offset": 24920,
       "length": 17,
       "value": "\"sdk-vpn-success\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24747,
+      "offset": 25049,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24814,
+      "offset": 25116,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24945,
+      "offset": 25247,
       "length": 21,
       "value": "\"--VPN-- VPN ERROR 2\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25005,
+      "offset": 25307,
       "length": 59,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25063,
+      "offset": 25365,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25115,
+      "offset": 25417,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25178,
+      "offset": 25480,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 25478,
+      "offset": 25780,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25528,
+      "offset": 25830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25580,
+      "offset": 25882,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25618,
+      "offset": 25920,
       "length": 21,
       "value": "\"--VPN-- VPN TIMEOUT\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25695,
+      "offset": 25997,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25935,
+      "offset": 26237,
       "length": 8,
       "value": "\"script\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25992,
+      "offset": 26294,
       "length": 13,
       "value": "\"messageUUID\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26043,
+      "offset": 26345,
       "length": 16,
       "value": "\"NOT EVALUATING\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26119,
+      "offset": 26421,
       "length": 39,
       "value": "\"Evaluate JS on device: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26157,
+      "offset": 26459,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26203,
+      "offset": 26505,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26257,
+      "offset": 26559,
       "length": 19,
       "value": "\"Evaluate response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Dictionary",
-      "offset": 26335,
+      "offset": 26637,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26348,
+      "offset": 26650,
       "length": 13,
       "value": "\"messageUUID\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26473,
+      "offset": 26775,
       "length": 23,
       "value": "\"sdk-evaluate-response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26641,
+      "offset": 26943,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26713,
+      "offset": 27015,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26788,
+      "offset": 27090,
       "length": 9,
       "value": "\"headers\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26853,
+      "offset": 27155,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26904,
+      "offset": 27206,
       "length": 51,
       "value": "\"Setting auth webview user agent to '\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26953,
+      "offset": 27255,
       "length": 3,
       "value": "\"'\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27069,
+      "offset": 27371,
       "length": 35,
       "value": "\"Evaluate native request on device\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27144,
+      "offset": 27446,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27234,
+      "offset": 27536,
       "length": 8,
       "value": "\"method\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27289,
+      "offset": 27591,
       "length": 9,
       "value": "\"headers\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27404,
+      "offset": 27706,
       "length": 17,
       "value": "\"followRedirects\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27436,
+      "offset": 27738,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27478,
+      "offset": 27780,
       "length": 13,
       "value": "\"URL: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27490,
+      "offset": 27792,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27517,
+      "offset": 27819,
       "length": 19,
       "value": "\"Method: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27535,
+      "offset": 27837,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27562,
+      "offset": 27864,
       "length": 21,
       "value": "\"Headers: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27582,
+      "offset": 27884,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 28021,
+      "offset": 28323,
       "length": 5,
       "value": "\"get\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 28047,
+      "offset": 28349,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 28259,
+      "offset": 28561,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 28397,
+      "offset": 28699,
       "length": 21,
       "value": "\"Data: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 28417,
+      "offset": 28719,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29758,
+      "offset": 30060,
       "length": 44,
       "value": "\"Received network response for \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29801,
+      "offset": 30103,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29882,
+      "offset": 30184,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29923,
+      "offset": 30225,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29935,
+      "offset": 30237,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29957,
+      "offset": 30259,
       "length": 9,
       "value": "\"headers\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29977,
+      "offset": 30279,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30150,
+      "offset": 30452,
       "length": 29,
       "value": "\"sdk-native-network-response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30331,
+      "offset": 30633,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30372,
+      "offset": 30674,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30384,
+      "offset": 30686,
       "length": 5,
       "value": "\"err\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30392,
+      "offset": 30694,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30570,
+      "offset": 30872,
       "length": 29,
       "value": "\"sdk-native-network-response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30822,
+      "offset": 31124,
       "length": 32,
       "value": "\"Native navigate \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30853,
+      "offset": 31155,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30905,
+      "offset": 31207,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30977,
+      "offset": 31279,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31048,
+      "offset": 31350,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31209,
+      "offset": 31511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31367,
+      "offset": 31669,
       "length": 30,
       "value": "\"sdk-native-navigate-finished\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31431,
+      "offset": 31733,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31448,
+      "offset": 31750,
       "length": 18,
       "value": "\"did-not-navigate\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31468,
+      "offset": 31770,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31682,
+      "offset": 31984,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31727,
+      "offset": 32029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32078,
+      "offset": 32380,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32199,
+      "offset": 32501,
       "length": 18,
       "value": "\"sdk-native-shown\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32247,
+      "offset": 32549,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32389,
+      "offset": 32691,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32518,
+      "offset": 32820,
       "length": 19,
       "value": "\"sdk-native-hidden\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32567,
+      "offset": 32869,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32696,
+      "offset": 32998,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32739,
+      "offset": 33041,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32916,
+      "offset": 33218,
       "length": 44,
       "value": "\"Storing local property \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32948,
+      "offset": 33250,
       "length": 3,
       "value": "\" for \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32959,
+      "offset": 33261,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33062,
+      "offset": 33364,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33254,
+      "offset": 33556,
       "length": 45,
       "value": "\"Retrieved local property \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33287,
+      "offset": 33589,
       "length": 3,
       "value": "\" for \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33298,
+      "offset": 33600,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33335,
+      "offset": 33637,
       "length": 22,
       "value": "\"sdk-storage-response\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33371,
+      "offset": 33673,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33383,
+      "offset": 33685,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33710,
+      "offset": 34012,
       "length": 8,
       "value": "\"weight\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33750,
+      "offset": 34052,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33835,
+      "offset": 34137,
       "length": 8,
       "value": "\"medium\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33922,
+      "offset": 34224,
       "length": 7,
       "value": "\"heavy\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34194,
+      "offset": 34496,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35012,
+      "offset": 35314,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35146,
+      "offset": 35448,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 35239,
+      "offset": 35541,
       "length": 20,
       "value": "\"sdk-card-was-added\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/AtomicTransact\/AtomicTransact\/Data\/TransactEnviroment.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 338,
       "length": 31,
       "value": "\"https:\/\/transact.atomicfi.com\""
     },
