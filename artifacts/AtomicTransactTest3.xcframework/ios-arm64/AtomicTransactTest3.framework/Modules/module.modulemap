@@ -1,0 +1,4 @@
+framework module AtomicTransactTest3 {
+  header "AtomicTransactTest3-Swift.h"
+  requires objc
+}

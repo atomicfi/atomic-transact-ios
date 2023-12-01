@@ -1,0 +1,4 @@
+framework module AtomicTransactSwiftUITest3 {
+  header "AtomicTransactSwiftUITest3-Swift.h"
+  requires objc
+}
