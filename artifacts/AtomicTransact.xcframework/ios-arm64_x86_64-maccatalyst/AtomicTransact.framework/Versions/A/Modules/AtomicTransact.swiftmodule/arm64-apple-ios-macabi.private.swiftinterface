@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicTransact
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AtomicTransact
@@ -276,9 +276,11 @@ public enum Atomic {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@_Concurrency.MainActor(unsafe) public class TransactViewController : AtomicTransact.BaseTransactViewController {
+@_Concurrency.MainActor(unsafe) public class TransactViewController : AtomicTransact.BaseTransactViewController, WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc public func webViewDidClose(_ webView: WebKit.WKWebView)
   @_Concurrency.MainActor(unsafe) @objc override public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
