@@ -300,11 +300,16 @@ SWIFT_CLASS("_TtC14AtomicTransact26BaseTransactViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 
 SWIFT_CLASS("_TtC14AtomicTransact22TransactViewController") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface TransactViewController : BaseTransactViewController
+@interface TransactViewController : BaseTransactViewController <WKUIDelegate>
 - (void)viewDidLoad;
 - (void)viewWillDisappear:(BOOL)animated;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)webViewDidClose:(WKWebView * _Nonnull)webView;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -622,11 +627,16 @@ SWIFT_CLASS("_TtC14AtomicTransact26BaseTransactViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 
 SWIFT_CLASS("_TtC14AtomicTransact22TransactViewController") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface TransactViewController : BaseTransactViewController
+@interface TransactViewController : BaseTransactViewController <WKUIDelegate>
 - (void)viewDidLoad;
 - (void)viewWillDisappear:(BOOL)animated;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)webViewDidClose:(WKWebView * _Nonnull)webView;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
