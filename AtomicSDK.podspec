@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.version      = "3.3.1.12"
     s.summary      = "iOS SDK for using Atomic Transact"
     s.homepage     = "https://docs.atomicfi.com/reference/transact-sdk#libraries__swift"
-    s.license = { :type => 'Copyright', :text => '© Copyright 2022 Atomic FI Inc.'}
+    s.license = { :type => 'Copyright', :text => '© Copyright 2024 Atomic FI Inc.'}
     s.author             = { "Sean Hill" => "sean@atomicfi.com" }
     s.source       = { :git => "https://github.com/atomicfi/atomic-transact-ios.git", :tag => "#{s.version}" }
     s.platform = :ios
