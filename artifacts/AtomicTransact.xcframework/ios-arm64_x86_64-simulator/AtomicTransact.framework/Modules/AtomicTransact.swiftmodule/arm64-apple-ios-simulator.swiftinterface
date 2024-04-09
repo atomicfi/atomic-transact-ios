@@ -93,6 +93,7 @@ public struct AtomicConfig : Swift.Codable {
     case enroll
     case `switch`
     case present
+    case tax
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
