@@ -576,7 +576,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(publicToken:scope:tasks:linkedAccount:theme:language:sessionContext:deeplink:metadata:search:handoff:experiments:customer:)",
+            "printedName": "init(publicToken:scope:tasks:linkedAccount:theme:language:sessionContext:deeplink:metadata:search:handoff:experiments:features:customer:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -754,6 +754,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "AtomicTransact.AtomicConfig.Features?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Features",
+                    "printedName": "AtomicTransact.AtomicConfig.Features",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "AtomicTransact.AtomicConfig.Customer?",
                 "children": [
                   {
@@ -768,8 +783,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14AtomicTransact0A6ConfigV11publicToken5scope5tasks13linkedAccount5theme8language14sessionContext8deeplink8metadata6search7handoff11experiments8customerACSS_AC9ScopeTypeOSayAC4TaskVGSSSgAC5ThemeVSSAvC8DeeplinkVSgSDyS2SGSgAC6SearchVSgSaySSGSgAC11ExperimentsVSgAC8CustomerVSgtcfc",
-            "mangledName": "$s14AtomicTransact0A6ConfigV11publicToken5scope5tasks13linkedAccount5theme8language14sessionContext8deeplink8metadata6search7handoff11experiments8customerACSS_AC9ScopeTypeOSayAC4TaskVGSSSgAC5ThemeVSSAvC8DeeplinkVSgSDyS2SGSgAC6SearchVSgSaySSGSgAC11ExperimentsVSgAC8CustomerVSgtcfc",
+            "usr": "s:14AtomicTransact0A6ConfigV11publicToken5scope5tasks13linkedAccount5theme8language14sessionContext8deeplink8metadata6search7handoff11experiments8features8customerACSS_AC9ScopeTypeOSayAC4TaskVGSSSgAC5ThemeVSSAwC8DeeplinkVSgSDyS2SGSgAC6SearchVSgSaySSGSgAC11ExperimentsVSgAC8FeaturesVSgAC8CustomerVSgtcfc",
+            "mangledName": "$s14AtomicTransact0A6ConfigV11publicToken5scope5tasks13linkedAccount5theme8language14sessionContext8deeplink8metadata6search7handoff11experiments8features8customerACSS_AC9ScopeTypeOSayAC4TaskVGSSSgAC5ThemeVSSAwC8DeeplinkVSgSDyS2SGSgAC6SearchVSgSaySSGSgAC11ExperimentsVSgAC8FeaturesVSgAC8CustomerVSgtcfc",
             "moduleName": "AtomicTransact",
             "declAttributes": [
               "AccessControl",
@@ -6678,6 +6693,236 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "Features",
+            "printedName": "Features",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "manualDepositFlow",
+                "printedName": "manualDepositFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvp",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvg",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvs",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvs",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvM",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowSbSgvM",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(manualDepositFlow:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Features",
+                    "printedName": "AtomicTransact.AtomicConfig.Features",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowAESbSg_tcfc",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV17manualDepositFlowAESbSg_tcfc",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Features",
+                    "printedName": "AtomicTransact.AtomicConfig.Features",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV6encode2toys7Encoder_p_tKF",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV",
+            "mangledName": "$s14AtomicTransact0A6ConfigV8FeaturesV",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "Customer",
             "printedName": "Customer",
             "children": [
@@ -8487,6 +8732,117 @@
                 "declKind": "Accessor",
                 "usr": "s:14AtomicTransact0A6ConfigV11experimentsAC11ExperimentsVSgvM",
                 "mangledName": "$s14AtomicTransact0A6ConfigV11experimentsAC11ExperimentsVSgvM",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "features",
+            "printedName": "features",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AtomicTransact.AtomicConfig.Features?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Features",
+                    "printedName": "AtomicTransact.AtomicConfig.Features",
+                    "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvp",
+            "mangledName": "$s14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvp",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.AtomicConfig.Features?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Features",
+                        "printedName": "AtomicTransact.AtomicConfig.Features",
+                        "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvg",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvg",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.AtomicConfig.Features?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Features",
+                        "printedName": "AtomicTransact.AtomicConfig.Features",
+                        "usr": "s:14AtomicTransact0A6ConfigV8FeaturesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvs",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvs",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvM",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8featuresAC8FeaturesVSgvM",
                 "moduleName": "AtomicTransact",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12199,168 +12555,168 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1606,
+      "offset": 1658,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1613,
+      "offset": 1665,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1620,
+      "offset": 1672,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3777,
+      "offset": 3905,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3784,
+      "offset": 3912,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3791,
+      "offset": 3919,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6468,
+      "offset": 6596,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6475,
+      "offset": 6603,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6482,
+      "offset": 6610,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 11407,
+      "offset": 11535,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 11444,
+      "offset": 11572,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 11480,
+      "offset": 11608,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 11517,
+      "offset": 11645,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17447,
+      "offset": 17575,
       "length": 11,
       "value": "\"user-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17487,
+      "offset": 17615,
       "length": 15,
       "value": "\"employer-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17524,
+      "offset": 17652,
       "length": 10,
       "value": "\"pay-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17447,
+      "offset": 17575,
       "length": 11,
       "value": "\"user-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17487,
+      "offset": 17615,
       "length": 15,
       "value": "\"employer-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17524,
+      "offset": 17652,
       "length": 10,
       "value": "\"pay-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 18980,
+      "offset": 19108,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 22070,
+      "offset": 22609,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23818,
+      "offset": 24357,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23825,
+      "offset": 24364,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23832,
+      "offset": 24371,
       "length": 4,
       "value": "\"en\""
     },
@@ -12481,7 +12837,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 7,
-      "value": "\"3.4.0\""
+      "value": "\"3.4.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/ToolbarWebView.swift",
