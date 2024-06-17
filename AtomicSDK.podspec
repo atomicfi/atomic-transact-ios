@@ -13,16 +13,17 @@ Pod::Spec.new do |s|
 
     s.subspec 'AtomicTransact' do |ss|
         ss.vendored_frameworks = "artifacts/AtomicTransact.xcframework"
-        ss.ios.deployment_target  = '10.0'
+        ss.dependency "AtomicSDK/MuppetIOS"
+        ss.ios.deployment_target = '10.0'
     end
 
     s.subspec 'SwiftUI' do |ss|
         ss.vendored_frameworks = "artifacts/AtomicTransactSwiftUI.xcframework"
-        ss.ios.deployment_target  = '14.0'
+        ss.ios.deployment_target = '14.0'
     end
 
     s.subspec 'MuppetIOS' do |ss|
         ss.vendored_frameworks = "artifacts/MuppetIOS.xcframework"
-        ss.ios.deployment_target  = '14.0'
+        ss.ios.deployment_target = '14.0'
     end
 end
