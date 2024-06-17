@@ -20,4 +20,9 @@ Pod::Spec.new do |s|
         ss.vendored_frameworks = "artifacts/AtomicTransactSwiftUI.xcframework"
         ss.ios.deployment_target  = '14.0'
     end
+
+    s.subspec 'MuppetIOS' do |ss|
+        ss.vendored_frameworks = "artifacts/MuppetIOS.xcframework"
+        ss.ios.deployment_target  = '14.0'
+    end
 end
