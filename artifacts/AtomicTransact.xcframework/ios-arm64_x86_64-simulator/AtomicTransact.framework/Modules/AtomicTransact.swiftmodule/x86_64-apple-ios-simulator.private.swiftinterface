@@ -39,8 +39,9 @@ public struct AtomicConfig : Swift.Codable {
     public let brandColor: Swift.String?
     public let overlayColor: Swift.String?
     public var dark: Swift.Bool?
-    public init(brandColor: Swift.String?, overlayColor: Swift.String?, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
-    public init(brandColor: UIKit.UIColor? = nil, overlayColor: UIKit.UIColor? = nil, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
+    public var navigationOptions: AtomicTransact.AtomicConfig.NavigationOptions?
+    public init(brandColor: Swift.String?, overlayColor: Swift.String?, navigationOptions: AtomicTransact.AtomicConfig.NavigationOptions? = nil, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
+    public init(brandColor: UIKit.UIColor? = nil, overlayColor: UIKit.UIColor? = nil, navigationOptions: AtomicTransact.AtomicConfig.NavigationOptions? = nil, dark: AtomicTransact.AtomicConfig.Theme.ColorScheme = .system)
     public enum ColorScheme {
       case light
       case dark
@@ -175,6 +176,14 @@ public struct AtomicConfig : Swift.Codable {
   public struct Customer : Swift.Codable {
     public var name: Swift.String
     public init(name: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct NavigationOptions : Swift.Codable {
+    public var showBackButton: Swift.Bool?
+    public var showBackButtonText: Swift.Bool?
+    public var showCloseButton: Swift.Bool?
+    public init(showBackButton: Swift.Bool? = nil, showBackButtonText: Swift.Bool? = nil, showCloseButton: Swift.Bool? = nil)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
