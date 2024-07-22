@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		4ZXS7Ob92xUnthnBQO9iMn5zCdo=
+		nKNYHzDP684y0UqEqUnA1TQrviI=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QgNXSOOaD5h53ecAkrZFC82z7l0=
+		ATsvHGoOBylOe8jTF5+j0+2kRew=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ZXS7Ob92xUnthnBQO9iMn5zCdo=
+			nKNYHzDP684y0UqEqUnA1TQrviI=
 			</data>
 			<key>hash2</key>
 			<data>
-			kdo9Sz/YLCOe0iC3UBB/c7uUe8oidWkZOUDxb9kSxEk=
+			b45pIhju/XbvyPifeVgPqLj5AP8Y0EX9ZmuQ1sKSM7s=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -117,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QgNXSOOaD5h53ecAkrZFC82z7l0=
+			ATsvHGoOBylOe8jTF5+j0+2kRew=
 			</data>
 			<key>hash2</key>
 			<data>
-			E5sXqPXjoOFGbshUbKpxnNZhRsaXOWmIKVRpixHcW58=
+			k3ycfICzP/9Uoshn/RaqLC4lZjbgtw27m35E8djzf4A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
