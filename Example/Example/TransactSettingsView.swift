@@ -20,6 +20,13 @@ struct TransactSettingsView: View {
 					Toggle("Present Fullscreen", isOn: $data.showFullscreen)
 					ColorPicker("Brand Color", selection: $data.brandColor)
 					ColorPicker("Overlay Color", selection: $data.overlayColor)
+					Picker("Dark Mode", selection: $data.darkMode) {
+						ForEach(TransactData.DarkModeOption.allCases) { option in
+							Button(option.rawValue.capitalized) {
+								data.darkMode = option
+							}
+						}
+					}
 				}
 				
 				Section(header: Text("Public Token")) {
