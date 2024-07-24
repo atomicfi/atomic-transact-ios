@@ -11,13 +11,10 @@ let package = Package(
 		// Products define the executables and libraries a package produces, and make them visible to other packages.
 		.library(
 			name: "AtomicTransact",
-			targets: ["AtomicTransact"]),
+			targets: ["AtomicTransact", "MuppetIOS"]),
 		.library(
 			name: "AtomicTransactSwiftUI",
-			targets: ["AtomicTransactSwiftUI", "AtomicTransact"])
-	],
-	dependencies: [
-		// Dependencies declare other packages that this package depends on.
+			targets: ["AtomicTransactSwiftUI", "AtomicTransact", "MuppetIOS"])
 	],
 	targets: [
 		.binaryTarget(
@@ -25,6 +22,9 @@ let package = Package(
 			path: "artifacts/AtomicTransact.xcframework"),
 		.binaryTarget(
 			name: "AtomicTransactSwiftUI",
-			path: "artifacts/AtomicTransactSwiftUI.xcframework")
+			path: "artifacts/AtomicTransactSwiftUI.xcframework"),
+        .binaryTarget(
+            name: "MuppetIOS",
+            path: "artifacts/MuppetIOS.xcframework")
 	]
 )
