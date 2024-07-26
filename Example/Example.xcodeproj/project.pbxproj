@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF82CFCA2C5182E100DD616C /* AtomicTransact in Frameworks */ = {isa = PBXBuildFile; productRef = BF82CFC92C5182E100DD616C /* AtomicTransact */; };
-		BF82CFCC2C5182E100DD616C /* AtomicTransactSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BF82CFCB2C5182E100DD616C /* AtomicTransactSwiftUI */; };
 		BF8710CF26D59C3000D60708 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8710CE26D59C3000D60708 /* ExampleApp.swift */; };
 		BF8710D126D59C3000D60708 /* TransactSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8710D026D59C3000D60708 /* TransactSettingsView.swift */; };
 		BF8710D326D59C3100D60708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8710D226D59C3100D60708 /* Assets.xcassets */; };
@@ -16,7 +14,21 @@
 		BFAFC5EA26E9611C00794554 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC5E926E9611C00794554 /* TabBarView.swift */; };
 		BFAFC5EC26E962B100794554 /* TransactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC5EB26E962B100794554 /* TransactData.swift */; };
 		BFAFC5EE26E965A000794554 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFC5ED26E965A000794554 /* MainView.swift */; };
+		EE6F206C274EA7130008F292 /* AtomicTransact in Frameworks */ = {isa = PBXBuildFile; productRef = EE6F206B274EA7130008F292 /* AtomicTransact */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFB72F9426DEC8C0008FB05E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BF8710CB26D59C3000D60708 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,27 +48,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF82CFCA2C5182E100DD616C /* AtomicTransact in Frameworks */,
-				BF82CFCC2C5182E100DD616C /* AtomicTransactSwiftUI in Frameworks */,
+				EE6F206C274EA7130008F292 /* AtomicTransact in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF82CFC52C5182A400DD616C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BF8710C226D59C3000D60708 = {
 			isa = PBXGroup;
 			children = (
 				BF8710CD26D59C3000D60708 /* Example */,
 				BF8710CC26D59C3000D60708 /* Products */,
-				BF82CFC52C5182A400DD616C /* Frameworks */,
+				BF8710DE26D59C4900D60708 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +96,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BF8710DE26D59C4900D60708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +113,7 @@
 				BF8710C726D59C3000D60708 /* Sources */,
 				BF8710C826D59C3000D60708 /* Frameworks */,
 				BF8710C926D59C3000D60708 /* Resources */,
+				BFB72F9426DEC8C0008FB05E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,8 +121,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				BF82CFC92C5182E100DD616C /* AtomicTransact */,
-				BF82CFCB2C5182E100DD616C /* AtomicTransactSwiftUI */,
+				EE6F206B274EA7130008F292 /* AtomicTransact */,
 			);
 			productName = Example;
 			productReference = BF8710CB26D59C3000D60708 /* Example.app */;
@@ -122,9 +133,8 @@
 		BF8710C326D59C3000D60708 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					BF8710CA26D59C3000D60708 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -141,7 +151,7 @@
 			);
 			mainGroup = BF8710C226D59C3000D60708;
 			packageReferences = (
-				BF82CFC82C5182E100DD616C /* XCRemoteSwiftPackageReference "atomic-transact-ios" */,
+				EE6F206A274EA7130008F292 /* XCRemoteSwiftPackageReference "atomic-transact-ios" */,
 			);
 			productRefGroup = BF8710CC26D59C3000D60708 /* Products */;
 			projectDirPath = "";
@@ -184,7 +194,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -218,7 +227,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -247,7 +255,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -281,7 +288,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -370,26 +376,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BF82CFC82C5182E100DD616C /* XCRemoteSwiftPackageReference "atomic-transact-ios" */ = {
+		EE6F206A274EA7130008F292 /* XCRemoteSwiftPackageReference "atomic-transact-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/atomicfi/atomic-transact-ios.git";
+			repositoryURL = "https://github.com/atomicfi/atomic-transact-ios";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BF82CFC92C5182E100DD616C /* AtomicTransact */ = {
+		EE6F206B274EA7130008F292 /* AtomicTransact */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BF82CFC82C5182E100DD616C /* XCRemoteSwiftPackageReference "atomic-transact-ios" */;
+			package = EE6F206A274EA7130008F292 /* XCRemoteSwiftPackageReference "atomic-transact-ios" */;
 			productName = AtomicTransact;
-		};
-		BF82CFCB2C5182E100DD616C /* AtomicTransactSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BF82CFC82C5182E100DD616C /* XCRemoteSwiftPackageReference "atomic-transact-ios" */;
-			productName = AtomicTransactSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
