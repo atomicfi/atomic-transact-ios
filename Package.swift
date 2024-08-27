@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,18 +11,15 @@ let package = Package(
 		// Products define the executables and libraries a package produces, and make them visible to other packages.
 		.library(
 			name: "AtomicTransact",
-			targets: ["AtomicTransact", "MuppetIOS"]),
-		.library(
-			name: "AtomicTransactSwiftUI",
-			targets: ["AtomicTransactSwiftUI", "AtomicTransact", "MuppetIOS"])
+			targets: ["AtomicTransact", "QuantumIOS", "MuppetIOS"])
 	],
 	targets: [
 		.binaryTarget(
 			name: "AtomicTransact",
 			path: "artifacts/AtomicTransact.xcframework"),
 		.binaryTarget(
-			name: "AtomicTransactSwiftUI",
-			path: "artifacts/AtomicTransactSwiftUI.xcframework"),
+			name: "QuantumIOS",
+			path: "artifacts/QuantumIOS.xcframework"),
         .binaryTarget(
             name: "MuppetIOS",
             path: "artifacts/MuppetIOS.xcframework")
