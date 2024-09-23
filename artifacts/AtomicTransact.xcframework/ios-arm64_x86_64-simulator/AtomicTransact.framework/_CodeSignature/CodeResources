@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wzf8nio0zyShl0s3NH6v7t4Yi5c=
+		HOSkf3JWVrihK+2ykepPmjBVg5A=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		e65CLjjgvFdJmpHYDPkjlLrO2z4=
+		bEYDa4RwNGNxI5aG4/mTSTvGYNA=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wzf8nio0zyShl0s3NH6v7t4Yi5c=
+		HOSkf3JWVrihK+2ykepPmjBVg5A=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KcFtr8S+ew3I2Zac/NdsY+uPCOI=
+		yULg9UVo5/xoHd9bVy7XEAMW4z8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,11 +93,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wzf8nio0zyShl0s3NH6v7t4Yi5c=
+			HOSkf3JWVrihK+2ykepPmjBVg5A=
 			</data>
 			<key>hash2</key>
 			<data>
-			HAcfTQmtY+psw51CbBlvqimp/qW2FrZAD2VkSdUOgyw=
+			vesk+xiuAbicPAitjIcnWuwqJkxPYhMd7Dtl4RBpMAg=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,22 +137,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e65CLjjgvFdJmpHYDPkjlLrO2z4=
+			bEYDa4RwNGNxI5aG4/mTSTvGYNA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fH5APvnSQAZxa8Qmn+VtAqUwMIdJsjZ3xjOnlEn2C0E=
+			oWn3Ig7BDywCCJhzx2myB0jiXxbtaW4ck3/GmyOn1C8=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wzf8nio0zyShl0s3NH6v7t4Yi5c=
+			HOSkf3JWVrihK+2ykepPmjBVg5A=
 			</data>
 			<key>hash2</key>
 			<data>
-			HAcfTQmtY+psw51CbBlvqimp/qW2FrZAD2VkSdUOgyw=
+			vesk+xiuAbicPAitjIcnWuwqJkxPYhMd7Dtl4RBpMAg=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KcFtr8S+ew3I2Zac/NdsY+uPCOI=
+			yULg9UVo5/xoHd9bVy7XEAMW4z8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BUlzporXhIwtyVg97Q+LbrdkYE992/9vCtOeDjhbGZ4=
+			Wx+HGZ/84+Mh1xIOq50In79KzRyKeyMNa1vxfIV6/JM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
