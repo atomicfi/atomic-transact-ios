@@ -13074,8 +13074,8 @@
           },
           {
             "kind": "Function",
-            "name": "viewWillDisappear",
-            "printedName": "viewWillDisappear(_:)",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13090,11 +13090,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AtomicTransact@objc(cs)TransactViewController(im)viewWillDisappear:",
-            "mangledName": "$s14AtomicTransact0B14ViewControllerC17viewWillDisappearyySbF",
+            "usr": "c:@M@AtomicTransact@objc(cs)TransactViewController(im)viewDidDisappear:",
+            "mangledName": "$s14AtomicTransact0B14ViewControllerC16viewDidDisappearyySbF",
             "moduleName": "AtomicTransact",
             "overriding": true,
-            "objc_name": "viewWillDisappear:",
+            "objc_name": "viewDidDisappear:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -13867,7 +13867,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 7,
-      "value": "\"3.8.3\""
+      "value": "\"3.8.4\""
     }
   ]
 }
