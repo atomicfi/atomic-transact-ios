@@ -1,0 +1,4 @@
+framework module QuantumIOS {
+  header "QuantumIOS-Swift.h"
+  requires objc
+}
