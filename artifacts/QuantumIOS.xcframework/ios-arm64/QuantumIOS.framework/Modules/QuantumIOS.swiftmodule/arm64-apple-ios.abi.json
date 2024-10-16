@@ -26,30 +26,6 @@
       },
       {
         "kind": "Import",
-        "name": "MuppetIOS",
-        "printedName": "MuppetIOS",
-        "declKind": "Import",
-        "moduleName": "QuantumIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "QuantumIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuantumIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -57,193 +33,12 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "QuantumIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "MuppetIOS",
-        "printedName": "MuppetIOS",
-        "declKind": "Import",
-        "moduleName": "QuantumIOS"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Quantum",
-        "printedName": "Quantum",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "muppet",
-            "printedName": "muppet",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any MuppetIOS.Muppet)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Muppet",
-                    "printedName": "any MuppetIOS.Muppet",
-                    "usr": "c:objc(pl)MIOSMuppet"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvp",
-            "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvp",
-            "moduleName": "QuantumIOS",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any MuppetIOS.Muppet)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Muppet",
-                        "printedName": "any MuppetIOS.Muppet",
-                        "usr": "c:objc(pl)MIOSMuppet"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvg",
-                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvg",
-                "moduleName": "QuantumIOS",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any MuppetIOS.Muppet)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Muppet",
-                        "printedName": "any MuppetIOS.Muppet",
-                        "usr": "c:objc(pl)MIOSMuppet"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvs",
-                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvs",
-                "moduleName": "QuantumIOS",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvM",
-                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvM",
-                "moduleName": "QuantumIOS",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(view:controller:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Quantum",
-                "printedName": "QuantumIOS.Quantum",
-                "usr": "s:10QuantumIOS0A0C"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WKWebView",
-                "printedName": "WebKit.WKWebView",
-                "usr": "c:objc(cs)WKWebView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10QuantumIOS0A0C4view10controllerACSo9WKWebViewC_So16UIViewControllerCtcfc",
-            "mangledName": "$s10QuantumIOS0A0C4view10controllerACSo9WKWebViewC_So16UIViewControllerCtcfc",
-            "moduleName": "QuantumIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "cleanup",
-            "printedName": "cleanup()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10QuantumIOS0A0C7cleanupyyF",
-            "mangledName": "$s10QuantumIOS0A0C7cleanupyyF",
-            "moduleName": "QuantumIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:10QuantumIOS0A0C",
-        "mangledName": "$s10QuantumIOS0A0C",
         "moduleName": "QuantumIOS",
         "declAttributes": [
-          "AccessControl"
+          "RawDocComment"
         ]
       },
       {
@@ -258,8 +53,15 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "MuppetIOS",
+        "printedName": "MuppetIOS",
+        "declKind": "Import",
+        "moduleName": "QuantumIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "QuantumIOS"
       },
@@ -800,16 +602,6 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "QuantumIOS",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -1574,118 +1366,326 @@
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuantumIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QuantumIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "QuantumIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "MuppetIOS",
+        "printedName": "MuppetIOS",
+        "declKind": "Import",
+        "moduleName": "QuantumIOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Quantum",
+        "printedName": "Quantum",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "muppet",
+            "printedName": "muppet",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MuppetIOS.Muppet)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Muppet",
+                    "printedName": "any MuppetIOS.Muppet",
+                    "usr": "c:objc(pl)MIOSMuppet"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvp",
+            "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvp",
+            "moduleName": "QuantumIOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MuppetIOS.Muppet)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Muppet",
+                        "printedName": "any MuppetIOS.Muppet",
+                        "usr": "c:objc(pl)MIOSMuppet"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvg",
+                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvg",
+                "moduleName": "QuantumIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MuppetIOS.Muppet)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Muppet",
+                        "printedName": "any MuppetIOS.Muppet",
+                        "usr": "c:objc(pl)MIOSMuppet"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvs",
+                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvs",
+                "moduleName": "QuantumIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvM",
+                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvM",
+                "moduleName": "QuantumIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(view:controller:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Quantum",
+                "printedName": "QuantumIOS.Quantum",
+                "usr": "s:10QuantumIOS0A0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10QuantumIOS0A0C4view10controllerACSo9WKWebViewC_So16UIViewControllerCtcfc",
+            "mangledName": "$s10QuantumIOS0A0C4view10controllerACSo9WKWebViewC_So16UIViewControllerCtcfc",
+            "moduleName": "QuantumIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanup",
+            "printedName": "cleanup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10QuantumIOS0A0C7cleanupyyF",
+            "mangledName": "$s10QuantumIOS0A0C7cleanupyyF",
+            "moduleName": "QuantumIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10QuantumIOS0A0C",
+        "mangledName": "$s10QuantumIOS0A0C",
+        "moduleName": "QuantumIOS",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/InternalNotifications.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/InternalNotifications.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 17,
       "value": "\"DismissTransact\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/ToolbarWebView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 14,
       "value": "\"customerLogo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/ToolbarWebView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 472,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/ToolbarWebView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 478,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/ToolbarWebView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 488,
       "length": 3,
       "value": "350"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/ToolbarWebView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 501,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/ToolbarWebView.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "StringLiteral",
       "offset": 650,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 368,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 547,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 586,
       "length": 21,
       "value": "\"WebController.title\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 806,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 849,
       "length": 24,
       "value": "\"WebController.progress\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1154,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1210,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Sources\/QuantumIOS\/WebViewController.swift",
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 1246,
       "length": 30,
