@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
 		<data>
-		OYQlGGnTM8+FL7uxaqK2fI6GoMM=
+		Ucc86+jLoCiE1ymT3mxatY6JIeQ=
 		</data>
 		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qSCQjXG3YF//P1TO6jVYmZUaHyE=
+		pjDm9a7AJsqi3AWUItOrNcjCEXQ=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		owdPHAPUbkBAKT7ROTOdjQtx3Ak=
+		008I+Sn3MkW4RBCi5fwdJOY0Kio=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,11 +89,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OYQlGGnTM8+FL7uxaqK2fI6GoMM=
+			Ucc86+jLoCiE1ymT3mxatY6JIeQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NGCOr1/NfRM2KNGCeDV9pvxPz8zVdv/TM9PoQj+LooY=
+			4f7G1/h01YTqX/ihtzvdsCRyZdKzso8v0RGAhu6tWfg=
 			</data>
 		</dict>
 		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
@@ -133,11 +133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qSCQjXG3YF//P1TO6jVYmZUaHyE=
+			pjDm9a7AJsqi3AWUItOrNcjCEXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Fg85R/UYn6z6aFRRBzPdkHw8au7y3mngUOI4G7b30c=
+			Ax8IplP00fTYX0NAShJ/JGVMV+5Bl6jELYMjJhsJMRY=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			owdPHAPUbkBAKT7ROTOdjQtx3Ak=
+			008I+Sn3MkW4RBCi5fwdJOY0Kio=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bmp3Ss2iAEPzcUxRMa1MJysubp3ym+MmlofDpRVuLak=
+			ug8Qs+xCyq1kEMRd8PqcaGYrsdYmgvT+BX/o5j/2tD8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
