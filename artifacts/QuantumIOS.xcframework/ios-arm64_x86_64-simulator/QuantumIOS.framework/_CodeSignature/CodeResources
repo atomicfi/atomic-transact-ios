@@ -10,51 +10,51 @@
 		</data>
 		<key>Headers/QuantumIOS-Swift.h</key>
 		<data>
-		Ic6Uy0R7qPHbkcbYDZzU7gK6VVY=
+		dVdaa4AN8pPjhjoArA1pBKKuUps=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OrW3X8Cqo1upEfcqDzvgjQVqJm0=
+		tr6JnX2lbgheSOdQwJ/NNsKzwME=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		x84jfZlR8kqX41dRgX1RZJQBD28=
+		Xr6WFg7QyCB/JoFOhlLvlKilh+A=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yyMhrcBsHEMCuTDokMZMRc4mCXI=
+		disXiLBG+Y1/MakoCFIhxoueT8s=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OOihcEn4Q6DfXTk49CpC5OGEFEo=
+		c1/8r9tcAnKpuJWmJBxY7CDn2Es=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yyMhrcBsHEMCuTDokMZMRc4mCXI=
+		disXiLBG+Y1/MakoCFIhxoueT8s=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LlP3bgz3L+KVfJ+YFgVDAlr8sEA=
+		jzdmcVfRXSkR2Dj+yRiTuNN19WA=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		x84jfZlR8kqX41dRgX1RZJQBD28=
+		Xr6WFg7QyCB/JoFOhlLvlKilh+A=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oPKMhFKZGVWKTHOKVFM7kZ61Rds=
+		ZOGnQHsaVsJM9gbt0lbqvCyYfEU=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ojYa/x7AeKEsasKUKsA5A4p5vIQ=
+		cDMRnfrJxk5gJ4zKoiyjFFPIYVA=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oPKMhFKZGVWKTHOKVFM7kZ61Rds=
+		ZOGnQHsaVsJM9gbt0lbqvCyYfEU=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xXmPVzh5/cOUCASnwhPAFUwtXCU=
+		Q0eNGW7U2gCES8d1h0gv7NJrjF8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,10 +69,6 @@
 	<dict>
 		<key>Headers/AtomicTransact.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			63jNDtX4M9+e1WPPlB1jn6XgUXc=
-			</data>
 			<key>hash2</key>
 			<data>
 			RdGUuucF6lW+TnEOIYmHL+V/2+8IYc6I3ZhiVxjXoA0=
@@ -80,131 +76,83 @@
 		</dict>
 		<key>Headers/QuantumIOS-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ic6Uy0R7qPHbkcbYDZzU7gK6VVY=
-			</data>
 			<key>hash2</key>
 			<data>
-			C8zJbcrv6lzihsYepy1EFpKGbY33qDR/A279SxSbNQk=
+			OHJmqCSPviE68KQenCmWJu88dbyXKc+KNXbvz/2cMhg=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			x84jfZlR8kqX41dRgX1RZJQBD28=
-			</data>
 			<key>hash2</key>
 			<data>
-			OMdiWvlCtg365SoE0ohOoBPv+u5uaHPOEdELi4EG4Q4=
+			k5c5fQEmAXcx+4S+q8h/PSnEG3mZrQwfPUMYMRP7MaA=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yyMhrcBsHEMCuTDokMZMRc4mCXI=
-			</data>
 			<key>hash2</key>
 			<data>
-			D6P0RuAtq7qH2wMDeEOFxFXJIpwGPQ6cZfrKeYGSTHc=
+			AuigoUq3tBx43peN7tIlL8LZmri7KC5aYJ21fCxdKR4=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OOihcEn4Q6DfXTk49CpC5OGEFEo=
-			</data>
 			<key>hash2</key>
 			<data>
-			cul7x+gTszliHeupsHOyh0EscxyQwpHwuOF/P5b2lu8=
+			OVgb3Ve4ZSWnB5WOG5oOsdoZlfzE7Iaqf+MHUy2U4Xo=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yyMhrcBsHEMCuTDokMZMRc4mCXI=
-			</data>
 			<key>hash2</key>
 			<data>
-			D6P0RuAtq7qH2wMDeEOFxFXJIpwGPQ6cZfrKeYGSTHc=
+			AuigoUq3tBx43peN7tIlL8LZmri7KC5aYJ21fCxdKR4=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LlP3bgz3L+KVfJ+YFgVDAlr8sEA=
-			</data>
 			<key>hash2</key>
 			<data>
-			RtCStYXLNVHN4ZMt3T18Maozs0svG0LUK9uIhgwAMWE=
+			9+izqhwunyP85kcXUCj9A5UQg6uXVWmkYg93ZgOGvEM=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			x84jfZlR8kqX41dRgX1RZJQBD28=
-			</data>
 			<key>hash2</key>
 			<data>
-			OMdiWvlCtg365SoE0ohOoBPv+u5uaHPOEdELi4EG4Q4=
+			k5c5fQEmAXcx+4S+q8h/PSnEG3mZrQwfPUMYMRP7MaA=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oPKMhFKZGVWKTHOKVFM7kZ61Rds=
-			</data>
 			<key>hash2</key>
 			<data>
-			KnGr3RNBY30BUSKt8aepP+yVP7jZGI494hDMOt/pq5M=
+			vViFYqq4zXAUu25V6OxV+jPkoCxUPHvkdWu3c/kzaig=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ojYa/x7AeKEsasKUKsA5A4p5vIQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			mO3+LF/iMFzS9e++458kjrmbM9yCeYA2BDcI7ZoKCEs=
+			h0Chkkrgm0QPbZqNm7nfUmwtBSeVyO6nCI6rs9/6q1c=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oPKMhFKZGVWKTHOKVFM7kZ61Rds=
-			</data>
 			<key>hash2</key>
 			<data>
-			KnGr3RNBY30BUSKt8aepP+yVP7jZGI494hDMOt/pq5M=
+			vViFYqq4zXAUu25V6OxV+jPkoCxUPHvkdWu3c/kzaig=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xXmPVzh5/cOUCASnwhPAFUwtXCU=
-			</data>
 			<key>hash2</key>
 			<data>
-			fc/vnQEOmFUTVTVKq/9nHu1OtVWovFPlwEzNZ8SFh28=
+			MDLJJ3/bohL7Mb6hdHRJT+J6QuxuqvAm3Mrd0sF4bpc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FMpkdTu3YO+8gM9eAYFX7zjRM6c=
-			</data>
 			<key>hash2</key>
 			<data>
 			jQxgWApk8jioC2nGy+qtngGRl01Xv4PWIeM7LyHju9o=
@@ -212,10 +160,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			n1Tior/Z23JWo5dZj/4GmktJKDA=
-			</data>
 			<key>hash2</key>
 			<data>
 			CmTZqdG2e1lBJxEXDqpQnDUADbiIfumJXtPyjCRyBaw=
