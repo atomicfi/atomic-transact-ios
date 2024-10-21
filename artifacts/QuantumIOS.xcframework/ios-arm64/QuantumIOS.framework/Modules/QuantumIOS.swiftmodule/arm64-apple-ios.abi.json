@@ -126,8 +126,8 @@
             "moduleName": "QuantumIOS",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1411,12 +1411,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MuppetIOS.Muppet)?",
+                "printedName": "MuppetIOS.Muppet?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Muppet",
-                    "printedName": "any MuppetIOS.Muppet",
+                    "printedName": "MuppetIOS.Muppet",
                     "usr": "c:objc(pl)MIOSMuppet"
                   }
                 ],
@@ -1442,12 +1442,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MuppetIOS.Muppet)?",
+                    "printedName": "MuppetIOS.Muppet?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Muppet",
-                        "printedName": "any MuppetIOS.Muppet",
+                        "printedName": "MuppetIOS.Muppet",
                         "usr": "c:objc(pl)MIOSMuppet"
                       }
                     ],
@@ -1474,12 +1474,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MuppetIOS.Muppet)?",
+                    "printedName": "MuppetIOS.Muppet?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Muppet",
-                        "printedName": "any MuppetIOS.Muppet",
+                        "printedName": "MuppetIOS.Muppet",
                         "usr": "c:objc(pl)MIOSMuppet"
                       }
                     ],
@@ -1587,6 +1587,356 @@
       "value": "\"DismissTransact\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 458,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 17,
+      "value": "\"AutofillToolbar\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 641,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 684,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 879,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1014,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1212,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 1246,
+      "length": 21,
+      "value": "\"Your Account Number\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1399,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 1451,
+      "length": 23,
+      "value": "\"AutofillToolbar.Title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1792,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 10,
+      "value": "\"12345678\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1965,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 2016,
+      "length": 27,
+      "value": "\"AutofillToolbar.FillValue\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3018,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 3054,
+      "length": 6,
+      "value": "\"Copy\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "Array",
+      "offset": 3067,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3202,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "Array",
+      "offset": 3355,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "Array",
+      "offset": 3483,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3532,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3603,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3667,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3676,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3688,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3698,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 3749,
+      "length": 28,
+      "value": "\"AutofillToolbar.CopyButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3965,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 4005,
+      "length": 10,
+      "value": "\"Autofill\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "Array",
+      "offset": 4022,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4165,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "Array",
+      "offset": 4263,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "Array",
+      "offset": 4382,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4514,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4582,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4591,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4603,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4613,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "StringLiteral",
+      "offset": 4668,
+      "length": 32,
+      "value": "\"AutofillToolbar.AutofillButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4855,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5176,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5322,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5423,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5709,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5880,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6174,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Toolbar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6368,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/MuppetInterface.swift",
+      "kind": "BooleanLiteral",
+      "offset": 669,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/MuppetInterface.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1135,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
       "kind": "StringLiteral",
       "offset": 285,
@@ -1627,6 +1977,125 @@
       "offset": 650,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1586,
+      "length": 14,
+      "value": "\"codeSnippets\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1673,
+      "length": 22,
+      "value": "\"detectAutofillInputs\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1903,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2027,
+      "length": 11,
+      "value": "\"autofills\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2101,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2140,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2670,
+      "length": 14,
+      "value": "\"codeSnippets\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2752,
+      "length": 15,
+      "value": "\"autofillInput\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2868,
+      "length": 32,
+      "value": "\"{atomic}autofillValue{\/atomic}\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 3394,
+      "length": 14,
+      "value": "\"customerLogo\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3673,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3691,
+      "length": 2,
+      "value": "56"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3821,
+      "length": 2,
+      "value": "56"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3839,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4421,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 524,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 614,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
@@ -1690,6 +2159,370 @@
       "offset": 1246,
       "length": 30,
       "value": "\"WebController.assistantTitle\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1888,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2436,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2546,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2594,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2605,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2638,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2670,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2868,
+      "length": 3,
+      "value": "-12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2971,
+      "length": 3,
+      "value": "-16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3072,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3176,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3379,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3799,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5433,
+      "length": 27,
+      "value": "\"WebController.closeButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5553,
+      "length": 17,
+      "value": "\"arrow.clockwise\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5867,
+      "length": 28,
+      "value": "\"WebController.reloadButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6012,
+      "length": 18,
+      "value": "\"chevron.backward\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6139,
+      "length": 26,
+      "value": "\"WebController.backButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6346,
+      "length": 17,
+      "value": "\"chevron.forward\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6471,
+      "length": 29,
+      "value": "\"WebController.forwardButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6860,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6908,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6925,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7139,
+      "length": 11,
+      "value": "\"lock.fill\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7442,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7507,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7538,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7675,
+      "length": 21,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7692,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7695,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7957,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7961,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7969,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7996,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8028,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8066,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8079,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8118,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8153,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8185,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8223,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8263,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8450,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8498,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8717,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8813,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8878,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8942,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9188,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9428,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9477,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 9510,
+      "length": 4,
+      "value": "0.25"
     }
   ]
 }
