@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/QuantumIOS.framework/Info.plist</key>
-		<data>
-		zbE9uwg81VBTAKazx6lfsBz+/90=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		n1Tior/Z23JWo5dZj/4GmktJKDA=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
-		<data>
-		JTy62Axh3k3uMY7dpgGA2WONuGI=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Ms4ZL0NHDSRjOY/nQ7ePmVSM3h4=
-		</data>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<data>
 		nlsMwat3U6txgetoLN+/mqoKXLQ=
@@ -34,7 +18,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6kEcu6Iigbj4m8FxHZc6LKGtJjE=
+		kreu/O0MF+YNhyowe1vtJRea594=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +38,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6kEcu6Iigbj4m8FxHZc6LKGtJjE=
+		kreu/O0MF+YNhyowe1vtJRea594=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -83,34 +67,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/QuantumIOS.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dtUuLDYDg6IpjEKcTcgvtTLBKcaP7ohG546O1KrHh1w=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CmTZqdG2e1lBJxEXDqpQnDUADbiIfumJXtPyjCRyBaw=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kbqEekmda3Wwo3DEHFfFNnpsVgqsSRsMSnv6J7Uz0OA=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PuyYrHYNbPTCHc2QeXUxlPUtY9hmUtZbXeBzHp73GvA=
-			</data>
-		</dict>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -129,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MyvYbY7dr3cQZ6O1Psct0S8kO1rda+8aDlSqMMGEWZc=
+			dVOMv1Wy1alan3Yy4uykSXBcKTxFIwzrJP6PJWKHHvU=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -164,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MyvYbY7dr3cQZ6O1Psct0S8kO1rda+8aDlSqMMGEWZc=
+			dVOMv1Wy1alan3Yy4uykSXBcKTxFIwzrJP6PJWKHHvU=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
