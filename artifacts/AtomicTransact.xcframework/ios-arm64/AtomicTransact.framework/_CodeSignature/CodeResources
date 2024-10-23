@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/QuantumIOS.framework/Info.plist</key>
-		<data>
-		u4SJCk/hI+VA75QcFvbeR8WfS6E=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		n1Tior/Z23JWo5dZj/4GmktJKDA=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
-		<data>
-		Ucc86+jLoCiE1ymT3mxatY6JIeQ=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
-		<data>
-		ZMLlxLJydXcA48/4QPbMU8w8PNU=
-		</data>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<data>
 		vAu9l5u93GaEIt8WGfnLMAEf8uA=
@@ -34,7 +18,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		pjDm9a7AJsqi3AWUItOrNcjCEXQ=
+		/NpuNyt50ACYZdoTlsR3MNl5Soc=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -50,7 +34,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		008I+Sn3MkW4RBCi5fwdJOY0Kio=
+		OPtKg5D511LS4fIgbo2xF3TjgM4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,50 +47,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/QuantumIOS.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			u4SJCk/hI+VA75QcFvbeR8WfS6E=
-			</data>
-			<key>hash2</key>
-			<data>
-			k5VcPNfyeZ2kGOYWu9fuYi3oNrdwbqCFJJlmykHMXfc=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n1Tior/Z23JWo5dZj/4GmktJKDA=
-			</data>
-			<key>hash2</key>
-			<data>
-			CmTZqdG2e1lBJxEXDqpQnDUADbiIfumJXtPyjCRyBaw=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ucc86+jLoCiE1ymT3mxatY6JIeQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			4f7G1/h01YTqX/ihtzvdsCRyZdKzso8v0RGAhu6tWfg=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZMLlxLJydXcA48/4QPbMU8w8PNU=
-			</data>
-			<key>hash2</key>
-			<data>
-			/LhDniNJut9q1MO2eG6Ex5vY7n6vFOnHFouq4Q5l9rg=
-			</data>
-		</dict>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<dict>
 			<key>hash</key>
@@ -133,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pjDm9a7AJsqi3AWUItOrNcjCEXQ=
+			/NpuNyt50ACYZdoTlsR3MNl5Soc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ax8IplP00fTYX0NAShJ/JGVMV+5Bl6jELYMjJhsJMRY=
+			fGSjS27GHQ8y4hPijfTQheGA6ntQRzzwIDQaiiPlRgQ=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -177,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			008I+Sn3MkW4RBCi5fwdJOY0Kio=
+			OPtKg5D511LS4fIgbo2xF3TjgM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ug8Qs+xCyq1kEMRd8PqcaGYrsdYmgvT+BX/o5j/2tD8=
+			wVv9JZEacZO+fggAxEs+5cOetcGkpHlvsjl25QoVKlo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

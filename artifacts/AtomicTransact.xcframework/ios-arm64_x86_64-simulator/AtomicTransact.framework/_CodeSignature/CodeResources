@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/QuantumIOS.framework/Info.plist</key>
-		<data>
-		OrW3X8Cqo1upEfcqDzvgjQVqJm0=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		n1Tior/Z23JWo5dZj/4GmktJKDA=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
-		<data>
-		EizDmt7vRPzy4lYiHEB+or8MfGE=
-		</data>
-		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
-		<data>
-		sLoJNjdGPi1Yar5Q6YuHmakQdF4=
-		</data>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<data>
 		SZ5IDDnenxNt/0RdS6+5BZIFQkA=
@@ -34,7 +18,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		pjDm9a7AJsqi3AWUItOrNcjCEXQ=
+		/NpuNyt50ACYZdoTlsR3MNl5Soc=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,11 +34,11 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jOQJOBuL/JIiyiQQ8HOcu8LsPis=
+		JEje2XC30oLvISk2pOLea9QSaPM=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		pjDm9a7AJsqi3AWUItOrNcjCEXQ=
+		/NpuNyt50ACYZdoTlsR3MNl5Soc=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +54,7 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fLuSEUs0aCXhWsSCC3iL1JBT65Q=
+		9kqO0K3UCpQCBrVZu1MyGhJd3GU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,50 +67,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/QuantumIOS.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OrW3X8Cqo1upEfcqDzvgjQVqJm0=
-			</data>
-			<key>hash2</key>
-			<data>
-			2hEhMqGOD25AexZ+I7nBqO+D42gliXd9gZHXWaJlQTg=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n1Tior/Z23JWo5dZj/4GmktJKDA=
-			</data>
-			<key>hash2</key>
-			<data>
-			CmTZqdG2e1lBJxEXDqpQnDUADbiIfumJXtPyjCRyBaw=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/QuantumIOS</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EizDmt7vRPzy4lYiHEB+or8MfGE=
-			</data>
-			<key>hash2</key>
-			<data>
-			HnWARIVYL6H3xJ5QAH+AjAA6qfEXorg0Wp+FELUOMY8=
-			</data>
-		</dict>
-		<key>Frameworks/QuantumIOS.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sLoJNjdGPi1Yar5Q6YuHmakQdF4=
-			</data>
-			<key>hash2</key>
-			<data>
-			VzsMD3x04YlNOUaOSyXhfZAbzwzzDTbgwVN5kCWZGos=
-			</data>
-		</dict>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<dict>
 			<key>hash</key>
@@ -153,11 +93,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pjDm9a7AJsqi3AWUItOrNcjCEXQ=
+			/NpuNyt50ACYZdoTlsR3MNl5Soc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ax8IplP00fTYX0NAShJ/JGVMV+5Bl6jELYMjJhsJMRY=
+			fGSjS27GHQ8y4hPijfTQheGA6ntQRzzwIDQaiiPlRgQ=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -197,22 +137,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jOQJOBuL/JIiyiQQ8HOcu8LsPis=
+			JEje2XC30oLvISk2pOLea9QSaPM=
 			</data>
 			<key>hash2</key>
 			<data>
-			q6y+LJ7sThtzJi5wUM518TgV5daRZAjIld9s49bwK+o=
+			0FBtPXa5USBAAE+aFFn7zWvXF4oqKtM3cr+ZicwQ5V4=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pjDm9a7AJsqi3AWUItOrNcjCEXQ=
+			/NpuNyt50ACYZdoTlsR3MNl5Soc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ax8IplP00fTYX0NAShJ/JGVMV+5Bl6jELYMjJhsJMRY=
+			fGSjS27GHQ8y4hPijfTQheGA6ntQRzzwIDQaiiPlRgQ=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -252,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fLuSEUs0aCXhWsSCC3iL1JBT65Q=
+			9kqO0K3UCpQCBrVZu1MyGhJd3GU=
 			</data>
 			<key>hash2</key>
 			<data>
-			sOG0wSVXsRJlukORysKbsDfuxB1D2E7Kj7O75MgrTS8=
+			EDoOsMZ88xrECh8qLQMx8P7VWINKv2irlCDYCNj5uS4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
