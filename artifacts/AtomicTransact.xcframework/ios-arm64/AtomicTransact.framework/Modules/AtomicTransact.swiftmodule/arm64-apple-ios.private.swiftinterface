@@ -292,7 +292,7 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
 public enum Atomic {
   public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   @available(iOS 13.0, *)
-  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onLaunch: (() -> ())? = nil, onCompleted: (() -> ())? = nil)
+  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onLaunch: (() -> ())? = nil, onCompletion: (() -> ())? = nil)
   @available(iOS 13.0, *)
   public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
     get
