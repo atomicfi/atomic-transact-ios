@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/QuantumIOS</key>
 		<data>
-		uYBhvssFnf582jSQfiaUy60C5oI=
+		mE7gbWi/Y4+e5gmsj+WWNOO6pnA=
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		YH3gL7MfMXcG4WBn5FdZd+efb+M=
+		KTDE9OPUlw6TmEsLPDaty5K00Gc=
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		JcFYNpfCogDC/xgR36wHA872ZFM=
+		MIv1IbHC6zk5kTc02GKjjeB6BwA=
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		PynVSSLMig0ck48P1QkUWqYLLvA=
+		IzNsgORpmSQ7RHX3XIjrpEn3b8M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Headers/AtomicTransact.h</key>
 		<data>
@@ -230,22 +230,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uYBhvssFnf582jSQfiaUy60C5oI=
+			mE7gbWi/Y4+e5gmsj+WWNOO6pnA=
 			</data>
 			<key>hash2</key>
 			<data>
-			5nk6OrME0kQzQDPtsvsf0D6Go51aKSK89UiCB8xaQy8=
+			bXsQudW51Yn8LC7n8jc2VK26AI0ywbK0iqObpzCgxbc=
 			</data>
 		</dict>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YH3gL7MfMXcG4WBn5FdZd+efb+M=
+			KTDE9OPUlw6TmEsLPDaty5K00Gc=
 			</data>
 			<key>hash2</key>
 			<data>
-			m7JKLL5nHyhkbyrTlZNwUGwgTCdhxacWUPz/7SjyouI=
+			txAYgiDFqpM9mT8Mt0shZUaTX2kBF9ccogNTFkl2LSg=
 			</data>
 		</dict>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeRequirements</key>
@@ -263,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JcFYNpfCogDC/xgR36wHA872ZFM=
+			MIv1IbHC6zk5kTc02GKjjeB6BwA=
 			</data>
 			<key>hash2</key>
 			<data>
-			GWBikIb1/klMsJ2CIdXw9g0HmoZrcUHmz2MilalKfpc=
+			tZIcirCQBQe/OjiKYkSGcUiSZs7SHdU8l5HIvV2j6O4=
 			</data>
 		</dict>
 		<key>ios-arm64/QuantumIOS.framework/_CodeSignature/CodeResources</key>
@@ -285,11 +285,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PynVSSLMig0ck48P1QkUWqYLLvA=
+			IzNsgORpmSQ7RHX3XIjrpEn3b8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vj5h4dYt9jvCALIbs1PnMujnuxr38PmsFrceQ6bgCq4=
+			Yzbt6BJf1JsRfPRaCHhSgfu+DJKlINPBnnfLL5TLQPU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Headers/AtomicTransact.h</key>
