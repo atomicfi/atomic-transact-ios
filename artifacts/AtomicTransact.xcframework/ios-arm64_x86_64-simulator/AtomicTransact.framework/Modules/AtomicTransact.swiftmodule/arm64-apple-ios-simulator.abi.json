@@ -11738,7 +11738,7 @@
           {
             "kind": "Function",
             "name": "presentAction",
-            "printedName": "presentAction(from:id:environment:presentationStyle:onLaunch:onCompleted:)",
+            "printedName": "presentAction(from:id:environment:presentationStyle:onLaunch:onCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11825,8 +11825,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J9CompletedySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
-            "mangledName": "$s14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J9CompletedySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
+            "usr": "s:14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
+            "mangledName": "$s14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
             "moduleName": "AtomicTransact",
             "static": true,
             "intro_iOS": "13.0",
@@ -14175,35 +14175,35 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "Array",
-      "offset": 2538,
+      "offset": 2539,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "StringLiteral",
-      "offset": 2594,
+      "offset": 2595,
       "length": 13,
       "value": "\"publicToken\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "BooleanLiteral",
-      "offset": 3145,
+      "offset": 3146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "StringLiteral",
-      "offset": 3448,
+      "offset": 3449,
       "length": 22,
       "value": "\"Launched User Action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "StringLiteral",
-      "offset": 3562,
+      "offset": 3563,
       "length": 23,
       "value": "\"Completed User Action\""
     },
@@ -15254,8 +15254,8 @@
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/FrameworkVersion.swift",
       "kind": "StringLiteral",
       "offset": 228,
-      "length": 7,
-      "value": "\"3.8.9\""
+      "length": 8,
+      "value": "\"3.8.10\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactEnviroment.swift",
