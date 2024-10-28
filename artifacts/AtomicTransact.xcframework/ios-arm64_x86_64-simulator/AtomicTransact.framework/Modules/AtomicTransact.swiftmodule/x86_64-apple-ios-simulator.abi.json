@@ -11738,7 +11738,7 @@
           {
             "kind": "Function",
             "name": "presentAction",
-            "printedName": "presentAction(from:id:environment:presentationStyle:onLaunch:onCompleted:)",
+            "printedName": "presentAction(from:id:environment:presentationStyle:onLaunch:onCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11825,8 +11825,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J9CompletedySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
-            "mangledName": "$s14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J9CompletedySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
+            "usr": "s:14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
+            "mangledName": "$s14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle8onLaunch0J10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VyycSgAQtFZ",
             "moduleName": "AtomicTransact",
             "static": true,
             "intro_iOS": "13.0",
@@ -13918,8 +13918,8 @@
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/FrameworkVersion.swift",
       "kind": "StringLiteral",
       "offset": 228,
-      "length": 7,
-      "value": "\"3.8.9\""
+      "length": 8,
+      "value": "\"3.8.10\""
     }
   ]
 }
