@@ -3944,6 +3944,46 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "aggregate",
+                "printedName": "aggregate",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.AtomicConfig.ProductType.Type) -> AtomicTransact.AtomicConfig.ProductType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProductType",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                        "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AtomicTransact.AtomicConfig.ProductType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductType",
+                            "printedName": "AtomicTransact.AtomicConfig.ProductType",
+                            "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14AtomicTransact0A6ConfigV11ProductTypeO9aggregateyA2EmF",
+                "mangledName": "$s14AtomicTransact0A6ConfigV11ProductTypeO9aggregateyA2EmF",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -4195,6 +4235,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:14AtomicTransact0A6ConfigV9ScopeTypeO7payLinkyA2EmF",
                 "mangledName": "$s14AtomicTransact0A6ConfigV9ScopeTypeO7payLinkyA2EmF",
+                "moduleName": "AtomicTransact"
+              },
+              {
+                "kind": "Var",
+                "name": "custom",
+                "printedName": "custom",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.AtomicConfig.ScopeType.Type) -> AtomicTransact.AtomicConfig.ScopeType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScopeType",
+                        "printedName": "AtomicTransact.AtomicConfig.ScopeType",
+                        "usr": "s:14AtomicTransact0A6ConfigV9ScopeTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AtomicTransact.AtomicConfig.ScopeType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ScopeType",
+                            "printedName": "AtomicTransact.AtomicConfig.ScopeType",
+                            "usr": "s:14AtomicTransact0A6ConfigV9ScopeTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14AtomicTransact0A6ConfigV9ScopeTypeO6customyA2EmF",
+                "mangledName": "$s14AtomicTransact0A6ConfigV9ScopeTypeO6customyA2EmF",
                 "moduleName": "AtomicTransact"
               },
               {
@@ -13777,91 +13854,105 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17994,
+      "offset": 17985,
       "length": 13,
       "value": "\"user-action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17994,
+      "offset": 17985,
       "length": 13,
       "value": "\"user-action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18130,
+      "offset": 18166,
       "length": 11,
       "value": "\"user-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18170,
+      "offset": 18206,
       "length": 15,
       "value": "\"employer-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18207,
+      "offset": 18243,
       "length": 10,
       "value": "\"pay-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18130,
+      "offset": 18274,
+      "length": 8,
+      "value": "\"custom\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18166,
       "length": 11,
       "value": "\"user-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18170,
+      "offset": 18206,
       "length": 15,
       "value": "\"employer-link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 18207,
+      "offset": 18243,
       "length": 10,
       "value": "\"pay-link\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 18274,
+      "length": 8,
+      "value": "\"custom\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 19663,
+      "offset": 19728,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 23907,
+      "offset": 23972,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 25655,
+      "offset": 25720,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 25662,
+      "offset": 25727,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 25669,
+      "offset": 25734,
       "length": 4,
       "value": "\"en\""
     },
@@ -13919,7 +14010,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.8.10\""
+      "value": "\"3.8.11\""
     }
   ]
 }

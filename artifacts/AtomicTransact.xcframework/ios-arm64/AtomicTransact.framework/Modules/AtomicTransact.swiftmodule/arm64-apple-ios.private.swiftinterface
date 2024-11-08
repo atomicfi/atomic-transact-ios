@@ -104,6 +104,7 @@ public struct AtomicConfig : Swift.Codable {
     case present
     case tax
     case userAction
+    case aggregate
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -114,6 +115,7 @@ public struct AtomicConfig : Swift.Codable {
     case userLink
     case employerLink
     case payLink
+    case custom
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
