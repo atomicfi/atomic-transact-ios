@@ -46,5 +46,6 @@ public class Quantum {
   public var muppet: (any MuppetIOS.Muppet)?
   public init(view: WebKit.WKWebView, controller: UIKit.UIViewController)
   public func cleanup()
+  public func update(presentationSource: UIKit.UIViewController)
   @objc deinit
 }
