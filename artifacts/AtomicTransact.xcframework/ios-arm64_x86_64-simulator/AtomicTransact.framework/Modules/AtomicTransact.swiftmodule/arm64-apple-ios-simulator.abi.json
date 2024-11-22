@@ -12812,38 +12812,6 @@
           },
           {
             "kind": "Function",
-            "name": "viewDidDisappear",
-            "printedName": "viewDidDisappear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AtomicTransact@objc(cs)BaseTransactViewController(im)viewDidDisappear:",
-            "mangledName": "$s14AtomicTransact04BaseB14ViewControllerC16viewDidDisappearyySbF",
-            "moduleName": "AtomicTransact",
-            "overriding": true,
-            "objc_name": "viewDidDisappear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "webView",
             "printedName": "webView(_:didFailProvisionalNavigation:withError:)",
             "children": [
@@ -13205,38 +13173,6 @@
               "Override",
               "AccessControl",
               "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewDidDisappear",
-            "printedName": "viewDidDisappear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AtomicTransact@objc(cs)TransactViewController(im)viewDidDisappear:",
-            "mangledName": "$s14AtomicTransact0B14ViewControllerC16viewDidDisappearyySbF",
-            "moduleName": "AtomicTransact",
-            "overriding": true,
-            "objc_name": "viewDidDisappear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14024,7 +13960,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.8.17\""
+      "value": "\"3.8.18\""
     }
   ]
 }
