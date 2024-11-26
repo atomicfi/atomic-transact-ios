@@ -166,7 +166,8 @@ public struct AtomicConfig : Swift.Codable {
   public struct Search : Swift.Codable {
     public var tags: [Swift.String]?
     public var excludedTags: [Swift.String]?
-    public init(tags: [Swift.String]? = nil, excludedTags: [Swift.String]? = nil)
+    public var ruleId: Swift.String?
+    public init(tags: [Swift.String]? = nil, excludedTags: [Swift.String]? = nil, ruleId: Swift.String? = nil)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -293,7 +294,7 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
 public enum Atomic {
   public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   @available(iOS 13.0, *)
-  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onLaunch: (() -> ())? = nil, onCompletion: (() -> ())? = nil)
+  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), onLaunch: (() -> ())? = nil, onCompletion: (() -> ())? = nil)
   @available(iOS 13.0, *)
   public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
     get
