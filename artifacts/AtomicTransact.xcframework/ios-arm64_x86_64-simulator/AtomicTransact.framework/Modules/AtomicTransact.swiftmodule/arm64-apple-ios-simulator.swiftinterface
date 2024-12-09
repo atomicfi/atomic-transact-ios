@@ -103,7 +103,7 @@ public struct AtomicConfig : Swift.Codable {
     case `switch`
     case present
     case tax
-    case userAction
+    case action
     case aggregate
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
@@ -291,10 +291,28 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
     get
   }
 }
+public enum TransactSDKEvent : Swift.String, Swift.CaseIterable {
+  case close
+  case finish
+  case openURL
+  case interaction
+  case dataRequest
+  case automationHandoff
+  case launch
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [AtomicTransact.TransactSDKEvent]
+  public typealias RawValue = Swift.String
+  public static var allCases: [AtomicTransact.TransactSDKEvent] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   @available(iOS 13.0, *)
-  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), onLaunch: (() -> ())? = nil, onCompletion: (() -> ())? = nil)
+  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   @available(iOS 13.0, *)
   public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
     get
@@ -311,6 +329,7 @@ public enum Atomic {
   @_Concurrency.MainActor(unsafe) public var onInteraction: ((AtomicTransact.TransactInteraction) -> ())?
   @_Concurrency.MainActor(unsafe) public var onDataRequest: ((AtomicTransact.TransactDataRequest) -> ())?
   @_Concurrency.MainActor(unsafe) public var onCompletion: ((AtomicTransact.TransactResponse) -> ())?
+  @_Concurrency.MainActor(unsafe) public var onLaunch: (() -> ())?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -349,3 +368,6 @@ extension AtomicTransact.AtomicConfig.ScopeType : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.ScopeType : Swift.RawRepresentable {}
 extension AtomicTransact.TransactError : Swift.Equatable {}
 extension AtomicTransact.TransactError : Swift.Hashable {}
+extension AtomicTransact.TransactSDKEvent : Swift.Equatable {}
+extension AtomicTransact.TransactSDKEvent : Swift.Hashable {}
+extension AtomicTransact.TransactSDKEvent : Swift.RawRepresentable {}
