@@ -418,6 +418,12 @@ __attribute__((swift_name("Page")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)progressWithCompletionHandler:(void (^)(MIOSInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("progress(completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)requestMethod:(NSString *)method url:(NSString *)url data:(NSString * _Nullable)data headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers followRedirects:(BOOL)followRedirects completionHandler:(void (^)(MIOSResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("request(method:url:data:headers:followRedirects:completionHandler:)")));
 
 /**
@@ -509,6 +515,12 @@ __attribute__((swift_name("Page__")))
  * @note This method has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
 - (BOOL)isHostAllowedUri:(NSString *)uri __attribute__((swift_name("isHostAllowed(uri:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)progressWithCompletionHandler:(void (^)(MIOSInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("progress(completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -632,6 +644,12 @@ __attribute__((swift_name("Page_")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)initializeWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("initialize(completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)progressWithCompletionHandler:(void (^)(MIOSInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("progress(completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
