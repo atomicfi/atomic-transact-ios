@@ -696,6 +696,13 @@ __attribute__((swift_name("Page_Factory")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ContentTypeFallbackConfig")))
+@interface MIOSContentTypeFallbackConfig : MIOSBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ForceHttpsConfig")))
 @interface MIOSForceHttpsConfig : MIOSBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -894,6 +901,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("BridgeKt")))
 @interface MIOSBridgeKt : MIOSBase
 + (void)injectMuppet:(id<MIOSMuppet>)muppet page:(id<MIOSPage>)page factory:(id<MIOSBrowserFactory>)factory __attribute__((swift_name("inject(muppet:page:factory:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ContentTypeFallbackKt")))
+@interface MIOSContentTypeFallbackKt : MIOSBase
+@property (class, readonly) id<MIOSKtor_client_coreClientPlugin> ContentTypeFallback __attribute__((swift_name("ContentTypeFallback")));
 @end
 
 __attribute__((objc_subclassing_restricted))
