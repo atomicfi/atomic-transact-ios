@@ -42,10 +42,17 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public class Quantum {
-  public var muppet: (any MuppetIOS.Muppet)?
-  public init(view: WebKit.WKWebView, controller: UIKit.UIViewController)
-  public func cleanup()
-  public func update(presentationSource: UIKit.UIViewController)
+@_Concurrency.MainActor public class Quantum {
+  @_Concurrency.MainActor public var muppet: MuppetIOS.Muppet?
+  @_Concurrency.MainActor public init()
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func initialize(view: WebKit.WKWebView, controller: UIKit.UIViewController) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func goto(url: Swift.String, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int64 = 3000) async throws -> Swift.Bool
+  #endif
+  @_Concurrency.MainActor public func cleanup()
+  @_Concurrency.MainActor public func update(presentationSource: UIKit.UIViewController)
   @objc deinit
 }
+extension QuantumIOS.Quantum : Swift.Sendable {}
