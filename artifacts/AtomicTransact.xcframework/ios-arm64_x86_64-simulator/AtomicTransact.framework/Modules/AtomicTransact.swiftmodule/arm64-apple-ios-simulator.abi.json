@@ -14569,7 +14569,7 @@
           {
             "kind": "Function",
             "name": "presentAction",
-            "printedName": "presentAction(from:id:environment:presentationStyle:theme:onLaunch:onCompletion:)",
+            "printedName": "presentAction(from:id:environment:presentationStyle:theme:onLaunch:onAuthStatusUpdate:onTaskStatusUpdate:onCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14638,6 +14638,60 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "((AtomicTransact.TransactAuthStatusUpdate) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactAuthStatusUpdate) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactAuthStatusUpdate",
+                        "printedName": "AtomicTransact.TransactAuthStatusUpdate",
+                        "usr": "s:14AtomicTransact0B16AuthStatusUpdateV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactTaskStatusUpdate) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactTaskStatusUpdate) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactTaskStatusUpdate",
+                        "printedName": "AtomicTransact.TransactTaskStatusUpdate",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "((AtomicTransact.TransactResponse) -> ())?",
                 "children": [
                   {
@@ -14664,8 +14718,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle5theme8onLaunch0K10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VAA0A6ConfigV5ThemeVyycSgyAA0B8ResponseOcSgtFZ",
-            "mangledName": "$s14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle5theme8onLaunch0K10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VAA0A6ConfigV5ThemeVyycSgyAA0B8ResponseOcSgtFZ",
+            "usr": "s:14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle5theme8onLaunch0K16AuthStatusUpdate0k4TasknO00K10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VAA0A6ConfigV5ThemeVyycSgyAA0bmnO0VcSgyAA0bpnO0VcSgyAA0B8ResponseOcSgtFZ",
+            "mangledName": "$s14AtomicTransact0A0O13presentAction4from2id11environment17presentationStyle5theme8onLaunch0K16AuthStatusUpdate0k4TasknO00K10CompletionySo16UIViewControllerC_SSAA0B11EnvironmentOSo019UIModalPresentationI0VAA0A6ConfigV5ThemeVyycSgyAA0bmnO0VcSgyAA0bpnO0VcSgyAA0B8ResponseOcSgtFZ",
             "moduleName": "AtomicTransact",
             "static": true,
             "intro_iOS": "13.0",
@@ -17977,7 +18031,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 7,
-      "value": "\"3.9.8\""
+      "value": "\"3.9.9\""
     }
   ]
 }
