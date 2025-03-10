@@ -13987,6 +13987,809 @@
             "printedName": "SwitchData",
             "children": [
               {
+                "kind": "Var",
+                "name": "paymentMethod",
+                "printedName": "paymentMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentMethod",
+                    "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13paymentMethodAE07PaymentI0Vvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13paymentMethodAE07PaymentI0Vvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentMethod",
+                        "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13paymentMethodAE07PaymentI0Vvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13paymentMethodAE07PaymentI0Vvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "PaymentMethod",
+                "printedName": "PaymentMethod",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "id",
+                    "printedName": "id",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV2idSSvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV2idSSvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV2idSSvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV2idSSvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "title",
+                    "printedName": "title",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5titleSSvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5titleSSvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5titleSSvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5titleSSvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "type",
+                    "printedName": "type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentType",
+                        "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV4typeAG0H4TypeOvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV4typeAG0H4TypeOvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentType",
+                            "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                            "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV4typeAG0H4TypeOvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV4typeAG0H4TypeOvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeDecl",
+                    "name": "PaymentType",
+                    "printedName": "PaymentType",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "card",
+                        "printedName": "card",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType.Type) -> AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PaymentType",
+                                "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentType",
+                                    "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO4cardyA2ImF",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO4cardyA2ImF",
+                        "moduleName": "AtomicTransact"
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "bank",
+                        "printedName": "bank",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType.Type) -> AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PaymentType",
+                                "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentType",
+                                    "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO4bankyA2ImF",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO4bankyA2ImF",
+                        "moduleName": "AtomicTransact"
+                      },
+                      {
+                        "kind": "Constructor",
+                        "name": "init",
+                        "printedName": "init(rawValue:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PaymentType",
+                                "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType",
+                                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Constructor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO8rawValueAISgSS_tcfc",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO8rawValueAISgSS_tcfc",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "init_kind": "Designated"
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "rawValue",
+                        "printedName": "rawValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO8rawValueSSvp",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO8rawValueSSvp",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO8rawValueSSvg",
+                            "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO8rawValueSSvg",
+                            "moduleName": "AtomicTransact",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV0H4TypeO",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "enumRawTypeName": "String",
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "RawRepresentable",
+                        "printedName": "RawRepresentable",
+                        "children": [
+                          {
+                            "kind": "TypeWitness",
+                            "name": "RawValue",
+                            "printedName": "RawValue",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ],
+                        "usr": "s:SY",
+                        "mangledName": "$sSY"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Decodable",
+                        "printedName": "Decodable",
+                        "usr": "s:Se",
+                        "mangledName": "$sSe"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "expiry",
+                    "printedName": "expiry",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV6expirySSSgvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV6expirySSSgvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV6expirySSSgvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV6expirySSSgvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "brand",
+                    "printedName": "brand",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5brandSSSgvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5brandSSSgvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5brandSSSgvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV5brandSSSgvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "lastFour",
+                    "printedName": "lastFour",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV8lastFourSSSgvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV8lastFourSSSgvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV8lastFourSSSgvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV8lastFourSSSgvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "routingNumber",
+                    "printedName": "routingNumber",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV13routingNumberSSSgvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV13routingNumberSSSgvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV13routingNumberSSSgvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV13routingNumberSSSgvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "accountType",
+                    "printedName": "accountType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV11accountTypeSSSgvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV11accountTypeSSSgvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV11accountTypeSSSgvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV11accountTypeSSSgvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "lastFourAccountNumber",
+                    "printedName": "lastFourAccountNumber",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV21lastFourAccountNumberSSSgvp",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV21lastFourAccountNumberSSSgvp",
+                    "moduleName": "AtomicTransact",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV21lastFourAccountNumberSSSgvg",
+                        "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV21lastFourAccountNumberSSSgvg",
+                        "moduleName": "AtomicTransact",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(from:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentMethod",
+                        "printedName": "AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Decoder",
+                        "printedName": "any Swift.Decoder",
+                        "usr": "s:s7DecoderP"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV4fromAGs7Decoder_p_tKcfc",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV4fromAGs7Decoder_p_tKcfc",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "throwing": true,
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV10SwitchDataV13PaymentMethodV",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Decodable",
+                    "printedName": "Decodable",
+                    "usr": "s:Se",
+                    "mangledName": "$sSe"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -14036,6 +14839,372 @@
             "name": "DepositData",
             "printedName": "DepositData",
             "children": [
+              {
+                "kind": "Var",
+                "name": "accountType",
+                "printedName": "accountType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV11accountTypeSSSgvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV11accountTypeSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV11accountTypeSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV11accountTypeSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "distributionAmount",
+                "printedName": "distributionAmount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV18distributionAmountSdSgvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV18distributionAmountSdSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV18distributionAmountSdSgvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV18distributionAmountSdSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "distributionType",
+                "printedName": "distributionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV16distributionTypeSSSgvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV16distributionTypeSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV16distributionTypeSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV16distributionTypeSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lastFour",
+                "printedName": "lastFour",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV8lastFourSSSgvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV8lastFourSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV8lastFourSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV8lastFourSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "routingNumber",
+                "printedName": "routingNumber",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV13routingNumberSSSgvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV13routingNumberSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV13routingNumberSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV13routingNumberSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "title",
+                "printedName": "title",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV5titleSSSgvp",
+                "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV5titleSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B16TaskStatusUpdateV11DepositDataV5titleSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B16TaskStatusUpdateV11DepositDataV5titleSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
               {
                 "kind": "Constructor",
                 "name": "init",
@@ -16309,6 +17478,128 @@
         "printedName": "TransactDataResponse",
         "children": [
           {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AtomicTransact.TransactDataResponse.CardData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardData",
+                    "printedName": "AtomicTransact.TransactDataResponse.CardData",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14AtomicTransact0B12DataResponseV4cardAC04CardC0VSgvp",
+            "mangledName": "$s14AtomicTransact0B12DataResponseV4cardAC04CardC0VSgvp",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.TransactDataResponse.CardData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardData",
+                        "printedName": "AtomicTransact.TransactDataResponse.CardData",
+                        "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AtomicTransact0B12DataResponseV4cardAC04CardC0VSgvg",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV4cardAC04CardC0VSgvg",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identity",
+            "printedName": "identity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AtomicTransact.TransactDataResponse.Identity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Identity",
+                    "printedName": "AtomicTransact.TransactDataResponse.Identity",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14AtomicTransact0B12DataResponseV8identityAC8IdentityVSgvp",
+            "mangledName": "$s14AtomicTransact0B12DataResponseV8identityAC8IdentityVSgvp",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AtomicTransact.TransactDataResponse.Identity?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Identity",
+                        "printedName": "AtomicTransact.TransactDataResponse.Identity",
+                        "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AtomicTransact0B12DataResponseV8identityAC8IdentityVSgvg",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8identityAC8IdentityVSgvg",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(card:identity:)",
@@ -16364,6 +17655,555 @@
             "name": "Identity",
             "printedName": "Identity",
             "children": [
+              {
+                "kind": "Var",
+                "name": "firstName",
+                "printedName": "firstName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV9firstNameSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV9firstNameSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV9firstNameSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV9firstNameSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lastName",
+                "printedName": "lastName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV8lastNameSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV8lastNameSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV8lastNameSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV8lastNameSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "postalCode",
+                "printedName": "postalCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV10postalCodeSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV10postalCodeSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV10postalCodeSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV10postalCodeSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "address",
+                "printedName": "address",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV7addressSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV7addressSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV7addressSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV7addressSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "address2",
+                "printedName": "address2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV8address2SSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV8address2SSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV8address2SSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV8address2SSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "city",
+                "printedName": "city",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV4citySSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV4citySSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV4citySSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV4citySSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "state",
+                "printedName": "state",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV5stateSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV5stateSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV5stateSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV5stateSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "phone",
+                "printedName": "phone",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV5phoneSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV5phoneSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV5phoneSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV5phoneSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "email",
+                "printedName": "email",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV5emailSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV5emailSSSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV5emailSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV5emailSSSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
               {
                 "kind": "Constructor",
                 "name": "init",
@@ -16560,6 +18400,141 @@
             "name": "CardData",
             "printedName": "CardData",
             "children": [
+              {
+                "kind": "Var",
+                "name": "number",
+                "printedName": "number",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6numberSSvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6numberSSvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6numberSSvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6numberSSvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "expiry",
+                "printedName": "expiry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6expirySSvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6expirySSvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6expirySSvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6expirySSvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cvv",
+                "printedName": "cvv",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
               {
                 "kind": "Constructor",
                 "name": "init",
@@ -17973,14 +19948,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactTaskStatusUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 3269,
+      "offset": 3250,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactTaskStatusUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 3269,
+      "offset": 3250,
       "length": 5,
       "value": "\"_id\""
     },
@@ -18030,8 +20005,8 @@
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/FrameworkVersion.swift",
       "kind": "StringLiteral",
       "offset": 228,
-      "length": 7,
-      "value": "\"3.9.9\""
+      "length": 8,
+      "value": "\"3.9.10\""
     }
   ]
 }

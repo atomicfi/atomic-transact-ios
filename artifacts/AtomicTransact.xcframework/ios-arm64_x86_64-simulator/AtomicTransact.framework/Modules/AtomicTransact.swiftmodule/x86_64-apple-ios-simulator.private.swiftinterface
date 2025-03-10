@@ -362,9 +362,37 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
     }
   }
   public struct SwitchData : Swift.Decodable {
+    public let paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod
+    public struct PaymentMethod : Swift.Decodable {
+      public let id: Swift.String
+      public let title: Swift.String
+      public let type: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType
+      public enum PaymentType : Swift.String, Swift.Decodable {
+        case card
+        case bank
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+      public let expiry: Swift.String?
+      public let brand: Swift.String?
+      public let lastFour: Swift.String?
+      public let routingNumber: Swift.String?
+      public let accountType: Swift.String?
+      public let lastFourAccountNumber: Swift.String?
+      public init(from decoder: any Swift.Decoder) throws
+    }
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct DepositData : Swift.Decodable {
+    public let accountType: Swift.String?
+    public let distributionAmount: Swift.Double?
+    public let distributionType: Swift.String?
+    public let lastFour: Swift.String?
+    public let routingNumber: Swift.String?
+    public let title: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -399,12 +427,26 @@ public enum Atomic {
   @objc deinit
 }
 public struct TransactDataResponse : Swift.Encodable {
+  public let card: AtomicTransact.TransactDataResponse.CardData?
+  public let identity: AtomicTransact.TransactDataResponse.Identity?
   public init(card: AtomicTransact.TransactDataResponse.CardData? = nil, identity: AtomicTransact.TransactDataResponse.Identity? = nil)
   public struct Identity : Swift.Encodable {
+    public let firstName: Swift.String?
+    public let lastName: Swift.String?
+    public let postalCode: Swift.String?
+    public let address: Swift.String?
+    public let address2: Swift.String?
+    public let city: Swift.String?
+    public let state: Swift.String?
+    public let phone: Swift.String?
+    public let email: Swift.String?
     public init(firstName: Swift.String, lastName: Swift.String? = nil, postalCode: Swift.String? = nil, address: Swift.String? = nil, address2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
     public func encode(to encoder: any Swift.Encoder) throws
   }
   public struct CardData : Swift.Encodable {
+    public let number: Swift.String
+    public let expiry: Swift.String
+    public let cvv: Swift.String
     public init(number: Swift.String, expiry: Swift.String, cvv: Swift.String)
     public func encode(to encoder: any Swift.Encoder) throws
   }
@@ -463,6 +505,9 @@ extension AtomicTransact.TransactSDKEvent : Swift.RawRepresentable {}
 extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.Equatable {}
 extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.Hashable {}
 extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.RawRepresentable {}
+extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Equatable {}
+extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Hashable {}
+extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.RawRepresentable {}
 extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Equatable {}
 extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Hashable {}
 extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.RawRepresentable {}
