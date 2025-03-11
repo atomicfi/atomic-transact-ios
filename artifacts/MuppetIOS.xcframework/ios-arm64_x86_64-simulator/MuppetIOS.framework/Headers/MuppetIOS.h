@@ -424,6 +424,12 @@ __attribute__((objc_subclassing_restricted))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)screenshotWidth:(int32_t)width height:(int32_t)height quality:(double)quality completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("screenshot(width:height:quality:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)setCookieCookie:(MIOSKtor_httpCookie *)cookie completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("setCookie(cookie:completionHandler:)")));
 
 /**
@@ -463,6 +469,13 @@ __attribute__((objc_subclassing_restricted))
 - (instancetype)initWithBrowser:(id<BrowserProtocol>)browser view:(T _Nullable)view __attribute__((swift_name("init(browser:view:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+ * @note This method has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+- (void)_closeWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("_close(completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -561,6 +574,11 @@ __attribute__((objc_subclassing_restricted))
 /**
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
+@property BOOL _closed __attribute__((swift_name("_closed")));
+
+/**
+ * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
 @property (readonly) MIOSMutableDictionary<MIOSInt *, id<MIOSKotlinx_coroutines_coreCompletableDeferred>> *_deferrables __attribute__((swift_name("_deferrables")));
 
 /**
@@ -602,9 +620,15 @@ __attribute__((objc_subclassing_restricted))
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
+ * @note This method has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+- (void)_closeWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("_close(completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)addUserScriptScript:(NSString *)script completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("addUserScript(script:completionHandler:)")));
-- (void)close __attribute__((swift_name("close()")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -642,6 +666,12 @@ __attribute__((objc_subclassing_restricted))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)progressWithCompletionHandler:(void (^)(MIOSInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("progress(completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)screenshotWidth:(int32_t)width height:(int32_t)height quality:(double)quality completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("screenshot(width:height:quality:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
