@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "QuantumIOS",
+    "printedName": "QuantumIOS",
     "children": [
       {
         "kind": "Import",
@@ -126,8 +126,9 @@
             "moduleName": "QuantumIOS",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -271,6 +272,7 @@
             "static": true,
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -307,6 +309,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -375,6 +378,7 @@
             "mangledName": "$s10QuantumIOS14ToolbarWebViewC011setAutofillC5Items5value5titleySS_SStF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -397,6 +401,7 @@
             "mangledName": "$s10QuantumIOS14ToolbarWebViewC010setDefaultC5ItemsyyF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -426,6 +431,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -466,6 +472,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -507,6 +514,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -518,6 +526,7 @@
         "mangledName": "$s10QuantumIOS14ToolbarWebViewC",
         "moduleName": "QuantumIOS",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -532,6 +541,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -658,6 +681,7 @@
             "moduleName": "QuantumIOS",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -698,6 +722,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -739,6 +764,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -750,6 +776,7 @@
         "mangledName": "$s10QuantumIOS7WebViewC",
         "moduleName": "QuantumIOS",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -763,6 +790,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -881,8 +922,9 @@
             "moduleName": "QuantumIOS",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "RawDocComment"
@@ -1006,8 +1048,9 @@
             "moduleName": "QuantumIOS",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1133,6 +1176,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -1156,6 +1200,7 @@
             "mangledName": "$s10QuantumIOS17WebViewControllerC18hideAssistantTitleyyF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1183,6 +1228,7 @@
             "mangledName": "$s10QuantumIOS17WebViewControllerC13showAssistant5titleySS_tF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1238,6 +1284,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1279,6 +1326,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -1290,6 +1338,7 @@
         "mangledName": "$s10QuantumIOS17WebViewControllerC",
         "moduleName": "QuantumIOS",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1302,6 +1351,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1429,8 +1492,8 @@
             "moduleName": "QuantumIOS",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1687,6 +1750,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -1746,6 +1823,48 @@
       "offset": 650,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1586,
+      "length": 14,
+      "value": "\"codeSnippets\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1673,
+      "length": 22,
+      "value": "\"detectAutofillInputs\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1903,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2027,
+      "length": 11,
+      "value": "\"autofills\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2101,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2140,
+      "length": 7,
+      "value": "\"title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
