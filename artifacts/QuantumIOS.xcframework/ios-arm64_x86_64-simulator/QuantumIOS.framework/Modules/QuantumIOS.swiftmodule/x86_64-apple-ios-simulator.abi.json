@@ -1396,17 +1396,18 @@
                     "kind": "TypeNominal",
                     "name": "Muppet",
                     "printedName": "MuppetIOS.Muppet",
-                    "usr": "c:objc(pl)MIOSMuppet"
+                    "usr": "c:objc(cs)Muppet"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvp",
-            "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvp",
+            "usr": "s:10QuantumIOS0A0C6muppetSo6MuppetCSgvp",
+            "mangledName": "$s10QuantumIOS0A0C6muppetSo6MuppetCSgvp",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Custom",
               "HasInitialValue",
               "HasStorage",
               "AccessControl"
@@ -1427,15 +1428,15 @@
                         "kind": "TypeNominal",
                         "name": "Muppet",
                         "printedName": "MuppetIOS.Muppet",
-                        "usr": "c:objc(pl)MIOSMuppet"
+                        "usr": "c:objc(cs)Muppet"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvg",
-                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvg",
+                "usr": "s:10QuantumIOS0A0C6muppetSo6MuppetCSgvg",
+                "mangledName": "$s10QuantumIOS0A0C6muppetSo6MuppetCSgvg",
                 "moduleName": "QuantumIOS",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1459,15 +1460,15 @@
                         "kind": "TypeNominal",
                         "name": "Muppet",
                         "printedName": "MuppetIOS.Muppet",
-                        "usr": "c:objc(pl)MIOSMuppet"
+                        "usr": "c:objc(cs)Muppet"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvs",
-                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvs",
+                "usr": "s:10QuantumIOS0A0C6muppetSo6MuppetCSgvs",
+                "mangledName": "$s10QuantumIOS0A0C6muppetSo6MuppetCSgvs",
                 "moduleName": "QuantumIOS",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1484,8 +1485,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvM",
-                "mangledName": "$s10QuantumIOS0A0C6muppetSo10MIOSMuppet_pSgvM",
+                "usr": "s:10QuantumIOS0A0C6muppetSo6MuppetCSgvM",
+                "mangledName": "$s10QuantumIOS0A0C6muppetSo6MuppetCSgvM",
                 "moduleName": "QuantumIOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1495,13 +1496,34 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(view:controller:)",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Quantum",
                 "printedName": "QuantumIOS.Quantum",
                 "usr": "s:10QuantumIOS0A0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10QuantumIOS0A0CACycfc",
+            "mangledName": "$s10QuantumIOS0A0CACycfc",
+            "moduleName": "QuantumIOS",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(view:controller:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -1516,14 +1538,73 @@
                 "usr": "c:objc(cs)UIViewController"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:10QuantumIOS0A0C4view10controllerACSo9WKWebViewC_So16UIViewControllerCtcfc",
-            "mangledName": "$s10QuantumIOS0A0C4view10controllerACSo9WKWebViewC_So16UIViewControllerCtcfc",
+            "declKind": "Func",
+            "usr": "s:10QuantumIOS0A0C10initialize4view10controllerySo9WKWebViewC_So16UIViewControllerCtYaKF",
+            "mangledName": "$s10QuantumIOS0A0C10initialize4view10controllerySo9WKWebViewC_So16UIViewControllerCtYaKF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "goto",
+            "printedName": "goto(url:headers:timeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "hasDefaultArg": true,
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10QuantumIOS0A0C4goto3url7headers7timeoutSbSS_SDyS2SGs5Int64VtYaKF",
+            "mangledName": "$s10QuantumIOS0A0C4goto3url7headers7timeoutSbSS_SDyS2SGs5Int64VtYaKF",
+            "moduleName": "QuantumIOS",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -1541,6 +1622,34 @@
             "mangledName": "$s10QuantumIOS0A0C7cleanupyyF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(presentationSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10QuantumIOS0A0C6update18presentationSourceySo16UIViewControllerC_tF",
+            "mangledName": "$s10QuantumIOS0A0C6update18presentationSourceySo16UIViewControllerC_tF",
+            "moduleName": "QuantumIOS",
+            "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1551,7 +1660,17 @@
         "mangledName": "$s10QuantumIOS0A0C",
         "moduleName": "QuantumIOS",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       }
     ],
@@ -1904,14 +2023,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/MuppetInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 669,
+      "offset": 697,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/MuppetInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 1135,
+      "offset": 1200,
       "length": 4,
       "value": "true"
     },
@@ -2240,275 +2359,296 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5433,
+      "offset": 5453,
       "length": 27,
       "value": "\"WebController.closeButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5553,
+      "offset": 5573,
       "length": 17,
       "value": "\"arrow.clockwise\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5867,
+      "offset": 5887,
       "length": 28,
       "value": "\"WebController.reloadButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6012,
+      "offset": 6032,
       "length": 18,
       "value": "\"chevron.backward\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6139,
+      "offset": 6159,
       "length": 26,
       "value": "\"WebController.backButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6346,
+      "offset": 6366,
       "length": 17,
       "value": "\"chevron.forward\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6471,
+      "offset": 6491,
       "length": 29,
       "value": "\"WebController.forwardButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6860,
+      "offset": 6880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6908,
+      "offset": 6928,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6925,
+      "offset": 6945,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7139,
+      "offset": 7194,
       "length": 11,
       "value": "\"lock.fill\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7442,
+      "offset": 7497,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7507,
+      "offset": 7562,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7538,
+      "offset": 7593,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7675,
+      "offset": 7730,
       "length": 21,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7692,
+      "offset": 7747,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7695,
+      "offset": 7750,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7957,
+      "offset": 8058,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7961,
+      "offset": 8062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7969,
+      "offset": 8070,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7996,
+      "offset": 8097,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8028,
+      "offset": 8129,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8066,
+      "offset": 8167,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8079,
+      "offset": 8180,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8118,
+      "offset": 8219,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8153,
+      "offset": 8254,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8185,
+      "offset": 8286,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8223,
+      "offset": 8324,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8263,
+      "offset": 8364,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8450,
+      "offset": 8551,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8498,
+      "offset": 8599,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8717,
+      "offset": 8818,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8813,
+      "offset": 8963,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8878,
+      "offset": 9028,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8942,
+      "offset": 9105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9188,
+      "offset": 9351,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9428,
+      "offset": 9591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9477,
+      "offset": 9640,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/WebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9510,
+      "offset": 9673,
       "length": 4,
       "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
+      "kind": "Dictionary",
+      "offset": 1088,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1110,
+      "length": 4,
+      "value": "3000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1170,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
