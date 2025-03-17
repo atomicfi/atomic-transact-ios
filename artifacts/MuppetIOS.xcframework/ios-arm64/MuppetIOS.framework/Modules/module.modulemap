@@ -1,4 +1,4 @@
-framework module MuppetIOS {
+framework module "MuppetIOS" {
     umbrella header "MuppetIOS.h"
 
     export *

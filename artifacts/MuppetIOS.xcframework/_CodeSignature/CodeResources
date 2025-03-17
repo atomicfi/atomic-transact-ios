@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/MuppetIOS.framework/Headers/MuppetIOS.h</key>
 		<data>
-		FiiROPgTi91ZJJhQFoPT0mho1IY=
+		d4PD28xYxoTtj/U2OB1WzLAnxz0=
 		</data>
 		<key>ios-arm64/MuppetIOS.framework/Info.plist</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>ios-arm64/MuppetIOS.framework/Modules/module.modulemap</key>
 		<data>
-		1N4yj7w1u6/m+Ao9syx7KZsW3II=
+		oHsluKWLVtjOF4KmUS1SyYj5yPk=
 		</data>
 		<key>ios-arm64/MuppetIOS.framework/MuppetIOS</key>
 		<data>
-		RoTM2KZXDDqyeN6NZdZg7FAZjrk=
+		sVvHNCMG7mXNvoatNk78SVInXME=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Headers/MuppetIOS.h</key>
 		<data>
-		FiiROPgTi91ZJJhQFoPT0mho1IY=
+		d4PD28xYxoTtj/U2OB1WzLAnxz0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Info.plist</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Modules/module.modulemap</key>
 		<data>
-		ppyM4zbBr3bFKI84Spe4f1nMrDQ=
+		ObNeQcuhCBOMkGnlBqCmwWokHJA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/MuppetIOS</key>
 		<data>
-		C7aIhDOxJXn5KdBLGjRSjOe4R/A=
+		oMqIaQAVnpvN7z+6CiVlWri7BjY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FiiROPgTi91ZJJhQFoPT0mho1IY=
+			d4PD28xYxoTtj/U2OB1WzLAnxz0=
 			</data>
 			<key>hash2</key>
 			<data>
-			s6ecBy3OACsPs3HwREDMm8aGJqHO9LJQCxd4zoG1gG0=
+			cdzxFGlwlJ5sqTlbiuRQpZhYhp5jxWFrYAEb9nAZbik=
 			</data>
 		</dict>
 		<key>ios-arm64/MuppetIOS.framework/Info.plist</key>
@@ -65,33 +65,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1N4yj7w1u6/m+Ao9syx7KZsW3II=
+			oHsluKWLVtjOF4KmUS1SyYj5yPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			3NRqZGvscQ8z7w5M6CMZfvj5B14cDlaTk7IV7uiYPoQ=
+			W+ACEj+Ou0JASAUIIXIxS45cB8wc+i2thX7u35Hs8lE=
 			</data>
 		</dict>
 		<key>ios-arm64/MuppetIOS.framework/MuppetIOS</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RoTM2KZXDDqyeN6NZdZg7FAZjrk=
+			sVvHNCMG7mXNvoatNk78SVInXME=
 			</data>
 			<key>hash2</key>
 			<data>
-			7H1NX8y7xBagwmum6Ui2VpB/BD/osz9UW0rG3BJk2Js=
+			9RoUeHXxs/LE23UPSQxyVXzuChWhdOmb1dcet0qNb2g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Headers/MuppetIOS.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FiiROPgTi91ZJJhQFoPT0mho1IY=
+			d4PD28xYxoTtj/U2OB1WzLAnxz0=
 			</data>
 			<key>hash2</key>
 			<data>
-			s6ecBy3OACsPs3HwREDMm8aGJqHO9LJQCxd4zoG1gG0=
+			cdzxFGlwlJ5sqTlbiuRQpZhYhp5jxWFrYAEb9nAZbik=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Info.plist</key>
@@ -109,22 +109,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ppyM4zbBr3bFKI84Spe4f1nMrDQ=
+			ObNeQcuhCBOMkGnlBqCmwWokHJA=
 			</data>
 			<key>hash2</key>
 			<data>
-			BC/4nWMGKObCIbDxYr07MsB8XNrkvIsppPpsiXVQPvU=
+			JLGVdPmdskjJWaz5pbGOVAPlmLY9TBZAEvvNE6WUk60=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/MuppetIOS</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C7aIhDOxJXn5KdBLGjRSjOe4R/A=
+			oMqIaQAVnpvN7z+6CiVlWri7BjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0UP1hx4ATeeFG7u3qDOyRjqYT/aR/yKT0mKsXlosT3w=
+			7BUw1SbSl4DLE+msOO46084bS+iIZdpE6ZttSmkZFzg=
 			</data>
 		</dict>
 	</dict>
