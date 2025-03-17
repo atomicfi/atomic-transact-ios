@@ -310,7 +310,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC14AtomicTransact26BaseTransactViewController")
 @interface BaseTransactViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -321,7 +320,6 @@ SWIFT_CLASS("_TtC14AtomicTransact26BaseTransactViewController")
 SWIFT_CLASS("_TtC14AtomicTransact22TransactViewController") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface TransactViewController : BaseTransactViewController <WKUIDelegate>
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -648,7 +646,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC14AtomicTransact26BaseTransactViewController")
 @interface BaseTransactViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -659,7 +656,6 @@ SWIFT_CLASS("_TtC14AtomicTransact26BaseTransactViewController")
 SWIFT_CLASS("_TtC14AtomicTransact22TransactViewController") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface TransactViewController : BaseTransactViewController <WKUIDelegate>
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
