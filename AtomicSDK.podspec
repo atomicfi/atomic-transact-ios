@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AtomicSDK"
-    s.version      = "3.9.20"
+    s.version      = "3.9.21"
     s.summary      = "iOS SDK for using Atomic Transact"
     s.homepage     = "https://docs.atomicfi.com/reference/transact-sdk#libraries__swift"
     s.license = { :type => 'Copyright', :text => '© Copyright 2024 Atomic FI Inc.'}
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
     s.swift_version = "5"
     s.ios.deployment_target  = "13.0"
     s.vendored_frameworks = "artifacts/AtomicTransact.xcframework"
-    s.dependency "QuantumIOS"
+    s.dependency "QuantumIOS", "#{s.version}"
 end
