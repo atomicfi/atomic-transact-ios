@@ -18249,9 +18249,18 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
@@ -18375,12 +18384,38 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV9firstName04lastG010postalCode7address8address24city5state5phone5emailAESS_SSSgA7Otcfc",
-                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV9firstName04lastG010postalCode7address8address24city5state5phone5emailAESS_SSSgA7Otcfc",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV9firstName04lastG010postalCode7address8address24city5state5phone5emailAESSSg_A8Otcfc",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV9firstName04lastG010postalCode7address8address24city5state5phone5emailAESSSg_A8Otcfc",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
                   "AccessControl"
                 ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Identity",
+                    "printedName": "AtomicTransact.TransactDataResponse.Identity",
+                    "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14AtomicTransact0B12DataResponseV8IdentityV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV8IdentityV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "throwing": true,
                 "init_kind": "Designated"
               },
               {
@@ -18418,6 +18453,13 @@
               "RawDocComment"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
               {
                 "kind": "Conformance",
                 "name": "Encodable",
@@ -18607,6 +18649,32 @@
                 "init_kind": "Designated"
               },
               {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardData",
+                    "printedName": "AtomicTransact.TransactDataResponse.CardData",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "AtomicTransact",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
                 "kind": "Function",
                 "name": "encode",
                 "printedName": "encode(to:)",
@@ -18643,12 +18711,45 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Encodable",
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransactDataResponse",
+                "printedName": "AtomicTransact.TransactDataResponse",
+                "usr": "s:14AtomicTransact0B12DataResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14AtomicTransact0B12DataResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14AtomicTransact0B12DataResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AtomicTransact",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -18685,6 +18786,13 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -21360,7 +21468,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.9.23\""
+      "value": "\"3.9.24\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactEnviroment.swift",
