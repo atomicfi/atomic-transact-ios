@@ -428,11 +428,11 @@ public enum Atomic {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public struct TransactDataResponse : Swift.Encodable {
+public struct TransactDataResponse : Swift.Codable {
   public let card: AtomicTransact.TransactDataResponse.CardData?
   public let identity: AtomicTransact.TransactDataResponse.Identity?
   public init(card: AtomicTransact.TransactDataResponse.CardData? = nil, identity: AtomicTransact.TransactDataResponse.Identity? = nil)
-  public struct Identity : Swift.Encodable {
+  public struct Identity : Swift.Codable {
     public let firstName: Swift.String?
     public let lastName: Swift.String?
     public let postalCode: Swift.String?
@@ -442,17 +442,20 @@ public struct TransactDataResponse : Swift.Encodable {
     public let state: Swift.String?
     public let phone: Swift.String?
     public let email: Swift.String?
-    public init(firstName: Swift.String, lastName: Swift.String? = nil, postalCode: Swift.String? = nil, address: Swift.String? = nil, address2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
+    public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, postalCode: Swift.String? = nil, address: Swift.String? = nil, address2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
     public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
-  public struct CardData : Swift.Encodable {
+  public struct CardData : Swift.Codable {
     public let number: Swift.String
     public let expiry: Swift.String
     public let cvv: Swift.String
     public init(number: Swift.String, expiry: Swift.String, cvv: Swift.String)
     public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct TransactAuthStatusUpdate : Swift.Decodable {
   public let company: AtomicTransact.TransactCompany
