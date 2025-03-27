@@ -17830,8 +17830,7 @@
               "ObjC",
               "Preconcurrency",
               "Custom",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -20740,7 +20739,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.9.24\""
+      "value": "\"3.10.0\""
     }
   ]
 }
