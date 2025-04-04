@@ -15992,6 +15992,27 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideTransact",
+            "printedName": "hideTransact()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14AtomicTransact0A0O04hideB0yyFZ",
+            "mangledName": "$s14AtomicTransact0A0O04hideB0yyFZ",
+            "moduleName": "AtomicTransact",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -19952,6 +19973,13 @@
       "value": "\"DismissTransact\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Data\/InternalNotifications.swift",
+      "kind": "StringLiteral",
+      "offset": 287,
+      "length": 14,
+      "value": "\"HideTransact\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactSDKEvent.swift",
       "kind": "StringLiteral",
       "offset": 182,
@@ -20121,15 +20149,8 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 488,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 557,
+      "offset": 519,
       "length": 2,
       "value": "\"\""
     },
@@ -20145,7 +20166,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.11.0\""
+      "value": "\"3.12.0\""
     }
   ]
 }
