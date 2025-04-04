@@ -408,6 +408,7 @@ public enum Atomic {
     get
   }
   public static func dismissTransact()
+  public static func hideTransact()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BaseTransactViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor @preconcurrency public var config: AtomicTransact.AtomicConfig!
