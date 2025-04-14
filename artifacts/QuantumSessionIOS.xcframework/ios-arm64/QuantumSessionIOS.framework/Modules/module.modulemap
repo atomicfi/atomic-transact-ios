@@ -1,0 +1,8 @@
+framework module "QuantumSessionIOS" {
+    umbrella header "QuantumSessionIOS.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
