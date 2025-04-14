@@ -4,6 +4,7 @@
 import Combine
 import Foundation
 import MuppetIOS
+import QuantumSessionIOS
 import Swift
 import UIKit
 import WebKit
@@ -46,7 +47,7 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor public var muppet: MuppetIOS.Muppet?
   @_Concurrency.MainActor public init()
   #if compiler(>=5.3) && $AsyncAwait
-  @_Concurrency.MainActor public func initialize(view: WebKit.WKWebView, controller: UIKit.UIViewController) async throws
+  @_Concurrency.MainActor public func initialize(token: Swift.String, view: WebKit.WKWebView, controller: UIKit.UIViewController, apiUrl: Swift.String = "https://api.atomicfi.com") async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor public func goto(url: Swift.String, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int64 = 3000) async throws -> Swift.Bool
