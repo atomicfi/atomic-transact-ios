@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		SmgRoQy2KjabQrlky1LyUoXv0O4=
+		DA+qZRdTsfyth+rr+XvHLyE8Qtw=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		kkipPrNKriVeQvVAoOt1dGmxqOs=
+		O5TzGR9q2fcorCkmBCi2RB8iRns=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		kkipPrNKriVeQvVAoOt1dGmxqOs=
+		O5TzGR9q2fcorCkmBCi2RB8iRns=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KJCMkHAKEJyOXrtxX1fNXHq6P6I=
+		kLn6hpUQ74BRvUNs5DCQeoentPs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,22 +73,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SmgRoQy2KjabQrlky1LyUoXv0O4=
+			DA+qZRdTsfyth+rr+XvHLyE8Qtw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7b4hDufTRxrXK9BAHIQbmxT+A9vQsP7Ga3xS8s/3IOQ=
+			zdGNO7PdweD758YokYH8I09ZYvVFzOc3sd/nU1XTIYs=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kkipPrNKriVeQvVAoOt1dGmxqOs=
+			O5TzGR9q2fcorCkmBCi2RB8iRns=
 			</data>
 			<key>hash2</key>
 			<data>
-			o0wX2jUuiH0FqCMVLGhyaFa3qVuLOIRTQI8tlNzO6bU=
+			pbsae/NZq6KVRBAMEPqSIJK8DrTPGfemajjEr5ry0YY=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -106,22 +106,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kkipPrNKriVeQvVAoOt1dGmxqOs=
+			O5TzGR9q2fcorCkmBCi2RB8iRns=
 			</data>
 			<key>hash2</key>
 			<data>
-			o0wX2jUuiH0FqCMVLGhyaFa3qVuLOIRTQI8tlNzO6bU=
+			pbsae/NZq6KVRBAMEPqSIJK8DrTPGfemajjEr5ry0YY=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KJCMkHAKEJyOXrtxX1fNXHq6P6I=
+			kLn6hpUQ74BRvUNs5DCQeoentPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			yBvi0Je9X7IuFsGTR7Tyr38f4rWCjbg0JLSvJDtrtKc=
+			9XcBRP4XKG26msqYayYfdj51E3Kvm+Hxx01LDv6NlsI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
