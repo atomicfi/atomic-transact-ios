@@ -1399,6 +1399,13 @@
         "moduleName": "QuantumIOS"
       },
       {
+        "kind": "Import",
+        "name": "QuantumSessionIOS",
+        "printedName": "QuantumSessionIOS",
+        "declKind": "Import",
+        "moduleName": "QuantumIOS"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Quantum",
         "printedName": "Quantum",
@@ -1539,12 +1546,18 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(view:controller:)",
+            "printedName": "initialize(token:view:controller:apiUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -1557,11 +1570,18 @@
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
                 "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10QuantumIOS0A0C10initialize4view10controllerySo9WKWebViewC_So16UIViewControllerCtYaKF",
-            "mangledName": "$s10QuantumIOS0A0C10initialize4view10controllerySo9WKWebViewC_So16UIViewControllerCtYaKF",
+            "usr": "s:10QuantumIOS0A0C10initialize5token4view10controller6apiUrlySS_So9WKWebViewCSo16UIViewControllerCSStYaKF",
+            "mangledName": "$s10QuantumIOS0A0C10initialize5token4view10controller6apiUrlySS_So9WKWebViewCSo16UIViewControllerCSStYaKF",
             "moduleName": "QuantumIOS",
             "declAttributes": [
               "Custom",
@@ -2040,6 +2060,13 @@
       "offset": 6368,
       "length": 1,
       "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/FrameworkVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 224,
+      "length": 8,
+      "value": "\"3.14.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/MuppetInterface.swift",
@@ -2645,29 +2672,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 26,
+      "value": "\"https:\/\/api.atomicfi.com\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "BooleanLiteral",
-      "offset": 1059,
+      "offset": 1272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "Dictionary",
-      "offset": 1180,
+      "offset": 1393,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1202,
+      "offset": 1415,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "BooleanLiteral",
-      "offset": 1262,
+      "offset": 1475,
       "length": 5,
       "value": "false"
     }
