@@ -413,7 +413,7 @@ public enum Atomic {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseTransactViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) public var config: AtomicTransact.AtomicConfig!
-  @_Concurrency.MainActor(unsafe) public var transactPath: Swift.String
+  @_Concurrency.MainActor(unsafe) public var environment: AtomicTransact.TransactEnvironment!
   @_Concurrency.MainActor(unsafe) public var onInteraction: ((AtomicTransact.TransactInteraction) -> ())?
   @_Concurrency.MainActor(unsafe) public var onDataRequest: ((AtomicTransact.TransactDataRequest) async -> (AtomicTransact.TransactDataResponse?))?
   @_Concurrency.MainActor(unsafe) public var onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())?
@@ -480,8 +480,11 @@ public struct TransactAuthStatusUpdate : Swift.Decodable {
 }
 public enum TransactEnvironment {
   case production
-  case custom(path: Swift.String)
-  public var path: Swift.String {
+  case custom(transactPath: Swift.String, apiPath: Swift.String)
+  public var transactPath: Swift.String {
+    get
+  }
+  public var apiPath: Swift.String {
     get
   }
 }
