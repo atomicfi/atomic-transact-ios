@@ -20826,18 +20826,11 @@
       "value": "\"com.atomicfi.transact.keychain\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1092,
-      "length": 281,
-      "value": "\"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiNWU5NzhkY2YzYWJiZjkwMDA4YTAwYjdhIiwiYXBwSWRzIjpbImNvbS5hdG9taWNmaS5pb3MiLCJmaW5hbmNpYWwuYXRvbWljLnRyYW5zYWN0Il0sImlhdCI6MTc3NTc0ODExOH0.OV7yiI1mblNOwngJ2bpLEQb0ha1de7Ys18zU0emC6ghJEWJh8RDb1xISeb45qGc16lHGEl8Ep4-inBg3_EdStw\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/FrameworkVersion.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.13.0\""
+      "value": "\"3.14.0\""
     }
   ]
 }
