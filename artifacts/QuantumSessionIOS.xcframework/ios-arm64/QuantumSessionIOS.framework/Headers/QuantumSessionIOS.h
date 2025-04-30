@@ -154,6 +154,12 @@ __attribute__((swift_name("QuantumSession")))
  * @note This method converts instances of QuantumSessionException, CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)generateUserTokenPublicToken:(NSString *)publicToken context:(id _Nullable)context completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("generateUserToken(publicToken:context:completionHandler:)")));
+
+/**
+ * @note This method converts instances of QuantumSessionException, CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)trackSessionToken:(NSString *)token context:(id _Nullable)context completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("trackSession(token:context:completionHandler:)")));
 @end
 
