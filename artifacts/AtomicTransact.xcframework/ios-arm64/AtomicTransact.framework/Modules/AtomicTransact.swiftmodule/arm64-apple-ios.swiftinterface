@@ -7,6 +7,7 @@ import Combine
 import Foundation
 import MuppetIOS
 import QuantumIOS
+import QuantumSessionIOS
 import SafariServices
 import Security
 import Swift
@@ -480,6 +481,7 @@ public struct TransactAuthStatusUpdate : Swift.Decodable {
 }
 public enum TransactEnvironment {
   case production
+  case sandbox
   case custom(transactPath: Swift.String, apiPath: Swift.String)
   public var transactPath: Swift.String {
     get
