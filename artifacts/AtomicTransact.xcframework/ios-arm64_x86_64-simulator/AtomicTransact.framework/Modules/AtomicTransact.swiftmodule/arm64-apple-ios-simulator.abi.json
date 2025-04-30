@@ -19222,6 +19222,13 @@
       },
       {
         "kind": "Import",
+        "name": "QuantumSessionIOS",
+        "printedName": "QuantumSessionIOS",
+        "declKind": "Import",
+        "moduleName": "AtomicTransact"
+      },
+      {
+        "kind": "Import",
         "name": "MuppetIOS",
         "printedName": "MuppetIOS",
         "declKind": "Import",
@@ -19536,6 +19543,43 @@
             "declKind": "EnumElement",
             "usr": "s:14AtomicTransact0B11EnvironmentO10productionyA2CmF",
             "mangledName": "$s14AtomicTransact0B11EnvironmentO10productionyA2CmF",
+            "moduleName": "AtomicTransact"
+          },
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AtomicTransact.TransactEnvironment.Type) -> AtomicTransact.TransactEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactEnvironment",
+                    "printedName": "AtomicTransact.TransactEnvironment",
+                    "usr": "s:14AtomicTransact0B11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AtomicTransact.TransactEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactEnvironment",
+                        "printedName": "AtomicTransact.TransactEnvironment",
+                        "usr": "s:14AtomicTransact0B11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14AtomicTransact0B11EnvironmentO7sandboxyA2CmF",
+            "mangledName": "$s14AtomicTransact0B11EnvironmentO7sandboxyA2CmF",
             "moduleName": "AtomicTransact"
           },
           {
@@ -20236,7 +20280,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.15.0\""
+      "value": "\"3.16.1\""
     }
   ]
 }
