@@ -286,11 +286,7 @@ public enum TransactResponse : Swift.CustomStringConvertible {
 public enum TransactError : Swift.Error {
   case unableToConnectToTransact
   case invalidConfig
-  public static func == (a: AtomicTransact.TransactError, b: AtomicTransact.TransactError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+  case transactError(data: [Swift.String : Any])
 }
 public struct TransactInteraction : Swift.CustomStringConvertible {
   public var name: Swift.String
@@ -328,6 +324,7 @@ public enum TransactSDKEvent : Swift.String, Swift.CaseIterable {
   case launch
   case authStatusUpdate
   case taskStatusUpdate
+  case error
   public init?(rawValue: Swift.String)
   public typealias AllCases = [AtomicTransact.TransactSDKEvent]
   public typealias RawValue = Swift.String
@@ -400,9 +397,9 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
 }
 public enum Atomic {
   #if compiler(>=5.3) && $AsyncAwait
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> (AtomicTransact.TransactDataResponse?))? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> (AtomicTransact.TransactDataResponse?))? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
   #endif
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: @escaping ((AtomicTransact.TransactDataRequest) -> ()), onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: @escaping ((AtomicTransact.TransactDataRequest) -> ()), onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
   @available(iOS 13.0, *)
   public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   @available(iOS 13.0, *)
@@ -421,6 +418,7 @@ public enum Atomic {
   @_Concurrency.MainActor(unsafe) public var onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())?
   @_Concurrency.MainActor(unsafe) public var onCompletion: ((AtomicTransact.TransactResponse) -> ())?
   @_Concurrency.MainActor(unsafe) public var onLaunch: (() -> ())?
+  @_Concurrency.MainActor(unsafe) public var onError: ((AtomicTransact.TransactError) -> ())?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
@@ -433,6 +431,24 @@ public struct TransactDataResponse : Swift.Codable {
   public let card: AtomicTransact.TransactDataResponse.CardData?
   public let identity: AtomicTransact.TransactDataResponse.Identity?
   public init(card: AtomicTransact.TransactDataResponse.CardData? = nil, identity: AtomicTransact.TransactDataResponse.Identity? = nil)
+  public enum ValidationErrorType : Swift.String, Swift.Codable, Swift.Error {
+    case invalidCharacterCount
+    case tooManyCharacters
+    case invalidCharacters
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct ValidationError : Swift.Codable, Swift.Equatable {
+    public let fieldName: Swift.String
+    public let error: AtomicTransact.TransactDataResponse.ValidationErrorType
+    public init(fieldName: Swift.String, error: AtomicTransact.TransactDataResponse.ValidationErrorType)
+    public static func == (a: AtomicTransact.TransactDataResponse.ValidationError, b: AtomicTransact.TransactDataResponse.ValidationError) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
   public struct Identity : Swift.Codable {
     public let firstName: Swift.String?
     public let lastName: Swift.String?
@@ -444,6 +460,8 @@ public struct TransactDataResponse : Swift.Codable {
     public let phone: Swift.String?
     public let email: Swift.String?
     public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, postalCode: Swift.String? = nil, address: Swift.String? = nil, address2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
+    public func validate() -> [AtomicTransact.TransactDataResponse.ValidationError]
+    public func isValid() -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -452,6 +470,8 @@ public struct TransactDataResponse : Swift.Codable {
     public let expiry: Swift.String
     public let cvv: Swift.String
     public init(number: Swift.String, expiry: Swift.String, cvv: Swift.String)
+    public func validate() -> [AtomicTransact.TransactDataResponse.ValidationError]
+    public func isValid() -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -507,8 +527,6 @@ extension AtomicTransact.AtomicConfig.ScopeType : Swift.RawRepresentable {}
 extension AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy : Swift.RawRepresentable {}
-extension AtomicTransact.TransactError : Swift.Equatable {}
-extension AtomicTransact.TransactError : Swift.Hashable {}
 extension AtomicTransact.TransactSDKEvent : Swift.Equatable {}
 extension AtomicTransact.TransactSDKEvent : Swift.Hashable {}
 extension AtomicTransact.TransactSDKEvent : Swift.RawRepresentable {}
@@ -518,6 +536,9 @@ extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.RawRepresen
 extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Equatable {}
 extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Hashable {}
 extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.RawRepresentable {}
+extension AtomicTransact.TransactDataResponse.ValidationErrorType : Swift.Equatable {}
+extension AtomicTransact.TransactDataResponse.ValidationErrorType : Swift.Hashable {}
+extension AtomicTransact.TransactDataResponse.ValidationErrorType : Swift.RawRepresentable {}
 extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Equatable {}
 extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Hashable {}
 extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.RawRepresentable {}
