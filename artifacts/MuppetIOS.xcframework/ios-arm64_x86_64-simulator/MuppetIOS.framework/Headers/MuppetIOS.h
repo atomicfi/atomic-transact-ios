@@ -407,6 +407,7 @@ __attribute__((objc_subclassing_restricted))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)hideAnimate:(BOOL)animate completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("hide(animate:completionHandler:)")));
+- (id<PageProtocol> _Nullable)parent __attribute__((swift_name("parent()")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -521,6 +522,7 @@ __attribute__((objc_subclassing_restricted))
  * @note This method has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
 - (BOOL)isHostAllowedUri:(NSString *)uri __attribute__((swift_name("isHostAllowed(uri:)")));
+- (id<PageProtocol> _Nullable)parent __attribute__((swift_name("parent()")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -595,6 +597,11 @@ __attribute__((objc_subclassing_restricted))
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
 @property (readonly) NSString *_jsObjectName __attribute__((swift_name("_jsObjectName")));
+
+/**
+ * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
+*/
+@property id<PageProtocol> _Nullable _parent __attribute__((swift_name("_parent")));
 
 /**
  * @note This property has protected visibility in Kotlin source and is intended only for use by subclasses.
@@ -1152,7 +1159,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  * @note annotations
  *   kotlinx.coroutines.ExperimentalCoroutinesApi
 */
-@property (readonly) id<MIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@property (readonly, getter=parent_) id<MIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
 @end
 
 __attribute__((swift_name("Kotlinx_coroutines_coreDeferred")))
@@ -1520,7 +1527,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
  * @note annotations
  *   kotlinx.coroutines.InternalCoroutinesApi
 */
-@property (readonly) id<MIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@property (readonly, getter=parent_) id<MIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
 @end
 
 
