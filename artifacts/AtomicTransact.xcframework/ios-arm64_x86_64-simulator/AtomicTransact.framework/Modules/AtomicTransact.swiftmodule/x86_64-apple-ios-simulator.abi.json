@@ -20036,17 +20036,13 @@
       },
       {
         "kind": "Import",
-        "name": "QuantumSessionIOS",
-        "printedName": "QuantumSessionIOS",
-        "declKind": "Import",
-        "moduleName": "AtomicTransact"
-      },
-      {
-        "kind": "Import",
         "name": "MuppetIOS",
         "printedName": "MuppetIOS",
         "declKind": "Import",
-        "moduleName": "AtomicTransact"
+        "moduleName": "AtomicTransact",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -21150,7 +21146,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.16.2\""
+      "value": "\"3.16.3\""
     }
   ]
 }
