@@ -11,7 +11,7 @@ let package = Package(
 		// Products define the executables and libraries a package produces, and make them visible to other packages.
 		.library(
 			name: "AtomicTransact",
-			targets: ["AtomicTransact", "QuantumIOS", "MuppetIOS", "QuantumSessionIOS"])
+			targets: ["AtomicTransact", "QuantumIOS", "MuppetIOS"])
 	],
 	targets: [
 		.binaryTarget(
@@ -22,9 +22,6 @@ let package = Package(
 			path: "artifacts/QuantumIOS.xcframework"),
         .binaryTarget(
             name: "MuppetIOS",
-            path: "artifacts/MuppetIOS.xcframework"),
-        .binaryTarget(
-            name: "QuantumSessionIOS",
-            path: "artifacts/QuantumSessionIOS.xcframework")
+            path: "artifacts/MuppetIOS.xcframework")
 	]
 )
