@@ -1462,13 +1462,6 @@
         "moduleName": "QuantumIOS"
       },
       {
-        "kind": "Import",
-        "name": "QuantumSessionIOS",
-        "printedName": "QuantumSessionIOS",
-        "declKind": "Import",
-        "moduleName": "QuantumIOS"
-      },
-      {
         "kind": "TypeDecl",
         "name": "Quantum",
         "printedName": "Quantum",
@@ -1765,7 +1758,8 @@
         "moduleName": "QuantumIOS",
         "declAttributes": [
           "AccessControl",
-          "Custom"
+          "Custom",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -1807,7 +1801,7 @@
       "kind": "StringLiteral",
       "offset": 224,
       "length": 8,
-      "value": "\"3.16.2\""
+      "value": "\"3.16.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/ToolbarWebView.swift",
@@ -1959,21 +1953,21 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 565,
       "length": 26,
       "value": "\"https:\/\/api.atomicfi.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "Dictionary",
-      "offset": 1393,
+      "offset": 1448,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/QuantumIOS\/Quantum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1415,
+      "offset": 1470,
       "length": 4,
       "value": "3000"
     }
