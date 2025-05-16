@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ej8uxOY6dRzOciTHADdg9Wn9UoE=
+		Mmfc1ymoeRRZjKYwOeTv5scTZOc=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		49+u9ia18jnTe7RSFw2lYrNwmD4=
+		pGYZ94TGXxOUsLAFfc8K8/Ke/VM=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ej8uxOY6dRzOciTHADdg9Wn9UoE=
+		Mmfc1ymoeRRZjKYwOeTv5scTZOc=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ueAX04/tdp3N0XFKRAbOZQnJB4k=
+		4F3pAAiKVb1HMPM6w78FG+deyEY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,11 +93,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ej8uxOY6dRzOciTHADdg9Wn9UoE=
+			Mmfc1ymoeRRZjKYwOeTv5scTZOc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LXcpPuMRl3DwPFw8a3a6xLfkcf72lUlimcJ6C5eJnqo=
+			dfdjW8peAPxlBiG+fpvJHNWPx95SSM/rTcMGs2VcpRM=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,22 +137,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			49+u9ia18jnTe7RSFw2lYrNwmD4=
+			pGYZ94TGXxOUsLAFfc8K8/Ke/VM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OvGBjmX00vbxbsJL2z/6tAbkHkzSvlSoZQYE1qrJY+k=
+			ugthMEZz/RrlHNY+FukcpSm6G+4vRuJ+C4RWGsCtrZQ=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ej8uxOY6dRzOciTHADdg9Wn9UoE=
+			Mmfc1ymoeRRZjKYwOeTv5scTZOc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LXcpPuMRl3DwPFw8a3a6xLfkcf72lUlimcJ6C5eJnqo=
+			dfdjW8peAPxlBiG+fpvJHNWPx95SSM/rTcMGs2VcpRM=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ueAX04/tdp3N0XFKRAbOZQnJB4k=
+			4F3pAAiKVb1HMPM6w78FG+deyEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YG37UJAZCSIG7ML5jQemDV4+IUrQe/7oxwHvlbr5mH4=
+			XN/tOXUQqDZ8XnbTII/S4hRSMZXQ1/XHH0NxPX2lrlw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
