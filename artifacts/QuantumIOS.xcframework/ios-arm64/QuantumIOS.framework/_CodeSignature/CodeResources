@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Mmfc1ymoeRRZjKYwOeTv5scTZOc=
+		yvPw7lLmfArnbxrCR3URcC/5PP0=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		cwPLHG+pOyPEUxCdapDPrd8w+pA=
+		4nK+f362pDUrgy2b1tBXWwLkJ/w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mmfc1ymoeRRZjKYwOeTv5scTZOc=
+			yvPw7lLmfArnbxrCR3URcC/5PP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dfdjW8peAPxlBiG+fpvJHNWPx95SSM/rTcMGs2VcpRM=
+			iVWM2eEV43a8EIIa65iv4PjeeYxejVphf/DxvwjTG/A=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -117,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cwPLHG+pOyPEUxCdapDPrd8w+pA=
+			4nK+f362pDUrgy2b1tBXWwLkJ/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			ciWY/g4fzu2IOjdrckFb/6oVRLkpa4rVHp8UIpo/atw=
+			cQEIQdFEhmOOT8pKgcbZyrFDK1XpO9+KiPFsWCzG6yc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
