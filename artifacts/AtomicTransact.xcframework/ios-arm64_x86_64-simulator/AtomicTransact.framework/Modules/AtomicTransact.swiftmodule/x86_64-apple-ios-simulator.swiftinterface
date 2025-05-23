@@ -152,7 +152,7 @@ public struct AtomicConfig : Swift.Codable {
     public enum Step {
       case searchCompany
       case searchPayroll
-      case loginCompany(companyId: Swift.String)
+      case loginCompany(companyId: Swift.String, connectorId: Swift.String? = nil)
       case loginPayroll(connectorId: Swift.String, companyName: Swift.String)
       case addCard
       public var id: Swift.String {
