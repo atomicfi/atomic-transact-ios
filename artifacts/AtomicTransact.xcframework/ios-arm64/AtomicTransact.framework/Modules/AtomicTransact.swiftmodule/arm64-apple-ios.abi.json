@@ -17449,38 +17449,6 @@
           },
           {
             "kind": "Function",
-            "name": "viewDidAppear",
-            "printedName": "viewDidAppear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AtomicTransact@objc(cs)BaseTransactViewController(im)viewDidAppear:",
-            "mangledName": "$s14AtomicTransact04BaseB14ViewControllerC13viewDidAppearyySbF",
-            "moduleName": "AtomicTransact",
-            "overriding": true,
-            "objc_name": "viewDidAppear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "webView",
             "printedName": "webView(_:didFailProvisionalNavigation:withError:)",
             "children": [
@@ -20050,16 +20018,6 @@
       },
       {
         "kind": "Import",
-        "name": "MuppetIOS",
-        "printedName": "MuppetIOS",
-        "declKind": "Import",
-        "moduleName": "AtomicTransact",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -21388,14 +21346,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "IntegerLiteral",
-      "offset": 6081,
+      "offset": 6078,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/Atomic.swift",
       "kind": "StringLiteral",
-      "offset": 6386,
+      "offset": 6374,
       "length": 7,
       "value": "\"test-\""
     },
@@ -21423,231 +21381,231 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 488,
+      "offset": 490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1750,
+      "offset": 1826,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1803,
+      "offset": 1879,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1894,
+      "offset": 1970,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2025,
+      "offset": 2101,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2080,
+      "offset": 2156,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2681,
+      "offset": 2455,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3461,
+      "offset": 3235,
       "length": 12,
       "value": "\"initialize\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3503,
+      "offset": 3277,
       "length": 12,
       "value": "\"initialize\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3640,
+      "offset": 3414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3693,
+      "offset": 3467,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3703,
+      "offset": 3477,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3953,
+      "offset": 3727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4007,
+      "offset": 3781,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4033,
+      "offset": 3807,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4269,
+      "offset": 4043,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4574,
+      "offset": 4356,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4886,
+      "offset": 4668,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4962,
+      "offset": 4744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5291,
+      "offset": 5081,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "Dictionary",
-      "offset": 5796,
+      "offset": 5586,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5818,
+      "offset": 5608,
       "length": 33,
       "value": "\"Finish. Return: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5850,
+      "offset": 5640,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6013,
+      "offset": 5803,
       "length": 26,
       "value": "\"DATA REQUEST: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6038,
+      "offset": 5828,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "Dictionary",
-      "offset": 6204,
+      "offset": 5994,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6226,
+      "offset": 6016,
       "length": 32,
       "value": "\"Close. Return: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6257,
+      "offset": 6047,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6359,
+      "offset": 6149,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6407,
+      "offset": 6197,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6456,
+      "offset": 6246,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6825,
+      "offset": 6615,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/BaseTransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6949,
+      "offset": 6739,
       "length": 4,
       "value": "true"
     },
@@ -21990,777 +21948,735 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1231,
+      "offset": 1185,
       "length": 24,
       "value": "\"TransactViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2303,
       "length": 62,
       "value": "\"window.SUPPORTS_NATIVE_AUTHENTICATION = true\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2410,
       "length": 22,
       "value": "\"Great news \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2431,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2506,
+      "offset": 2615,
       "length": 26,
       "value": "\"sdk-did-enter-background\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 2853,
       "length": 26,
       "value": "\"sdk-did-enter-foreground\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3252,
-      "length": 45,
-      "value": "\"https:\/\/linear.app\/atomicbuilt\/issue\/TA-134\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3379,
+      "offset": 3423,
       "length": 24,
       "value": "\"Quantum token verified\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3438,
+      "offset": 3482,
       "length": 31,
       "value": "\"Quantum Token Error: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3468,
+      "offset": 3512,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4060,
+      "offset": 4120,
       "length": 30,
       "value": "\"Atomic Transact Sync Process\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4152,
+      "offset": 4212,
       "length": 44,
       "value": "\"Background sync process needs to end early\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4292,
+      "offset": 4352,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4903,
+      "offset": 4963,
       "length": 32,
       "value": "\"com.atomicfi.AtomicTransactiOS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4943,
+      "offset": 5003,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5082,
+      "offset": 5142,
       "length": 4,
       "value": "\"{}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "Array",
-      "offset": 5199,
+      "offset": 5259,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5304,
+      "offset": 5364,
       "length": 34,
       "value": "\"Dispatch Transact Event: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5337,
+      "offset": 5397,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5392,
+      "offset": 5452,
       "length": 159,
       "value": "\"var event = new CustomEvent('sdk-native-event', {\n\tdetail: { name: \"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5477,
+      "offset": 5537,
       "length": 21,
       "value": "\"\", payload: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5496,
+      "offset": 5556,
       "length": 1,
       "value": "\" }\n});\ndocument.body.dispatchEvent(event);\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5910,
+      "offset": 5970,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5938,
+      "offset": 5998,
       "length": 14,
       "value": "\"internal-log\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5992,
+      "offset": 6052,
       "length": 5,
       "value": "\"log\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6047,
+      "offset": 6107,
       "length": 9,
       "value": "\"sdk-log\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6070,
+      "offset": 6130,
       "length": 5,
       "value": "\"log\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6198,
+      "offset": 6258,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6226,
+      "offset": 6286,
       "length": 18,
       "value": "\"internal-message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6288,
+      "offset": 6348,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6325,
+      "offset": 6385,
       "length": 39,
       "value": "\"Received message event \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6363,
+      "offset": 6423,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6412,
+      "offset": 6472,
       "length": 13,
       "value": "\"sdk-message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6439,
+      "offset": 6499,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7105,
+      "offset": 7165,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7151,
+      "offset": 7211,
       "length": 24,
       "value": "\"check-vpn-connectivity\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7232,
+      "offset": 7292,
       "length": 13,
       "value": "\"storage-put\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7300,
+      "offset": 7360,
       "length": 13,
       "value": "\"storage-get\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7370,
+      "offset": 7430,
       "length": 16,
       "value": "\"haptic-success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7414,
+      "offset": 7474,
       "length": 14,
       "value": "\"haptic-error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7454,
+      "offset": 7514,
       "length": 12,
       "value": "\"haptic-tap\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7514,
+      "offset": 7574,
       "length": 18,
       "value": "\"haptic-selection\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7562,
-      "length": 27,
-      "value": "\"show-assistant-title-text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 7648,
-      "length": 27,
-      "value": "\"hide-assistant-title-text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 7734,
+      "offset": 7622,
       "length": 10,
       "value": "\"add-card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7764,
+      "offset": 7652,
       "length": 12,
       "value": "\"card-added\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7801,
+      "offset": 7689,
       "length": 24,
       "value": "\"create-background-task\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7856,
+      "offset": 7744,
       "length": 21,
       "value": "\"end-background-task\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7907,
+      "offset": 7795,
       "length": 21,
       "value": "\"cleanup-application\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7959,
+      "offset": 7847,
       "length": 11,
       "value": "\"hide-view\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7991,
+      "offset": 7879,
       "length": 11,
       "value": "\"show-view\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8500,
+      "offset": 8388,
       "length": 23,
       "value": "\"sdk-card-added-by-sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8825,
+      "offset": 8713,
       "length": 8,
       "value": "\"vpnURL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8966,
+      "offset": 8854,
       "length": 23,
       "value": "\"com.atomicfi.transact\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9023,
+      "offset": 8911,
       "length": 18,
       "value": "\"vpn-connectivity\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9068,
+      "offset": 8956,
       "length": 45,
       "value": "\"--VPN-- GO BABY \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9112,
+      "offset": 9000,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9157,
+      "offset": 9045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9462,
+      "offset": 9350,
       "length": 41,
       "value": "\"I have already notified of connectivity\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9592,
+      "offset": 9480,
       "length": 22,
       "value": "\"--VPN-- VPN RESPONSE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9649,
+      "offset": 9537,
       "length": 59,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9707,
+      "offset": 9595,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9743,
+      "offset": 9631,
       "length": 54,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9796,
+      "offset": 9684,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9873,
+      "offset": 9761,
       "length": 21,
       "value": "\"--VPN-- VPN ERROR 1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9933,
+      "offset": 9821,
       "length": 54,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9986,
+      "offset": 9874,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10038,
+      "offset": 9926,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10101,
+      "offset": 9989,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10257,
+      "offset": 10145,
       "length": 54,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10310,
+      "offset": 10198,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10350,
+      "offset": 10238,
       "length": 59,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10408,
+      "offset": 10296,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10520,
+      "offset": 10408,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10540,
+      "offset": 10428,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10600,
+      "offset": 10488,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10667,
+      "offset": 10555,
       "length": 17,
       "value": "\"sdk-vpn-success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10796,
+      "offset": 10684,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10863,
+      "offset": 10751,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10994,
+      "offset": 10882,
       "length": 21,
       "value": "\"--VPN-- VPN ERROR 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11054,
+      "offset": 10942,
       "length": 59,
       "value": "\"--VPN-- \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11112,
+      "offset": 11000,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11164,
+      "offset": 11052,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11227,
+      "offset": 11115,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11515,
+      "offset": 11403,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11580,
+      "offset": 11468,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11632,
+      "offset": 11520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11670,
+      "offset": 11558,
       "length": 21,
       "value": "\"--VPN-- VPN TIMEOUT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11748,
+      "offset": 11636,
       "length": 17,
       "value": "\"sdk-vpn-failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11910,
+      "offset": 11798,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11953,
+      "offset": 11841,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12128,
+      "offset": 12016,
       "length": 44,
       "value": "\"Storing local property \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12160,
+      "offset": 12048,
       "length": 3,
       "value": "\" for \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12171,
+      "offset": 12059,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12273,
+      "offset": 12161,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12466,
+      "offset": 12354,
       "length": 45,
       "value": "\"Retrieved local property \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12499,
+      "offset": 12387,
       "length": 3,
       "value": "\" for \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12510,
+      "offset": 12398,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12545,
+      "offset": 12433,
       "length": 22,
       "value": "\"sdk-storage-response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12581,
+      "offset": 12469,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12593,
+      "offset": 12481,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12908,
+      "offset": 12796,
       "length": 8,
       "value": "\"weight\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12948,
+      "offset": 12836,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13033,
+      "offset": 12921,
       "length": 8,
       "value": "\"medium\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13120,
+      "offset": 13008,
       "length": 7,
       "value": "\"heavy\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 13392,
-      "length": 12,
-      "value": "\"pageHandle\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 13453,
-      "length": 6,
-      "value": "\"text\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 13820,
-      "length": 12,
-      "value": "\"pageHandle\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14807,
+      "offset": 13900,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14937,
+      "offset": 14030,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Views\/TransactViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15030,
+      "offset": 14123,
       "length": 24,
       "value": "\"sdk-card-added-by-user\""
     },
@@ -22769,7 +22685,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.17.0\""
+      "value": "\"3.18.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactEnviroment.swift",

@@ -5,7 +5,6 @@
 @_exported import AtomicTransact
 import Combine
 import Foundation
-import MuppetIOS
 import QuantumIOS
 import SafariServices
 import Security
@@ -420,7 +419,6 @@ public enum Atomic {
   @_Concurrency.MainActor(unsafe) public var onLaunch: (() -> ())?
   @_Concurrency.MainActor(unsafe) public var onError: ((AtomicTransact.TransactError) -> ())?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
