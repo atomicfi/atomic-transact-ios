@@ -1,4 +1,8 @@
-framework module QuantumIOS {
-  header "QuantumIOS-Swift.h"
-  requires objc
+framework module "QuantumIOS" {
+    umbrella header "QuantumIOS.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
 }
