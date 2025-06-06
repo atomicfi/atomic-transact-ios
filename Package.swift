@@ -20,8 +20,8 @@ let package = Package(
 		.binaryTarget(
 			name: "QuantumIOS",
 			path: "artifacts/QuantumIOS.xcframework"),
-        .binaryTarget(
-            name: "MuppetIOS",
-            path: "artifacts/MuppetIOS.xcframework")
+		.binaryTarget(
+			name: "MuppetIOS",
+			path: "artifacts/MuppetIOS.xcframework")
 	]
 )

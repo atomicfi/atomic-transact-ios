@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AtomicTransact-Swift.h</key>
 		<data>
-		eWnWE3Nd4ULSR3JMYAKx6UZ3tnw=
+		qU8Lm0RYhsvwn4eyAvMdQDzgyOI=
 		</data>
 		<key>Headers/AtomicTransact.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vcDpAbHT0nnsiXyH5SPpn4QJPPQ=
+		ygTkwf4KU3JTFagGfBz7Ls1wvNU=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1hB1QaAJslHnH3UqP3d+uZO3hf8=
+		ygxJgKkq1DOPq3EIFT1Lkbah3BE=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		YvzL297ywIvIGCbP9QjbIKVHF+8=
+		rtUPVL+/Fkh5qMKdqFnCSUC2Cfo=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		YvzL297ywIvIGCbP9QjbIKVHF+8=
+		rtUPVL+/Fkh5qMKdqFnCSUC2Cfo=
 		</data>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Pp+LTMG6fIXTgZVVCndUzDQp9Cg=
+		j8n785qGM06bzlf6lV4TFlmjunM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gGWboxpiVhiEkNOA8Pli5y6I/TkblsEtmtLvAUS4//M=
+			Teb4pyPE1VtaZLpneNzirvvboJpxtJYflkG4XMDkPok=
 			</data>
 		</dict>
 		<key>Headers/AtomicTransact.h</key>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qeGo0ZRKsMiLA85mQmXzlEstopAE9eV+NIVC4g0i0Ek=
+			3RmY1fQyJnwakjkTF+wIbTdL7hdVM+6cND5OTFWN/YM=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxVrfLGrJ07RRIw6CnmD9R2vN8u2fNADSymmo6yd/zs=
+			7Q3XRIbmF2LlNcgp2KvVI0FeUtGxgRvdM2RYVuto/gk=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxVrfLGrJ07RRIw6CnmD9R2vN8u2fNADSymmo6yd/zs=
+			7Q3XRIbmF2LlNcgp2KvVI0FeUtGxgRvdM2RYVuto/gk=
 			</data>
 		</dict>
 		<key>Modules/AtomicTransact.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lF54q9UXEf6H25qr7/Ojs8wT/9H1/Sww7qw8hvWj4B4=
+			x0IL8AZOUhkbbJL134Dkn/XtdLk2fjrFW9NJtwIpn6E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
