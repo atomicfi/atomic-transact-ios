@@ -19,9 +19,6 @@ let package = Package(
 			path: "artifacts/AtomicTransact.xcframework"),
 		.binaryTarget(
 			name: "QuantumIOS",
-			path: "artifacts/QuantumIOS.xcframework"),
-		.binaryTarget(
-			name: "MuppetIOS",
-			path: "artifacts/MuppetIOS.xcframework")
+			path: "artifacts/QuantumIOS.xcframework")
 	]
 )
