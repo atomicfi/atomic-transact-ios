@@ -16,12 +16,10 @@ jobs:
         run: |
           tar -czf AtomicTransact.xcframework.tar.gz artifacts/AtomicTransact.xcframework
           tar -czf QuantumIOS.xcframework.tar.gz artifacts/QuantumIOS.xcframework
-          tar -czf MuppetIOS.xcframework.tar.gz artifacts/MuppetIOS.xcframework
       - name: Create Release
         uses: mikepenz/action-gh-release@main
         with:
           generate_release_notes: true
           files: |
             AtomicTransact.xcframework.tar.gz
-            MuppetIOS.xcframework.tar.gz
             QuantumIOS.xcframework.tar.gz
