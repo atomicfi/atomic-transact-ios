@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class QIOSCoreEmitterEvent<T>, QIOSCoreResponse, QIOSKotlinArray<T>, QIOSKotlinCancellationException, QIOSKotlinEnum<E>, QIOSKotlinEnumCompanion, QIOSKotlinException, QIOSKotlinIllegalStateException, QIOSKotlinNothing, QIOSKotlinRuntimeException, QIOSKotlinThrowable, QIOSKotlinUnit, QIOSKotlinx_serialization_coreSerialKind, QIOSKotlinx_serialization_coreSerializersModule, QIOSKotlinx_serialization_jsonJsonElement, QIOSKotlinx_serialization_jsonJsonElementCompanion, QIOSKtor_httpCookie, QIOSKtor_httpCookieCompanion, QIOSKtor_httpCookieEncoding, QIOSKtor_utilsGMTDate, QIOSKtor_utilsGMTDateCompanion, QIOSKtor_utilsMonth, QIOSKtor_utilsMonthCompanion, QIOSKtor_utilsWeekDay, QIOSKtor_utilsWeekDayCompanion, QIOSQuantumCommon<T>, QIOSQuantumSessionCompanion, UIViewController, WKWebView, WKWebViewConfiguration;
+@class QIOSCoreEmitterEvent<T>, QIOSCoreResponse, QIOSKotlinArray<T>, QIOSKotlinByteArray, QIOSKotlinByteIterator, QIOSKotlinCancellationException, QIOSKotlinEnum<E>, QIOSKotlinEnumCompanion, QIOSKotlinException, QIOSKotlinIllegalStateException, QIOSKotlinNothing, QIOSKotlinRuntimeException, QIOSKotlinThrowable, QIOSKotlinUnit, QIOSKotlinx_serialization_coreSerialKind, QIOSKotlinx_serialization_coreSerializersModule, QIOSKotlinx_serialization_jsonJsonElement, QIOSKotlinx_serialization_jsonJsonElementCompanion, QIOSKtor_httpCookie, QIOSKtor_httpCookieCompanion, QIOSKtor_httpCookieEncoding, QIOSKtor_utilsGMTDate, QIOSKtor_utilsGMTDateCompanion, QIOSKtor_utilsMonth, QIOSKtor_utilsMonthCompanion, QIOSKtor_utilsWeekDay, QIOSKtor_utilsWeekDayCompanion, QIOSQuantumCommon<T>, QIOSQuantumSessionCompanion, UIViewController, WKWebView, WKWebViewConfiguration;
 
-@protocol BrowserFactoryProtocol, BrowserProtocol, EmitterProtocol, MuppetProtocol, PageFactoryBaseProtocol, PageProtocol, QIOSKotlinAnnotation, QIOSKotlinComparable, QIOSKotlinCoroutineContext, QIOSKotlinCoroutineContextElement, QIOSKotlinCoroutineContextKey, QIOSKotlinFunction, QIOSKotlinIterator, QIOSKotlinKAnnotatedElement, QIOSKotlinKClass, QIOSKotlinKClassifier, QIOSKotlinKDeclarationContainer, QIOSKotlinSequence, QIOSKotlinSuspendFunction1, QIOSKotlinx_coroutines_coreChildHandle, QIOSKotlinx_coroutines_coreChildJob, QIOSKotlinx_coroutines_coreCoroutineScope, QIOSKotlinx_coroutines_coreDeferred, QIOSKotlinx_coroutines_coreDisposableHandle, QIOSKotlinx_coroutines_coreJob, QIOSKotlinx_coroutines_coreParentJob, QIOSKotlinx_coroutines_coreSelectClause, QIOSKotlinx_coroutines_coreSelectClause0, QIOSKotlinx_coroutines_coreSelectClause1, QIOSKotlinx_coroutines_coreSelectInstance, QIOSKotlinx_serialization_coreCompositeDecoder, QIOSKotlinx_serialization_coreCompositeEncoder, QIOSKotlinx_serialization_coreDecoder, QIOSKotlinx_serialization_coreDeserializationStrategy, QIOSKotlinx_serialization_coreEncoder, QIOSKotlinx_serialization_coreKSerializer, QIOSKotlinx_serialization_coreSerialDescriptor, QIOSKotlinx_serialization_coreSerializationStrategy, QIOSKotlinx_serialization_coreSerializersModuleCollector, QIOSKtor_ioJvmSerializable, QIOSQuantumInterface;
+@protocol BrowserFactoryProtocol, BrowserProtocol, EmitterProtocol, MuppetProtocol, PageFactoryBaseProtocol, PageProtocol, QIOSKotlinAnnotation, QIOSKotlinComparable, QIOSKotlinCoroutineContext, QIOSKotlinCoroutineContextElement, QIOSKotlinCoroutineContextKey, QIOSKotlinFunction, QIOSKotlinIterator, QIOSKotlinKAnnotatedElement, QIOSKotlinKClass, QIOSKotlinKClassifier, QIOSKotlinKDeclarationContainer, QIOSKotlinSequence, QIOSKotlinSuspendFunction1, QIOSKotlinx_coroutines_coreChildHandle, QIOSKotlinx_coroutines_coreChildJob, QIOSKotlinx_coroutines_coreCoroutineScope, QIOSKotlinx_coroutines_coreDeferred, QIOSKotlinx_coroutines_coreDisposableHandle, QIOSKotlinx_coroutines_coreFlow, QIOSKotlinx_coroutines_coreFlowCollector, QIOSKotlinx_coroutines_coreJob, QIOSKotlinx_coroutines_coreParentJob, QIOSKotlinx_coroutines_coreSelectClause, QIOSKotlinx_coroutines_coreSelectClause0, QIOSKotlinx_coroutines_coreSelectClause1, QIOSKotlinx_coroutines_coreSelectInstance, QIOSKotlinx_serialization_coreCompositeDecoder, QIOSKotlinx_serialization_coreCompositeEncoder, QIOSKotlinx_serialization_coreDecoder, QIOSKotlinx_serialization_coreDeserializationStrategy, QIOSKotlinx_serialization_coreEncoder, QIOSKotlinx_serialization_coreKSerializer, QIOSKotlinx_serialization_coreSerialDescriptor, QIOSKotlinx_serialization_coreSerializationStrategy, QIOSKotlinx_serialization_coreSerializersModuleCollector, QIOSKtor_ioJvmSerializable, QIOSQuantumInterface;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -321,6 +321,7 @@ __attribute__((swift_name("QuantumSessionKt")))
 - (id<QIOSKotlinSuspendFunction1>)onType:(NSString *)type removable:(BOOL)removable handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:removable:handler_:)")));
 - (id<QIOSKotlinSuspendFunction1>)onceType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type handler:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("once(type:handler:)")));
 - (id<QIOSKotlinSuspendFunction1>)onceType:(NSString *)type handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("once(type:handler_:)")));
+@property (readonly) id<QIOSKotlinx_coroutines_coreFlow> events __attribute__((swift_name("events")));
 @end
 
 @protocol BrowserProtocol <EmitterProtocol>
@@ -446,7 +447,7 @@ __attribute__((swift_name("KotlinCancellationException")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)requestMethod:(NSString *)method url:(NSString *)url data:(NSString * _Nullable)data headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers followRedirects:(BOOL)followRedirects completionHandler:(void (^)(QIOSCoreResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("request(method:url:data:headers:followRedirects:completionHandler:)")));
+- (void)requestMethod:(NSString *)method url:(NSString *)url data:(NSString * _Nullable)data headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers followRedirects:(BOOL)followRedirects stream:(id<QIOSKotlinx_coroutines_coreFlow> _Nullable)stream completionHandler:(void (^)(QIOSCoreResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("request(method:url:data:headers:followRedirects:stream:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -550,6 +551,17 @@ __attribute__((swift_name("KotlinSuspendFunction1")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)invokeP1:(id _Nullable)p1 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:completionHandler:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
+@protocol QIOSKotlinx_coroutines_coreFlow
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)collectCollector:(id<QIOSKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
 @end
 
 
@@ -674,14 +686,26 @@ __attribute__((swift_name("Kotlinx_coroutines_coreDeferred")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CoreResponse")))
 @interface QIOSCoreResponse : QIOSBase
-- (instancetype)initWithStatus:(int32_t)status headers:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable)headers data:(NSString * _Nullable)data __attribute__((swift_name("init(status:headers:data:)"))) __attribute__((objc_designated_initializer));
-- (QIOSCoreResponse *)doCopyStatus:(int32_t)status headers:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable)headers data:(NSString * _Nullable)data __attribute__((swift_name("doCopy(status:headers:data:)")));
+- (instancetype)initWithStatus:(int32_t)status headers:(NSDictionary<NSString *, NSArray<NSString *> *> *)headers body:(id<QIOSKotlinx_coroutines_coreFlow>)body __attribute__((swift_name("init(status:headers:body:)"))) __attribute__((objc_designated_initializer));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)bytesWithCompletionHandler:(void (^)(QIOSKotlinByteArray * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("bytes(completionHandler:)")));
+- (QIOSCoreResponse *)doCopyStatus:(int32_t)status headers:(NSDictionary<NSString *, NSArray<NSString *> *> *)headers body:(id<QIOSKotlinx_coroutines_coreFlow>)body __attribute__((swift_name("doCopy(status:headers:body:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSDictionary<NSString *, QIOSKotlinx_serialization_jsonJsonElement *> *)jsonObject __attribute__((swift_name("jsonObject()")));
+- (NSDictionary<NSString *, QIOSKotlinx_serialization_jsonJsonElement *> *)header __attribute__((swift_name("header()")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)jsonObjectWithCompletionHandler:(void (^)(NSDictionary<NSString *, QIOSKotlinx_serialization_jsonJsonElement *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("jsonObject(completionHandler:)")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable data __attribute__((swift_name("data")));
-@property (readonly) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable headers __attribute__((swift_name("headers")));
+@property (readonly) id<QIOSKotlinx_coroutines_coreFlow> body __attribute__((swift_name("body")));
+@property (readonly) NSDictionary<NSString *, NSArray<NSString *> *> *headers __attribute__((swift_name("headers")));
 @property (readonly) int32_t status __attribute__((swift_name("status")));
 @end
 
@@ -699,6 +723,17 @@ __attribute__((swift_name("KotlinEnumCompanion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) QIOSKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
+@protocol QIOSKotlinx_coroutines_coreFlowCollector
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
 @end
 
 __attribute__((swift_name("KotlinCoroutineContextKey")))
@@ -831,6 +866,19 @@ __attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
 @required
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinByteArray")))
+@interface QIOSKotlinByteArray : QIOSBase
++ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
++ (instancetype)arrayWithSize:(int32_t)size init:(QIOSByte *(^)(QIOSInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (int8_t)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (QIOSKotlinByteIterator *)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
 
 /**
  * @note annotations
@@ -952,6 +1000,14 @@ __attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
  *   kotlinx.coroutines.InternalCoroutinesApi
 */
 - (QIOSKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
+@end
+
+__attribute__((swift_name("KotlinByteIterator")))
+@interface QIOSKotlinByteIterator : QIOSBase <QIOSKotlinIterator>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (QIOSByte *)next __attribute__((swift_name("next()")));
+- (int8_t)nextByte __attribute__((swift_name("nextByte()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
