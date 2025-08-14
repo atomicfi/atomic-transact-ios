@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AtomicTransact
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AtomicTransact
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 @_exported import AtomicTransact
 import Combine
 import Foundation
@@ -18,7 +18,7 @@ import _SwiftConcurrencyShims
 import os
 @available(iOS 14.0, *)
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func atomicTransact(isPresented: SwiftUICore.Binding<Swift.Bool>, config: @escaping () -> (AtomicTransact.AtomicConfig), environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func atomicTransact(isPresented: SwiftUICore.Binding<Swift.Bool>, config: @escaping () -> AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUICore.View
   
 }
 public struct TransactDataRequest : Swift.Sendable {
@@ -395,8 +395,8 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> (AtomicTransact.TransactDataResponse?))? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: @escaping ((AtomicTransact.TransactDataRequest) -> ()), onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: @escaping (AtomicTransact.TransactDataRequest) -> (), onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
   @available(iOS 13.0, *)
   public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
   @available(iOS 13.0, *)
@@ -410,7 +410,7 @@ public enum Atomic {
   @_Concurrency.MainActor @preconcurrency public var config: AtomicTransact.AtomicConfig!
   @_Concurrency.MainActor @preconcurrency public var environment: AtomicTransact.TransactEnvironment!
   @_Concurrency.MainActor @preconcurrency public var onInteraction: ((AtomicTransact.TransactInteraction) -> ())?
-  @_Concurrency.MainActor @preconcurrency public var onDataRequest: ((AtomicTransact.TransactDataRequest) async -> (AtomicTransact.TransactDataResponse?))?
+  @_Concurrency.MainActor @preconcurrency public var onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)?
   @_Concurrency.MainActor @preconcurrency public var onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())?
   @_Concurrency.MainActor @preconcurrency public var onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())?
   @_Concurrency.MainActor @preconcurrency public var onCompletion: ((AtomicTransact.TransactResponse) -> ())?

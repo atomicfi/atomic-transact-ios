@@ -19,7 +19,7 @@ jobs:
       - name: Create Release
         uses: mikepenz/action-gh-release@main
         with:
-          body_path: ${{ github.workspace }}/.github/releases/release-body.txt
+          generate_release_notes: true
           files: |
             AtomicTransact.xcframework.tar.gz
             QuantumIOS.xcframework.tar.gz
