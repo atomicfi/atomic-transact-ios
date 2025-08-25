@@ -1,1 +1,21 @@
+## 2025-08-25
 
+## Changes
+
+- Updates `QuantumIOS` to 0.0.7 
+
+### Products
+
+- Deposit
+- Switch
+- Manage
+
+### Requirements
+
+| Name  | Version |
+| ----- | ------- |
+| Xcode | >= 16   |
+| iOS   | >= 13   |
+
+
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.20.5...3.20.6
