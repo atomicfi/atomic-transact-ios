@@ -313,14 +313,11 @@ __attribute__((swift_name("QuantumSessionKt")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)emitType:(NSString *)type data:(id _Nullable)data completionHandler_:(void (^)(QIOSCoreEmitterEvent<id> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("emit(type:data:completionHandler_:)")));
-- (void)offType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type handler:(id<QIOSKotlinSuspendFunction1> _Nullable)handler __attribute__((swift_name("off(type:handler:)")));
-- (void)offType:(NSString *)type handler_:(id<QIOSKotlinSuspendFunction1> _Nullable)handler __attribute__((swift_name("off(type:handler_:)")));
-- (id<QIOSKotlinSuspendFunction1>)onType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type handler:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:handler:)")));
-- (id<QIOSKotlinSuspendFunction1>)onType:(NSString *)type handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:handler_:)")));
-- (id<QIOSKotlinSuspendFunction1>)onType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type removable:(BOOL)removable handler:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:removable:handler:)")));
-- (id<QIOSKotlinSuspendFunction1>)onType:(NSString *)type removable:(BOOL)removable handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:removable:handler_:)")));
-- (id<QIOSKotlinSuspendFunction1>)onceType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type handler:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("once(type:handler:)")));
-- (id<QIOSKotlinSuspendFunction1>)onceType:(NSString *)type handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("once(type:handler_:)")));
+- (void)offJob:(id<QIOSKotlinx_coroutines_coreJob>)job __attribute__((swift_name("off(job:)")));
+- (id<QIOSKotlinx_coroutines_coreJob>)onType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type handler:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:handler:)")));
+- (id<QIOSKotlinx_coroutines_coreJob>)onType:(NSString *)type handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("on(type:handler_:)")));
+- (id<QIOSKotlinx_coroutines_coreJob>)onceType:(QIOSKotlinEnum<QIOSKotlinEnum *> *)type handler:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("once(type:handler:)")));
+- (id<QIOSKotlinx_coroutines_coreJob>)onceType:(NSString *)type handler_:(id<QIOSKotlinSuspendFunction1>)handler __attribute__((swift_name("once(type:handler_:)")));
 @property (readonly) id<QIOSKotlinx_coroutines_coreFlow> events __attribute__((swift_name("events")));
 @end
 
@@ -537,33 +534,6 @@ __attribute__((swift_name("KotlinEnum")))
 @property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
 @end
 
-__attribute__((swift_name("KotlinFunction")))
-@protocol QIOSKotlinFunction
-@required
-@end
-
-__attribute__((swift_name("KotlinSuspendFunction1")))
-@protocol QIOSKotlinSuspendFunction1 <QIOSKotlinFunction>
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)invokeP1:(id _Nullable)p1 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:completionHandler:)")));
-@end
-
-__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
-@protocol QIOSKotlinx_coroutines_coreFlow
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)collectCollector:(id<QIOSKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
-@end
-
 
 /**
  * @note annotations
@@ -576,37 +546,6 @@ __attribute__((swift_name("KotlinCoroutineContext")))
 - (id<QIOSKotlinCoroutineContextElement> _Nullable)getKey:(id<QIOSKotlinCoroutineContextKey>)key __attribute__((swift_name("get(key:)")));
 - (id<QIOSKotlinCoroutineContext>)minusKeyKey:(id<QIOSKotlinCoroutineContextKey>)key __attribute__((swift_name("minusKey(key:)")));
 - (id<QIOSKotlinCoroutineContext>)plusContext:(id<QIOSKotlinCoroutineContext>)context __attribute__((swift_name("plus(context:)")));
-@end
-
-__attribute__((swift_name("Ktor_ioJvmSerializable")))
-@protocol QIOSKtor_ioJvmSerializable
-@required
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_httpCookie")))
-@interface QIOSKtor_httpCookie : QIOSBase <QIOSKtor_ioJvmSerializable>
-- (instancetype)initWithName:(NSString *)name value:(NSString *)value encoding:(QIOSKtor_httpCookieEncoding *)encoding maxAge:(QIOSInt * _Nullable)maxAge expires:(QIOSKtor_utilsGMTDate * _Nullable)expires domain:(NSString * _Nullable)domain path:(NSString * _Nullable)path secure:(BOOL)secure httpOnly:(BOOL)httpOnly extensions:(NSDictionary<NSString *, id> *)extensions __attribute__((swift_name("init(name:value:encoding:maxAge:expires:domain:path:secure:httpOnly:extensions:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) QIOSKtor_httpCookieCompanion *companion __attribute__((swift_name("companion")));
-- (QIOSKtor_httpCookie *)doCopyName:(NSString *)name value:(NSString *)value encoding:(QIOSKtor_httpCookieEncoding *)encoding maxAge:(QIOSInt * _Nullable)maxAge expires:(QIOSKtor_utilsGMTDate * _Nullable)expires domain:(NSString * _Nullable)domain path:(NSString * _Nullable)path secure:(BOOL)secure httpOnly:(BOOL)httpOnly extensions:(NSDictionary<NSString *, id> *)extensions __attribute__((swift_name("doCopy(name:value:encoding:maxAge:expires:domain:path:secure:httpOnly:extensions:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable domain __attribute__((swift_name("domain")));
-@property (readonly) QIOSKtor_httpCookieEncoding *encoding __attribute__((swift_name("encoding")));
-@property (readonly) QIOSKtor_utilsGMTDate * _Nullable expires __attribute__((swift_name("expires")));
-@property (readonly) NSDictionary<NSString *, id> *extensions __attribute__((swift_name("extensions")));
-@property (readonly) BOOL httpOnly __attribute__((swift_name("httpOnly")));
-@property (readonly) QIOSInt * _Nullable maxAge __attribute__((swift_name("maxAge")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) NSString * _Nullable path __attribute__((swift_name("path")));
-@property (readonly) BOOL secure __attribute__((swift_name("secure")));
-@property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
 
 __attribute__((swift_name("KotlinCoroutineContextElement")))
@@ -657,6 +596,64 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  *   kotlinx.coroutines.ExperimentalCoroutinesApi
 */
 @property (readonly, getter=parent_) id<QIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@end
+
+__attribute__((swift_name("KotlinFunction")))
+@protocol QIOSKotlinFunction
+@required
+@end
+
+__attribute__((swift_name("KotlinSuspendFunction1")))
+@protocol QIOSKotlinSuspendFunction1 <QIOSKotlinFunction>
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeP1:(id _Nullable)p1 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:completionHandler:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
+@protocol QIOSKotlinx_coroutines_coreFlow
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)collectCollector:(id<QIOSKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
+@end
+
+__attribute__((swift_name("Ktor_ioJvmSerializable")))
+@protocol QIOSKtor_ioJvmSerializable
+@required
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpCookie")))
+@interface QIOSKtor_httpCookie : QIOSBase <QIOSKtor_ioJvmSerializable>
+- (instancetype)initWithName:(NSString *)name value:(NSString *)value encoding:(QIOSKtor_httpCookieEncoding *)encoding maxAge:(QIOSInt * _Nullable)maxAge expires:(QIOSKtor_utilsGMTDate * _Nullable)expires domain:(NSString * _Nullable)domain path:(NSString * _Nullable)path secure:(BOOL)secure httpOnly:(BOOL)httpOnly extensions:(NSDictionary<NSString *, id> *)extensions __attribute__((swift_name("init(name:value:encoding:maxAge:expires:domain:path:secure:httpOnly:extensions:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) QIOSKtor_httpCookieCompanion *companion __attribute__((swift_name("companion")));
+- (QIOSKtor_httpCookie *)doCopyName:(NSString *)name value:(NSString *)value encoding:(QIOSKtor_httpCookieEncoding *)encoding maxAge:(QIOSInt * _Nullable)maxAge expires:(QIOSKtor_utilsGMTDate * _Nullable)expires domain:(NSString * _Nullable)domain path:(NSString * _Nullable)path secure:(BOOL)secure httpOnly:(BOOL)httpOnly extensions:(NSDictionary<NSString *, id> *)extensions __attribute__((swift_name("doCopy(name:value:encoding:maxAge:expires:domain:path:secure:httpOnly:extensions:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable domain __attribute__((swift_name("domain")));
+@property (readonly) QIOSKtor_httpCookieEncoding *encoding __attribute__((swift_name("encoding")));
+@property (readonly) QIOSKtor_utilsGMTDate * _Nullable expires __attribute__((swift_name("expires")));
+@property (readonly) NSDictionary<NSString *, id> *extensions __attribute__((swift_name("extensions")));
+@property (readonly) BOOL httpOnly __attribute__((swift_name("httpOnly")));
+@property (readonly) QIOSInt * _Nullable maxAge __attribute__((swift_name("maxAge")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) NSString * _Nullable path __attribute__((swift_name("path")));
+@property (readonly) BOOL secure __attribute__((swift_name("secure")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
 
 __attribute__((swift_name("Kotlinx_coroutines_coreDeferred")))
@@ -725,6 +722,80 @@ __attribute__((swift_name("KotlinEnumCompanion")))
 @property (class, readonly, getter=shared) QIOSKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
 @end
 
+__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
+@protocol QIOSKotlinx_coroutines_coreDisposableHandle
+@required
+- (void)dispose __attribute__((swift_name("dispose()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
+@protocol QIOSKotlinx_coroutines_coreChildHandle <QIOSKotlinx_coroutines_coreDisposableHandle>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+- (BOOL)childCancelledCause:(QIOSKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+@property (readonly, getter=parent_) id<QIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
+@protocol QIOSKotlinx_coroutines_coreChildJob <QIOSKotlinx_coroutines_coreJob>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+- (void)parentCancelledParentJob:(id<QIOSKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
+@end
+
+__attribute__((swift_name("KotlinSequence")))
+@protocol QIOSKotlinSequence
+@required
+- (id<QIOSKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause")))
+@protocol QIOSKotlinx_coroutines_coreSelectClause
+@required
+@property (readonly) id clauseObject __attribute__((swift_name("clauseObject")));
+@property (readonly) QIOSKotlinUnit *(^(^ _Nullable onCancellationConstructor)(id<QIOSKotlinx_coroutines_coreSelectInstance>, id _Nullable, id _Nullable))(QIOSKotlinThrowable *, id _Nullable, id<QIOSKotlinCoroutineContext>) __attribute__((swift_name("onCancellationConstructor")));
+@property (readonly) id _Nullable (^processResFunc)(id, id _Nullable, id _Nullable) __attribute__((swift_name("processResFunc")));
+@property (readonly) void (^regFunc)(id, id<QIOSKotlinx_coroutines_coreSelectInstance>, id _Nullable) __attribute__((swift_name("regFunc")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
+@protocol QIOSKotlinx_coroutines_coreSelectClause0 <QIOSKotlinx_coroutines_coreSelectClause>
+@required
+@end
+
+__attribute__((swift_name("KotlinCoroutineContextKey")))
+@protocol QIOSKotlinCoroutineContextKey
+@required
+@end
+
 __attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
 @protocol QIOSKotlinx_coroutines_coreFlowCollector
 @required
@@ -734,11 +805,6 @@ __attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
-@end
-
-__attribute__((swift_name("KotlinCoroutineContextKey")))
-@protocol QIOSKotlinCoroutineContextKey
-@required
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -792,77 +858,8 @@ __attribute__((swift_name("Ktor_httpCookie.Companion")))
 - (id<QIOSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause")))
-@protocol QIOSKotlinx_coroutines_coreSelectClause
-@required
-@property (readonly) id clauseObject __attribute__((swift_name("clauseObject")));
-@property (readonly) QIOSKotlinUnit *(^(^ _Nullable onCancellationConstructor)(id<QIOSKotlinx_coroutines_coreSelectInstance>, id _Nullable, id _Nullable))(QIOSKotlinThrowable *, id _Nullable, id<QIOSKotlinCoroutineContext>) __attribute__((swift_name("onCancellationConstructor")));
-@property (readonly) id _Nullable (^processResFunc)(id, id _Nullable, id _Nullable) __attribute__((swift_name("processResFunc")));
-@property (readonly) void (^regFunc)(id, id<QIOSKotlinx_coroutines_coreSelectInstance>, id _Nullable) __attribute__((swift_name("regFunc")));
-@end
-
 __attribute__((swift_name("Kotlinx_coroutines_coreSelectClause1")))
 @protocol QIOSKotlinx_coroutines_coreSelectClause1 <QIOSKotlinx_coroutines_coreSelectClause>
-@required
-@end
-
-__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
-@protocol QIOSKotlinx_coroutines_coreDisposableHandle
-@required
-- (void)dispose __attribute__((swift_name("dispose()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
-@protocol QIOSKotlinx_coroutines_coreChildHandle <QIOSKotlinx_coroutines_coreDisposableHandle>
-@required
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-- (BOOL)childCancelledCause:(QIOSKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-@property (readonly, getter=parent_) id<QIOSKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
-@protocol QIOSKotlinx_coroutines_coreChildJob <QIOSKotlinx_coroutines_coreJob>
-@required
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-- (void)parentCancelledParentJob:(id<QIOSKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
-@end
-
-__attribute__((swift_name("KotlinSequence")))
-@protocol QIOSKotlinSequence
-@required
-- (id<QIOSKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-@end
-
-__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
-@protocol QIOSKotlinx_coroutines_coreSelectClause0 <QIOSKotlinx_coroutines_coreSelectClause>
 @required
 @end
 
@@ -887,6 +884,46 @@ __attribute__((swift_name("KotlinByteArray")))
 __attribute__((swift_name("Kotlinx_serialization_jsonJsonElement")))
 @interface QIOSKotlinx_serialization_jsonJsonElement : QIOSBase
 @property (class, readonly, getter=companion) QIOSKotlinx_serialization_jsonJsonElementCompanion *companion __attribute__((swift_name("companion")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
+@protocol QIOSKotlinx_coroutines_coreParentJob <QIOSKotlinx_coroutines_coreJob>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+- (QIOSKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinUnit")))
+@interface QIOSKotlinUnit : QIOSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)unit __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) QIOSKotlinUnit *shared __attribute__((swift_name("shared")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
+@protocol QIOSKotlinx_coroutines_coreSelectInstance
+@required
+- (void)disposeOnCompletionDisposableHandle:(id<QIOSKotlinx_coroutines_coreDisposableHandle>)disposableHandle __attribute__((swift_name("disposeOnCompletion(disposableHandle:)")));
+- (void)selectInRegistrationPhaseInternalResult:(id _Nullable)internalResult __attribute__((swift_name("selectInRegistrationPhase(internalResult:)")));
+- (BOOL)trySelectClauseObject:(id)clauseObject result:(id _Nullable)result __attribute__((swift_name("trySelect(clauseObject:result:)")));
+@property (readonly) id<QIOSKotlinCoroutineContext> context __attribute__((swift_name("context")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -960,46 +997,6 @@ __attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
 __attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
 @protocol QIOSKotlinx_serialization_coreKSerializer <QIOSKotlinx_serialization_coreSerializationStrategy, QIOSKotlinx_serialization_coreDeserializationStrategy>
 @required
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinUnit")))
-@interface QIOSKotlinUnit : QIOSBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)unit __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) QIOSKotlinUnit *shared __attribute__((swift_name("shared")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
-@protocol QIOSKotlinx_coroutines_coreSelectInstance
-@required
-- (void)disposeOnCompletionDisposableHandle:(id<QIOSKotlinx_coroutines_coreDisposableHandle>)disposableHandle __attribute__((swift_name("disposeOnCompletion(disposableHandle:)")));
-- (void)selectInRegistrationPhaseInternalResult:(id _Nullable)internalResult __attribute__((swift_name("selectInRegistrationPhase(internalResult:)")));
-- (BOOL)trySelectClauseObject:(id)clauseObject result:(id _Nullable)result __attribute__((swift_name("trySelect(clauseObject:result:)")));
-@property (readonly) id<QIOSKotlinCoroutineContext> context __attribute__((swift_name("context")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
-@protocol QIOSKotlinx_coroutines_coreParentJob <QIOSKotlinx_coroutines_coreJob>
-@required
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-- (QIOSKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
 @end
 
 __attribute__((swift_name("KotlinByteIterator")))
