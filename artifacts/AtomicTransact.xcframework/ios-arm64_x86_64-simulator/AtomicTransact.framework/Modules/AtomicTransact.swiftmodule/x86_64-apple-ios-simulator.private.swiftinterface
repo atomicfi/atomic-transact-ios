@@ -18,8 +18,15 @@ import _SwiftConcurrencyShims
 import os
 @available(iOS 14.0, *)
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func atomicTransact(isPresented: SwiftUICore.Binding<Swift.Bool>, config: @escaping () -> AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func atomicTransact(isPresented: SwiftUICore.Binding<Swift.Bool>, config: @escaping () -> AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil) -> some SwiftUICore.View
   
+  @_Concurrency.MainActor @preconcurrency public func atomicTransactActionsPresenter(_ presenter: AtomicTransact.TransactActionPresenter) -> some SwiftUICore.View
+  
+}
+@_Concurrency.MainActor final public class TransactActionPresenter {
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public func presentAction(id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  @objc deinit
 }
 public struct TransactDataRequest : Swift.Sendable {
   public var taskId: Swift.String?
@@ -506,6 +513,7 @@ public enum TransactEnvironment {
     get
   }
 }
+extension AtomicTransact.TransactActionPresenter : Swift.Sendable {}
 extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.Equatable {}

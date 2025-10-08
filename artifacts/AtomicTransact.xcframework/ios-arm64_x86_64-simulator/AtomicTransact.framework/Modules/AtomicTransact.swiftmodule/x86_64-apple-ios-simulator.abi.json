@@ -39,6 +39,225 @@
         "moduleName": "AtomicTransact"
       },
       {
+        "kind": "TypeDecl",
+        "name": "TransactActionPresenter",
+        "printedName": "TransactActionPresenter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransactActionPresenter",
+                "printedName": "AtomicTransact.TransactActionPresenter",
+                "usr": "s:14AtomicTransact0B15ActionPresenterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14AtomicTransact0B15ActionPresenterCACycfc",
+            "mangledName": "$s14AtomicTransact0B15ActionPresenterCACycfc",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "presentAction",
+            "printedName": "presentAction(id:environment:presentationStyle:theme:onLaunch:onAuthStatusUpdate:onTaskStatusUpdate:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransactEnvironment",
+                "printedName": "AtomicTransact.TransactEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:14AtomicTransact0B11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIModalPresentationStyle",
+                "printedName": "UIKit.UIModalPresentationStyle",
+                "hasDefaultArg": true,
+                "usr": "c:@E@UIModalPresentationStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Theme",
+                "printedName": "AtomicTransact.AtomicConfig.Theme",
+                "hasDefaultArg": true,
+                "usr": "s:14AtomicTransact0A6ConfigV5ThemeV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactAuthStatusUpdate) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactAuthStatusUpdate) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactAuthStatusUpdate",
+                        "printedName": "AtomicTransact.TransactAuthStatusUpdate",
+                        "usr": "s:14AtomicTransact0B16AuthStatusUpdateV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactTaskStatusUpdate) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactTaskStatusUpdate) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactTaskStatusUpdate",
+                        "printedName": "AtomicTransact.TransactTaskStatusUpdate",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactResponse) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactResponse) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactResponse",
+                        "printedName": "AtomicTransact.TransactResponse",
+                        "usr": "s:14AtomicTransact0B8ResponseO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14AtomicTransact0B15ActionPresenterC07presentC02id11environment17presentationStyle5theme8onLaunch0K16AuthStatusUpdate0k4TasknO00K10CompletionySS_AA0B11EnvironmentOSo019UIModalPresentationI0VAA0A6ConfigV5ThemeVyycSgyAA0bmnO0VcSgyAA0bpnO0VcSgyAA0B8ResponseOcSgtF",
+            "mangledName": "$s14AtomicTransact0B15ActionPresenterC07presentC02id11environment17presentationStyle5theme8onLaunch0K16AuthStatusUpdate0k4TasknO00K10CompletionySS_AA0B11EnvironmentOSo019UIModalPresentationI0VAA0A6ConfigV5ThemeVyycSgyAA0bmnO0VcSgyAA0bpnO0VcSgyAA0B8ResponseOcSgtF",
+            "moduleName": "AtomicTransact",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14AtomicTransact0B15ActionPresenterC",
+        "mangledName": "$s14AtomicTransact0B15ActionPresenterC",
+        "moduleName": "AtomicTransact",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -16501,7 +16720,8 @@
             "intro_iOS": "13.0",
             "declAttributes": [
               "AccessControl",
-              "Available"
+              "Available",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -21235,7 +21455,7 @@
           {
             "kind": "Function",
             "name": "atomicTransact",
-            "printedName": "atomicTransact(isPresented:config:environment:presentsFullscreen:onCompletion:)",
+            "printedName": "atomicTransact(isPresented:config:environment:presentsFullscreen:onInteraction:onDataRequest:onAuthStatusUpdate:onTaskStatusUpdate:onLaunch:onCompletion:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21299,6 +21519,149 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "((AtomicTransact.TransactInteraction) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactInteraction) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactInteraction",
+                        "printedName": "AtomicTransact.TransactInteraction",
+                        "usr": "s:14AtomicTransact0B11InteractionV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AtomicTransact.TransactDataResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TransactDataResponse",
+                            "printedName": "AtomicTransact.TransactDataResponse",
+                            "usr": "s:14AtomicTransact0B12DataResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactDataRequest",
+                        "printedName": "AtomicTransact.TransactDataRequest",
+                        "usr": "s:14AtomicTransact0B11DataRequestV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactAuthStatusUpdate) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactAuthStatusUpdate) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactAuthStatusUpdate",
+                        "printedName": "AtomicTransact.TransactAuthStatusUpdate",
+                        "usr": "s:14AtomicTransact0B16AuthStatusUpdateV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactTaskStatusUpdate) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactTaskStatusUpdate) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactTaskStatusUpdate",
+                        "printedName": "AtomicTransact.TransactTaskStatusUpdate",
+                        "usr": "s:14AtomicTransact0B16TaskStatusUpdateV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "((AtomicTransact.TransactResponse) -> ())?",
                 "children": [
                   {
@@ -21322,11 +21685,78 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AtomicTransact.TransactError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicTransact.TransactError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactError",
+                        "printedName": "AtomicTransact.TransactError",
+                        "usr": "s:14AtomicTransact0B5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP14AtomicTransactE06atomicE011isPresented6config11environment18presentsFullscreen12onCompletionQrAA7BindingVySbG_AD0D6ConfigVycAD0E11EnvironmentOSbyAD0E8ResponseOcSgtF",
-            "mangledName": "$s7SwiftUI4ViewP14AtomicTransactE06atomicE011isPresented6config11environment18presentsFullscreen12onCompletionQrAA7BindingVySbG_AD0D6ConfigVycAD0E11EnvironmentOSbyAD0E8ResponseOcSgtF",
+            "usr": "s:7SwiftUI4ViewP14AtomicTransactE06atomicE011isPresented6config11environment18presentsFullscreen13onInteraction0M11DataRequest0M16AuthStatusUpdate0m4TaskrS00M6Launch0M10Completion0M5ErrorQrAA7BindingVySbG_AD0D6ConfigVycAD0E11EnvironmentOSbyAD0eN0VcSgAD0eO8ResponseVSgAD0eoP0VYacSgyAD0eqrS0VcSgyAD0etrS0VcSgyycSgyAD0E8ResponseOcSgyAD0eW0OcSgtF",
+            "mangledName": "$s7SwiftUI4ViewP14AtomicTransactE06atomicE011isPresented6config11environment18presentsFullscreen13onInteraction0M11DataRequest0M16AuthStatusUpdate0m4TaskrS00M6Launch0M10Completion0M5ErrorQrAA7BindingVySbG_AD0D6ConfigVycAD0E11EnvironmentOSbyAD0eN0VcSgAD0eO8ResponseVSgAD0eoP0VYacSgyAD0eqrS0VcSgyAD0etrS0VcSgyycSgyAD0E8ResponseOcSgyAD0eW0OcSgtF",
+            "moduleName": "AtomicTransact",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "atomicTransactActionsPresenter",
+            "printedName": "atomicTransactActionsPresenter(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransactActionPresenter",
+                "printedName": "AtomicTransact.TransactActionPresenter",
+                "usr": "s:14AtomicTransact0B15ActionPresenterC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP14AtomicTransactE06atomicE16ActionsPresenteryQrAD0e6ActionH0CF",
+            "mangledName": "$s7SwiftUI4ViewP14AtomicTransactE06atomicE16ActionsPresenteryQrAD0e6ActionH0CF",
             "moduleName": "AtomicTransact",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Self where Self : SwiftUI.View>",
@@ -21388,14 +21818,21 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/TransactSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 345,
+      "offset": 344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicSwiftUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 947,
+      "offset": 1478,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicSwiftUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3464,
       "length": 5,
       "value": "false"
     },
@@ -21712,7 +22149,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.20.7\""
+      "value": "\"3.21.0\""
     }
   ]
 }
