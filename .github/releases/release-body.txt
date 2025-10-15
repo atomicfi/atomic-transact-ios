@@ -1,16 +1,13 @@
-## 2025-10-08
+## 2025-10-15
 
 ## Changes
 
-Improves SwiftUI support for Transact
-- Added `onInteraction`, `onDataRequest`, `onAuthStatusUpdates`, `onTaskStatusUpdate`, `onLaunch`, `onError` to the SwiftUI API
-- Added support for running actions from a SwiftUI view hierarchy
+- Changes expiry and cvv to be optional in onDataRequest
+- Adds deeplink parameter for single switch to close transact after switch task
 
 ### Products
 
-- Deposit
 - Switch
-- Manage
 
 ### Requirements
 
@@ -19,4 +16,5 @@ Improves SwiftUI support for Transact
 | Xcode | >= 16 | 
 | iOS | >= 13 | 
 
-**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.20.7...3.21.0
+
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.21.0...3.21.1

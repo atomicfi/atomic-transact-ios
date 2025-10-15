@@ -158,7 +158,7 @@ public struct AtomicConfig : Swift.Codable {
     public enum Step {
       case searchCompany
       case searchPayroll
-      case loginCompany(companyId: Swift.String, connectorId: Swift.String? = nil)
+      case loginCompany(companyId: Swift.String, connectorId: Swift.String? = nil, singleSwitch: Swift.Bool? = false)
       case loginPayroll(connectorId: Swift.String, companyName: Swift.String)
       case addCard
       public var id: Swift.String {
@@ -169,6 +169,7 @@ public struct AtomicConfig : Swift.Codable {
     public var companyId: Swift.String?
     public var connectorId: Swift.String?
     public var companyName: Swift.String?
+    public var singleSwitch: Swift.Bool?
     public init(step: AtomicTransact.AtomicConfig.Deeplink.Step)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
@@ -470,9 +471,9 @@ public struct TransactDataResponse : Swift.Codable {
   }
   public struct CardData : Swift.Codable {
     public let number: Swift.String
-    public let expiry: Swift.String
-    public let cvv: Swift.String
-    public init(number: Swift.String, expiry: Swift.String, cvv: Swift.String)
+    public let expiry: Swift.String?
+    public let cvv: Swift.String?
+    public init(number: Swift.String, expiry: Swift.String?, cvv: Swift.String?)
     public func validate() -> [AtomicTransact.TransactDataResponse.ValidationError]
     public func isValid() -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws

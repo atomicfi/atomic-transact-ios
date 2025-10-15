@@ -5654,12 +5654,12 @@
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(AtomicTransact.AtomicConfig.Deeplink.Step.Type) -> (Swift.String, Swift.String?) -> AtomicTransact.AtomicConfig.Deeplink.Step",
+                        "printedName": "(AtomicTransact.AtomicConfig.Deeplink.Step.Type) -> (Swift.String, Swift.String?, Swift.Bool?) -> AtomicTransact.AtomicConfig.Deeplink.Step",
                         "children": [
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Swift.String, Swift.String?) -> AtomicTransact.AtomicConfig.Deeplink.Step",
+                            "printedName": "(Swift.String, Swift.String?, Swift.Bool?) -> AtomicTransact.AtomicConfig.Deeplink.Step",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -5670,7 +5670,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Tuple",
-                                "printedName": "(companyId: Swift.String, connectorId: Swift.String?)",
+                                "printedName": "(companyId: Swift.String, connectorId: Swift.String?, singleSwitch: Swift.Bool?)",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -5688,6 +5688,20 @@
                                         "name": "String",
                                         "printedName": "Swift.String",
                                         "usr": "s:SS"
+                                      }
+                                    ],
+                                    "usr": "s:Sq"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Optional",
+                                    "printedName": "Swift.Bool?",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Bool",
+                                        "printedName": "Swift.Bool",
+                                        "usr": "s:Sb"
                                       }
                                     ],
                                     "usr": "s:Sq"
@@ -5713,8 +5727,8 @@
                       }
                     ],
                     "declKind": "EnumElement",
-                    "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV4StepO12loginCompanyyAGSS_SSSgtcAGmF",
-                    "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV4StepO12loginCompanyyAGSS_SSSgtcAGmF",
+                    "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV4StepO12loginCompanyyAGSS_SSSgSbSgtcAGmF",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV4StepO12loginCompanyyAGSS_SSSgSbSgtcAGmF",
                     "moduleName": "AtomicTransact"
                   },
                   {
@@ -6291,6 +6305,116 @@
                     "declKind": "Accessor",
                     "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV11companyNameSSSgvM",
                     "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV11companyNameSSSgvM",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "singleSwitch",
+                "printedName": "singleSwitch",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvp",
+                "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvp",
+                "moduleName": "AtomicTransact",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvg",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvg",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvs",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvs",
+                    "moduleName": "AtomicTransact",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvM",
+                    "mangledName": "$s14AtomicTransact0A6ConfigV8DeeplinkV12singleSwitchSbSgvM",
                     "moduleName": "AtomicTransact",
                     "implicit": true,
                     "accessorKind": "_modify"
@@ -20160,14 +20284,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6expirySSvp",
-                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6expirySSvp",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6expirySSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6expirySSSgvp",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
                   "HasStorage",
@@ -20184,14 +20316,22 @@
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6expirySSvg",
-                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6expirySSvg",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6expirySSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6expirySSSgvg",
                     "moduleName": "AtomicTransact",
                     "implicit": true,
                     "accessorKind": "get"
@@ -20205,14 +20345,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvp",
-                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvp",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V3cvvSSSgvp",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V3cvvSSSgvp",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
                   "HasStorage",
@@ -20229,14 +20377,22 @@
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvg",
-                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V3cvvSSvg",
+                    "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V3cvvSSSgvg",
+                    "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V3cvvSSSgvg",
                     "moduleName": "AtomicTransact",
                     "implicit": true,
                     "accessorKind": "get"
@@ -20262,20 +20418,36 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6number6expiry3cvvAESS_S2Stcfc",
-                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6number6expiry3cvvAESS_S2Stcfc",
+                "usr": "s:14AtomicTransact0B12DataResponseV04CardC0V6number6expiry3cvvAESS_SSSgAItcfc",
+                "mangledName": "$s14AtomicTransact0B12DataResponseV04CardC0V6number6expiry3cvvAESS_SSSgAItcfc",
                 "moduleName": "AtomicTransact",
                 "declAttributes": [
                   "AccessControl"
@@ -21965,35 +22137,42 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 20198,
+      "offset": 18947,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20333,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 24560,
+      "offset": 24695,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26426,
+      "offset": 26561,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26433,
+      "offset": 26568,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/AtomicTransact\/AtomicTransact\/Public\/AtomicConfig.swift",
       "kind": "StringLiteral",
-      "offset": 26440,
+      "offset": 26575,
       "length": 4,
       "value": "\"en\""
     },
@@ -22149,7 +22328,7 @@
       "kind": "StringLiteral",
       "offset": 228,
       "length": 8,
-      "value": "\"3.21.0\""
+      "value": "\"3.22.0\""
     }
   ]
 }
