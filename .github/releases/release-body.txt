@@ -1,13 +1,14 @@
-## 2025-10-15
+## 2025-10-28
 
 ## Changes
 
-- Changes expiry and cvv to be optional in onDataRequest
-- Adds deeplink parameter for single switch to close transact after switch task
+* Added support for pay now deeplink option
+* Added metadata to actions methods
 
 ### Products
 
 - Switch
+- Manage
 
 ### Requirements
 
@@ -17,4 +18,4 @@
 | iOS | >= 13 | 
 
 
-**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.21.0...3.21.1
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.22.0...3.23.0
