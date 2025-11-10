@@ -4,127 +4,262 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ios-arm64/QuantumIOS.framework/Headers/QuantumIOS.h</key>
-		<data>
-		3pYFuinjtw+A+Sx4ygTU8USYdi8=
-		</data>
 		<key>ios-arm64/QuantumIOS.framework/Info.plist</key>
 		<data>
-		YtAxhnpZyiUobYDF2TYdqkyMsmQ=
+		K0o4qlasQheE3cL5luTrU6xWRzQ=
 		</data>
-		<key>ios-arm64/QuantumIOS.framework/Modules/module.modulemap</key>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		GmmN9jzRqF7TNLPViZLY49tl1vI=
+		Z6rlJZ9Pf9DTOJjfms3AUmKkXv0=
+		</data>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		V0B+223DGvhiCUKDsDwGy7uf8mM=
+		</data>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		ib8aaiBhKVMrqt+8K8FLFzPe8TA=
+		</data>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		V0B+223DGvhiCUKDsDwGy7uf8mM=
 		</data>
 		<key>ios-arm64/QuantumIOS.framework/QuantumIOS</key>
 		<data>
-		nZ0EDjhL89/xWsAoXd6onv3Arl4=
-		</data>
-		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Headers/QuantumIOS.h</key>
-		<data>
-		3pYFuinjtw+A+Sx4ygTU8USYdi8=
+		iEfv8fw42qWh7gzS5WMdYA1Wokc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Info.plist</key>
 		<data>
-		tUoPATb9+A6aLamNoSXMylmLRkY=
+		vqGwFsqm2OkuAEEKGgOKS8yFiDg=
 		</data>
-		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/module.modulemap</key>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iRfDR3y0LzP62mD39RabU8ckBNA=
+		Z6rlJZ9Pf9DTOJjfms3AUmKkXv0=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		I5ziq7dIYXBHh/AS9iWrRGEzomw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		EgzkeRhtt0u+e6a44qs6sGlrmAg=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		I5ziq7dIYXBHh/AS9iWrRGEzomw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		Z6rlJZ9Pf9DTOJjfms3AUmKkXv0=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		CpV4LCMkKIVPPgFQjcx0DMzjGzA=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		dyGLLNLXhJaHx+KJhcEvX7M1V9s=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		CpV4LCMkKIVPPgFQjcx0DMzjGzA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/QuantumIOS</key>
 		<data>
-		b6iVyz0MP9bi60UnreSWgipNFbg=
+		SzaCW7uQiPj+OH1NR7T6Xl8v8Uc=
+		</data>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/_CodeSignature/CodeResources</key>
+		<data>
+		/SWkJSWBTFhMMjy+Tk0OEKfLyrY=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ios-arm64/QuantumIOS.framework/Headers/QuantumIOS.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3pYFuinjtw+A+Sx4ygTU8USYdi8=
-			</data>
-			<key>hash2</key>
-			<data>
-			nAJe8vHLJFR4PlWUwqJbnNxE5NsIjCr8/WeHhSiMVzI=
-			</data>
-		</dict>
 		<key>ios-arm64/QuantumIOS.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YtAxhnpZyiUobYDF2TYdqkyMsmQ=
+			K0o4qlasQheE3cL5luTrU6xWRzQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			cXiY/vi8rSSRsA4OvGPpdByOncnBVuy2AhwxKgJa7+k=
+			+Gl8PsdgKIzh1O/oaPGp9p3Mh9U54cj58rkhru67tHs=
 			</data>
 		</dict>
-		<key>ios-arm64/QuantumIOS.framework/Modules/module.modulemap</key>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GmmN9jzRqF7TNLPViZLY49tl1vI=
+			Z6rlJZ9Pf9DTOJjfms3AUmKkXv0=
 			</data>
 			<key>hash2</key>
 			<data>
-			f6GBPOPA9sTRmzD8WqOVxiUSND/74Ru8DpkpaWU/t2Q=
+			lq24okAiBvJJKaD+TjCR8noactr93n90ZdGulXh+JKM=
+			</data>
+		</dict>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V0B+223DGvhiCUKDsDwGy7uf8mM=
+			</data>
+			<key>hash2</key>
+			<data>
+			7N7HPwDHpUeVZZ6iLh6IWKVj3f+NbJM2ZyZqXMIUyOk=
+			</data>
+		</dict>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ib8aaiBhKVMrqt+8K8FLFzPe8TA=
+			</data>
+			<key>hash2</key>
+			<data>
+			MZ7LkxN6/K0TYEv6Zpg/3NnO2D22ct8aEfytuaEs594=
+			</data>
+		</dict>
+		<key>ios-arm64/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V0B+223DGvhiCUKDsDwGy7uf8mM=
+			</data>
+			<key>hash2</key>
+			<data>
+			7N7HPwDHpUeVZZ6iLh6IWKVj3f+NbJM2ZyZqXMIUyOk=
 			</data>
 		</dict>
 		<key>ios-arm64/QuantumIOS.framework/QuantumIOS</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nZ0EDjhL89/xWsAoXd6onv3Arl4=
+			iEfv8fw42qWh7gzS5WMdYA1Wokc=
 			</data>
 			<key>hash2</key>
 			<data>
-			tToTwciSQruu8DAjXvRdUhIGe3bHnzlg9e31hXz67UI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Headers/QuantumIOS.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3pYFuinjtw+A+Sx4ygTU8USYdi8=
-			</data>
-			<key>hash2</key>
-			<data>
-			nAJe8vHLJFR4PlWUwqJbnNxE5NsIjCr8/WeHhSiMVzI=
+			yrGy8xR6gKue5OTQEth92EPN/Uc1AFVG6XwBo0WvP74=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tUoPATb9+A6aLamNoSXMylmLRkY=
+			vqGwFsqm2OkuAEEKGgOKS8yFiDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			pp8aV4tarEEMKNyIl5CTC/JxM7ZzQaA4vjdB+K9Pgks=
+			+kiH56LdMfrNQBwocq1Evie4LXXjG2WRQnWkrYgh5Gk=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/module.modulemap</key>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iRfDR3y0LzP62mD39RabU8ckBNA=
+			Z6rlJZ9Pf9DTOJjfms3AUmKkXv0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bxPbcRVGdKayIeOg4YmR9wHU7ra6QEuevNbG5nRFYoQ=
+			lq24okAiBvJJKaD+TjCR8noactr93n90ZdGulXh+JKM=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I5ziq7dIYXBHh/AS9iWrRGEzomw=
+			</data>
+			<key>hash2</key>
+			<data>
+			so9AE2maEIuM4qEhhck5qETWzdlT8neGc/FFPWoiwU0=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EgzkeRhtt0u+e6a44qs6sGlrmAg=
+			</data>
+			<key>hash2</key>
+			<data>
+			FF9Ga9pSBukmrnm+CtiaZ8sCjzIwYG2RIgESoz6TFls=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I5ziq7dIYXBHh/AS9iWrRGEzomw=
+			</data>
+			<key>hash2</key>
+			<data>
+			so9AE2maEIuM4qEhhck5qETWzdlT8neGc/FFPWoiwU0=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z6rlJZ9Pf9DTOJjfms3AUmKkXv0=
+			</data>
+			<key>hash2</key>
+			<data>
+			lq24okAiBvJJKaD+TjCR8noactr93n90ZdGulXh+JKM=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CpV4LCMkKIVPPgFQjcx0DMzjGzA=
+			</data>
+			<key>hash2</key>
+			<data>
+			KOdseKse/bttoElJLbHMMNrCuD+yULzYOeRAvAgEN+A=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dyGLLNLXhJaHx+KJhcEvX7M1V9s=
+			</data>
+			<key>hash2</key>
+			<data>
+			q+Qd0qClr5dIBBku0nlNCxUHBDRBDm00Kg0SBQPMCL0=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CpV4LCMkKIVPPgFQjcx0DMzjGzA=
+			</data>
+			<key>hash2</key>
+			<data>
+			KOdseKse/bttoElJLbHMMNrCuD+yULzYOeRAvAgEN+A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/QuantumIOS</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b6iVyz0MP9bi60UnreSWgipNFbg=
+			SzaCW7uQiPj+OH1NR7T6Xl8v8Uc=
 			</data>
 			<key>hash2</key>
 			<data>
-			XF4NsxwrU8N49ImkRKexe1cmQMKyAFY8WxQ/lMXqm2U=
+			vCjXhzGgwkfk3Cbs6OJFTq9NZWG/wyN3BBAKdBCTLLs=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/QuantumIOS.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/SWkJSWBTFhMMjy+Tk0OEKfLyrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			veoGYFpqO2NTr300f6WnOj3Hn8+hlN31sSfiPSdsGv8=
 			</data>
 		</dict>
 	</dict>
