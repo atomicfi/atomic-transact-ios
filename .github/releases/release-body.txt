@@ -1,10 +1,10 @@
-## 2025-11-10
+## 2025-11-19
 
 ### Changes
 
-- Reintroduced separate MuppetIOS support framework
-- Improved build process for QuantumIOS support framework
-- There will be no changes here if you use SPM or Cocoapods, however, if you manually link to the provided xcframeworks, there is now a third that must be linked. 
+- Expands `pay-now` deeplink step with `accountId`
+- Makes `TransactInteraction` (and similar) structs publicly initializable. This makes them mockable for unit tests. 
+- Improves handling and animations of `hideTransact`
 
 ### Products
 
@@ -19,4 +19,4 @@
 | Xcode | >= 16   |
 | iOS   | >= 13   |
 
-**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.23.0...3.24.0
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/[3.24.0]...[3.25.0]

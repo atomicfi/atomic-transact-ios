@@ -34,17 +34,21 @@ public struct TransactDataRequest : Swift.Sendable {
   public var identifier: Swift.String
   public var fields: [Swift.String]
   public var data: [Swift.String : any Swift.Sendable]
+  public init(userId: Swift.String, identifier: Swift.String, fields: [Swift.String], taskId: Swift.String? = nil, additionalData: [Swift.String : any Swift.Sendable] = [:])
 }
 public struct TransactCompany : Swift.Decodable {
   public let id: Swift.String
   public let name: Swift.String
   public let branding: AtomicTransact.TransactCompany.Branding?
+  public init(id: Swift.String, name: Swift.String, branding: AtomicTransact.TransactCompany.Branding? = nil)
   public struct Branding : Swift.Decodable {
     public let color: Swift.String
     public let logo: AtomicTransact.TransactCompany.Branding.Logo
+    public init(color: Swift.String, logo: AtomicTransact.TransactCompany.Branding.Logo)
     public struct Logo : Swift.Decodable {
       public let url: Swift.String
       public let backgroundColor: Swift.String?
+      public init(url: Swift.String, backgroundColor: Swift.String? = nil)
       public init(from decoder: any Swift.Decoder) throws
     }
     public init(from decoder: any Swift.Decoder) throws
@@ -161,7 +165,7 @@ public struct AtomicConfig : Swift.Codable {
       case loginCompany(companyId: Swift.String, connectorId: Swift.String? = nil, singleSwitch: Swift.Bool? = false)
       case loginPayroll(connectorId: Swift.String, companyName: Swift.String)
       case addCard
-      case payNow(payments: [Swift.String])
+      case payNow(payments: [Swift.String], accountId: Swift.String)
       public var id: Swift.String {
         get
       }
@@ -172,6 +176,7 @@ public struct AtomicConfig : Swift.Codable {
     public var companyName: Swift.String?
     public var singleSwitch: Swift.Bool?
     public var payments: [Swift.String]?
+    public var accountId: Swift.String?
     public init(step: AtomicTransact.AtomicConfig.Deeplink.Step)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
@@ -270,6 +275,7 @@ public struct AtomicConfig : Swift.Codable {
 }
 public enum TransactResponse : Swift.CustomStringConvertible {
   public struct ResponseData {
+    public init(data: [Swift.String : Any])
     public var data: [Swift.String : Any]
     public var taskId: Swift.String? {
       get
@@ -301,6 +307,7 @@ public struct TransactInteraction : Swift.CustomStringConvertible {
   public var name: Swift.String
   public var identifier: Swift.String
   public var value: [Swift.String : Any]
+  public init(name: Swift.String, identifier: Swift.String, value: [Swift.String : Any])
   public var description: Swift.String {
     get
   }
@@ -353,8 +360,10 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
   public let switchData: AtomicTransact.TransactTaskStatusUpdate.SwitchData?
   public let depositData: AtomicTransact.TransactTaskStatusUpdate.DepositData?
   public let managedBy: AtomicTransact.TransactTaskStatusUpdate.ManagedBy?
+  public init(taskId: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, company: AtomicTransact.TransactCompany, status: AtomicTransact.TransactTaskStatusUpdate.TaskStatus, failReason: Swift.String? = nil, switchData: AtomicTransact.TransactTaskStatusUpdate.SwitchData? = nil, depositData: AtomicTransact.TransactTaskStatusUpdate.DepositData? = nil, managedBy: AtomicTransact.TransactTaskStatusUpdate.ManagedBy? = nil)
   public struct ManagedBy : Swift.Decodable {
     public let company: AtomicTransact.TransactCompany
+    public init(company: AtomicTransact.TransactCompany)
     public init(from decoder: any Swift.Decoder) throws
   }
   public enum TaskStatus : Swift.String, Swift.Decodable {
@@ -370,6 +379,7 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
   }
   public struct SwitchData : Swift.Decodable {
     public let paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod
+    public init(paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod)
     public struct PaymentMethod : Swift.Decodable {
       public let id: Swift.String
       public let title: Swift.String
@@ -389,6 +399,7 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
       public let routingNumber: Swift.String?
       public let accountType: Swift.String?
       public let lastFourAccountNumber: Swift.String?
+      public init(id: Swift.String, title: Swift.String, type: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType, expiry: Swift.String? = nil, brand: Swift.String? = nil, lastFour: Swift.String? = nil, routingNumber: Swift.String? = nil, accountType: Swift.String? = nil, lastFourAccountNumber: Swift.String? = nil)
       public init(from decoder: any Swift.Decoder) throws
     }
     public init(from decoder: any Swift.Decoder) throws
@@ -400,6 +411,7 @@ public struct TransactTaskStatusUpdate : Swift.Decodable {
     public let lastFour: Swift.String?
     public let routingNumber: Swift.String?
     public let title: Swift.String?
+    public init(accountType: Swift.String? = nil, distributionAmount: Swift.Double? = nil, distributionType: Swift.String? = nil, lastFour: Swift.String? = nil, routingNumber: Swift.String? = nil, title: Swift.String? = nil)
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -495,6 +507,7 @@ public struct TransactAuthStatusUpdate : Swift.Decodable {
       get
     }
   }
+  public init(company: AtomicTransact.TransactCompany, status: AtomicTransact.TransactAuthStatusUpdate.AuthStatus)
   public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
