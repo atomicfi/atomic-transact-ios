@@ -1,10 +1,12 @@
-## 2025-11-19
+## 2025-11-25
 
 ### Changes
 
-- Expands `pay-now` deeplink step with `accountId`
-- Makes `TransactInteraction` (and similar) structs publicly initializable. This makes them mockable for unit tests. 
-- Improves handling and animations of `hideTransact`
+- Fixed a potential crash when closing sheets
+- Dynamic package option is now available. Static is still the default.
+    - `AtomicTransact-Dynamic.xcframework` and `QuantumIOS-Dynamic.xcframework` are now available on releases for manual linking if needed. `MuppetIOS.xcframework` is also still required. 
+    - If using SPM and you need dynamic linking, switch to linking the `AtomicTransact-Dynamic` package into your project, rather than `AtomicTransact`.
+    - All other usages remain the same
 
 ### Products
 
@@ -19,4 +21,4 @@
 | Xcode | >= 16   |
 | iOS   | >= 13   |
 
-**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/[3.24.0]...[3.25.0]
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.25.0...3.25.1
