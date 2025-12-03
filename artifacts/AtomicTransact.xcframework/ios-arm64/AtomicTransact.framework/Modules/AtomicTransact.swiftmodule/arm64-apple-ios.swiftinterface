@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature MemberImportVisibility -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AtomicTransact
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature MemberImportVisibility -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AtomicTransact
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 @_exported import AtomicTransact
 import Combine
@@ -16,6 +16,125 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+public struct TransactTaskStatusUpdate : Swift.Decodable {
+  public let taskId: Swift.String
+  public let product: AtomicTransact.AtomicConfig.ProductType
+  public let company: AtomicTransact.TransactCompany
+  public let status: AtomicTransact.TransactTaskStatusUpdate.TaskStatus
+  public let failReason: Swift.String?
+  public let switchData: AtomicTransact.TransactTaskStatusUpdate.SwitchData?
+  public let depositData: AtomicTransact.TransactTaskStatusUpdate.DepositData?
+  public let managedBy: AtomicTransact.TransactTaskStatusUpdate.ManagedBy?
+  public init(taskId: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, company: AtomicTransact.TransactCompany, status: AtomicTransact.TransactTaskStatusUpdate.TaskStatus, failReason: Swift.String? = nil, switchData: AtomicTransact.TransactTaskStatusUpdate.SwitchData? = nil, depositData: AtomicTransact.TransactTaskStatusUpdate.DepositData? = nil, managedBy: AtomicTransact.TransactTaskStatusUpdate.ManagedBy? = nil)
+  public struct ManagedBy : Swift.Decodable {
+    public let company: AtomicTransact.TransactCompany
+    public init(company: AtomicTransact.TransactCompany)
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum TaskStatus : Swift.String, Swift.Decodable {
+    case completed
+    case failed
+    case processing
+    case queued
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct SwitchData : Swift.Decodable {
+    public let paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod
+    public init(paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod)
+    public struct PaymentMethod : Swift.Decodable {
+      public let id: Swift.String
+      public let title: Swift.String
+      public let type: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType
+      public enum PaymentType : Swift.String, Swift.Decodable {
+        case card
+        case bank
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+      public let expiry: Swift.String?
+      public let brand: Swift.String?
+      public let lastFour: Swift.String?
+      public let routingNumber: Swift.String?
+      public let accountType: Swift.String?
+      public let lastFourAccountNumber: Swift.String?
+      public init(id: Swift.String, title: Swift.String, type: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType, expiry: Swift.String? = nil, brand: Swift.String? = nil, lastFour: Swift.String? = nil, routingNumber: Swift.String? = nil, accountType: Swift.String? = nil, lastFourAccountNumber: Swift.String? = nil)
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct DepositData : Swift.Decodable {
+    public let accountType: Swift.String?
+    public let distributionAmount: Swift.Double?
+    public let distributionType: Swift.String?
+    public let lastFour: Swift.String?
+    public let routingNumber: Swift.String?
+    public let title: Swift.String?
+    public init(accountType: Swift.String? = nil, distributionAmount: Swift.Double? = nil, distributionType: Swift.String? = nil, lastFour: Swift.String? = nil, routingNumber: Swift.String? = nil, title: Swift.String? = nil)
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactCompany : Swift.Decodable {
+  public let id: Swift.String
+  public let name: Swift.String
+  public let branding: AtomicTransact.TransactCompany.Branding?
+  public init(id: Swift.String, name: Swift.String, branding: AtomicTransact.TransactCompany.Branding? = nil)
+  public struct Branding : Swift.Decodable {
+    public let color: Swift.String
+    public let logo: AtomicTransact.TransactCompany.Branding.Logo
+    public init(color: Swift.String, logo: AtomicTransact.TransactCompany.Branding.Logo)
+    public struct Logo : Swift.Decodable {
+      public let url: Swift.String
+      public let backgroundColor: Swift.String?
+      public init(url: Swift.String, backgroundColor: Swift.String? = nil)
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactInteraction : Swift.CustomStringConvertible {
+  public var name: Swift.String
+  public var identifier: Swift.String
+  public var value: [Swift.String : Any]
+  public init(name: Swift.String, identifier: Swift.String, value: [Swift.String : Any])
+  public var description: Swift.String {
+    get
+  }
+  public var language: Swift.String? {
+    get
+  }
+  public var customer: Swift.String? {
+    get
+  }
+  public var product: AtomicTransact.AtomicConfig.ProductType? {
+    get
+  }
+  public var additionalProduct: AtomicTransact.AtomicConfig.ProductType? {
+    get
+  }
+  public var company: Swift.String? {
+    get
+  }
+  public var payroll: Swift.String? {
+    get
+  }
+}
+public struct TransactDataRequest : Swift.Sendable {
+  public var taskId: Swift.String?
+  public var userId: Swift.String
+  public var identifier: Swift.String
+  public var fields: [Swift.String]
+  public var data: [Swift.String : any Swift.Sendable]
+  public init(userId: Swift.String, identifier: Swift.String, fields: [Swift.String], taskId: Swift.String? = nil, additionalData: [Swift.String : any Swift.Sendable] = [:])
+}
 public struct AtomicConfig : Swift.Codable {
   public init(publicToken: Swift.String, scope: AtomicTransact.AtomicConfig.ScopeType, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, deferredPaymentMethodStrategy: AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", sessionContext: Swift.String? = nil, deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil, features: AtomicTransact.AtomicConfig.Features? = nil, customer: AtomicTransact.AtomicConfig.Customer? = nil)
   public init(demo: AtomicTransact.AtomicConfig.DemoMode, scope: AtomicTransact.AtomicConfig.ScopeType, tasks: [AtomicTransact.AtomicConfig.Task], linkedAccount: Swift.String? = nil, theme: AtomicTransact.AtomicConfig.Theme = Theme(dark: .system), language: Swift.String = Locale.current.languageCode == "es" ? "es" : "en", sessionContext: Swift.String? = nil, deeplink: AtomicTransact.AtomicConfig.Deeplink? = nil, metadata: [Swift.String : Swift.String]? = nil, search: AtomicTransact.AtomicConfig.Search? = nil, handoff: [Swift.String]? = nil, experiments: AtomicTransact.AtomicConfig.Experiments? = nil)
@@ -234,109 +353,6 @@ public struct AtomicConfig : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct TransactDataRequest : Swift.Sendable {
-  public var taskId: Swift.String?
-  public var userId: Swift.String
-  public var identifier: Swift.String
-  public var fields: [Swift.String]
-  public var data: [Swift.String : any Swift.Sendable]
-  public init(userId: Swift.String, identifier: Swift.String, fields: [Swift.String], taskId: Swift.String? = nil, additionalData: [Swift.String : any Swift.Sendable] = [:])
-}
-public struct TransactTaskStatusUpdate : Swift.Decodable {
-  public let taskId: Swift.String
-  public let product: AtomicTransact.AtomicConfig.ProductType
-  public let company: AtomicTransact.TransactCompany
-  public let status: AtomicTransact.TransactTaskStatusUpdate.TaskStatus
-  public let failReason: Swift.String?
-  public let switchData: AtomicTransact.TransactTaskStatusUpdate.SwitchData?
-  public let depositData: AtomicTransact.TransactTaskStatusUpdate.DepositData?
-  public let managedBy: AtomicTransact.TransactTaskStatusUpdate.ManagedBy?
-  public init(taskId: Swift.String, product: AtomicTransact.AtomicConfig.ProductType, company: AtomicTransact.TransactCompany, status: AtomicTransact.TransactTaskStatusUpdate.TaskStatus, failReason: Swift.String? = nil, switchData: AtomicTransact.TransactTaskStatusUpdate.SwitchData? = nil, depositData: AtomicTransact.TransactTaskStatusUpdate.DepositData? = nil, managedBy: AtomicTransact.TransactTaskStatusUpdate.ManagedBy? = nil)
-  public struct ManagedBy : Swift.Decodable {
-    public let company: AtomicTransact.TransactCompany
-    public init(company: AtomicTransact.TransactCompany)
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public enum TaskStatus : Swift.String, Swift.Decodable {
-    case completed
-    case failed
-    case processing
-    case queued
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public struct SwitchData : Swift.Decodable {
-    public let paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod
-    public init(paymentMethod: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod)
-    public struct PaymentMethod : Swift.Decodable {
-      public let id: Swift.String
-      public let title: Swift.String
-      public let type: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType
-      public enum PaymentType : Swift.String, Swift.Decodable {
-        case card
-        case bank
-        public init?(rawValue: Swift.String)
-        public typealias RawValue = Swift.String
-        public var rawValue: Swift.String {
-          get
-        }
-      }
-      public let expiry: Swift.String?
-      public let brand: Swift.String?
-      public let lastFour: Swift.String?
-      public let routingNumber: Swift.String?
-      public let accountType: Swift.String?
-      public let lastFourAccountNumber: Swift.String?
-      public init(id: Swift.String, title: Swift.String, type: AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType, expiry: Swift.String? = nil, brand: Swift.String? = nil, lastFour: Swift.String? = nil, routingNumber: Swift.String? = nil, accountType: Swift.String? = nil, lastFourAccountNumber: Swift.String? = nil)
-      public init(from decoder: any Swift.Decoder) throws
-    }
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct DepositData : Swift.Decodable {
-    public let accountType: Swift.String?
-    public let distributionAmount: Swift.Double?
-    public let distributionType: Swift.String?
-    public let lastFour: Swift.String?
-    public let routingNumber: Swift.String?
-    public let title: Swift.String?
-    public init(accountType: Swift.String? = nil, distributionAmount: Swift.Double? = nil, distributionType: Swift.String? = nil, lastFour: Swift.String? = nil, routingNumber: Swift.String? = nil, title: Swift.String? = nil)
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum TransactResponse : Swift.CustomStringConvertible {
-  public struct ResponseData {
-    public init(data: [Swift.String : Any])
-    public var data: [Swift.String : Any]
-    public var taskId: Swift.String? {
-      get
-    }
-    public var handoff: Swift.String? {
-      get
-    }
-    public var reason: Swift.String? {
-      get
-    }
-    public var identifier: Swift.String {
-      get
-    }
-  }
-  case finished(response: AtomicTransact.TransactResponse.ResponseData)
-  case closed(response: AtomicTransact.TransactResponse.ResponseData)
-  case error(error: AtomicTransact.TransactError)
-  case transactDismissed
-  public var description: Swift.String {
-    get
-  }
-}
-public enum TransactError : Swift.Error {
-  case unableToConnectToTransact
-  case invalidConfig
-  case transactError(data: [Swift.String : Any])
-}
 public struct TransactDataResponse : Swift.Codable {
   public let card: AtomicTransact.TransactDataResponse.CardData?
   public let identity: AtomicTransact.TransactDataResponse.Identity?
@@ -388,6 +404,62 @@ public struct TransactDataResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum TransactResponse : Swift.CustomStringConvertible {
+  public struct ResponseData {
+    public init(data: [Swift.String : Any])
+    public var data: [Swift.String : Any]
+    public var taskId: Swift.String? {
+      get
+    }
+    public var handoff: Swift.String? {
+      get
+    }
+    public var reason: Swift.String? {
+      get
+    }
+    public var identifier: Swift.String {
+      get
+    }
+  }
+  case finished(response: AtomicTransact.TransactResponse.ResponseData)
+  case closed(response: AtomicTransact.TransactResponse.ResponseData)
+  case error(error: AtomicTransact.TransactError)
+  case transactDismissed
+  public var description: Swift.String {
+    get
+  }
+}
+public enum TransactError : Swift.Error {
+  case unableToConnectToTransact
+  case invalidConfig
+  case transactError(data: [Swift.String : Any])
+}
+public struct TransactAuthStatusUpdate : Swift.Decodable {
+  public let company: AtomicTransact.TransactCompany
+  public let status: AtomicTransact.TransactAuthStatusUpdate.AuthStatus
+  public enum AuthStatus : Swift.String, Swift.Decodable {
+    case authenticated
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(company: AtomicTransact.TransactCompany, status: AtomicTransact.TransactAuthStatusUpdate.AuthStatus)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Atomic {
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
+  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: @escaping (AtomicTransact.TransactDataRequest) -> (), onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
+  @available(iOS 13.0, *)
+  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), metadata: [Swift.String : Swift.String]? = nil, onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  @available(iOS 13.0, *)
+  public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
+    get
+  }
+  public static func dismissTransact()
+  public static func hideTransact()
+}
 public enum TransactSDKEvent : Swift.String, Swift.CaseIterable {
   case close
   case finish
@@ -409,18 +481,6 @@ public enum TransactSDKEvent : Swift.String, Swift.CaseIterable {
     get
   }
 }
-@available(iOS 14.0, *)
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func atomicTransact(isPresented: SwiftUICore.Binding<Swift.Bool>, config: @escaping () -> AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil) -> some SwiftUICore.View
-  
-  @_Concurrency.MainActor @preconcurrency public func atomicTransactActionsPresenter(_ presenter: AtomicTransact.TransactActionPresenter) -> some SwiftUICore.View
-  
-}
-@_Concurrency.MainActor final public class TransactActionPresenter {
-  @_Concurrency.MainActor public init()
-  @_Concurrency.MainActor final public func presentAction(id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), metadata: [Swift.String : Swift.String]? = nil, onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BaseTransactViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor @preconcurrency public var config: AtomicTransact.AtomicConfig!
   @_Concurrency.MainActor @preconcurrency public var environment: AtomicTransact.TransactEnvironment!
@@ -438,36 +498,25 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public struct TransactCompany : Swift.Decodable {
-  public let id: Swift.String
-  public let name: Swift.String
-  public let branding: AtomicTransact.TransactCompany.Branding?
-  public init(id: Swift.String, name: Swift.String, branding: AtomicTransact.TransactCompany.Branding? = nil)
-  public struct Branding : Swift.Decodable {
-    public let color: Swift.String
-    public let logo: AtomicTransact.TransactCompany.Branding.Logo
-    public init(color: Swift.String, logo: AtomicTransact.TransactCompany.Branding.Logo)
-    public struct Logo : Swift.Decodable {
-      public let url: Swift.String
-      public let backgroundColor: Swift.String?
-      public init(url: Swift.String, backgroundColor: Swift.String? = nil)
-      public init(from decoder: any Swift.Decoder) throws
-    }
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public init(from decoder: any Swift.Decoder) throws
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public class TransactViewController : AtomicTransact.BaseTransactViewController, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
-public enum Atomic {
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
-  public static func presentTransact(from source: UIKit.UIViewController, config: AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: @escaping (AtomicTransact.TransactDataRequest) -> (), onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil)
-  @available(iOS 13.0, *)
-  public static func presentAction(from source: UIKit.UIViewController, id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), metadata: [Swift.String : Swift.String]? = nil, onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
-  @available(iOS 13.0, *)
-  public static var interactions: Combine.AnyPublisher<AtomicTransact.TransactInteraction, Swift.Never> {
-    get
-  }
-  public static func dismissTransact()
-  public static func hideTransact()
+@available(iOS 14.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func atomicTransact(isPresented: SwiftUICore.Binding<Swift.Bool>, config: @escaping () -> AtomicTransact.AtomicConfig, environment: AtomicTransact.TransactEnvironment = .production, presentsFullscreen: Swift.Bool = false, onInteraction: ((AtomicTransact.TransactInteraction) -> ())? = nil, onDataRequest: ((AtomicTransact.TransactDataRequest) async -> AtomicTransact.TransactDataResponse?)? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onLaunch: (() -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil, onError: ((AtomicTransact.TransactError) -> ())? = nil) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func atomicTransactActionsPresenter(_ presenter: AtomicTransact.TransactActionPresenter) -> some SwiftUICore.View
+  
+}
+@_Concurrency.MainActor final public class TransactActionPresenter {
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public func presentAction(id: Swift.String, environment: AtomicTransact.TransactEnvironment = .production, presentationStyle: UIKit.UIModalPresentationStyle = .formSheet, theme: AtomicTransact.AtomicConfig.Theme = AtomicConfig.Theme(dark: .system), metadata: [Swift.String : Swift.String]? = nil, onLaunch: (() -> ())? = nil, onAuthStatusUpdate: ((AtomicTransact.TransactAuthStatusUpdate) -> ())? = nil, onTaskStatusUpdate: ((AtomicTransact.TransactTaskStatusUpdate) -> ())? = nil, onCompletion: ((AtomicTransact.TransactResponse) -> ())? = nil)
+  @objc deinit
 }
 public enum TransactEnvironment {
   case production
@@ -480,55 +529,12 @@ public enum TransactEnvironment {
     get
   }
 }
-public struct TransactAuthStatusUpdate : Swift.Decodable {
-  public let company: AtomicTransact.TransactCompany
-  public let status: AtomicTransact.TransactAuthStatusUpdate.AuthStatus
-  public enum AuthStatus : Swift.String, Swift.Decodable {
-    case authenticated
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(company: AtomicTransact.TransactCompany, status: AtomicTransact.TransactAuthStatusUpdate.AuthStatus)
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct TransactInteraction : Swift.CustomStringConvertible {
-  public var name: Swift.String
-  public var identifier: Swift.String
-  public var value: [Swift.String : Any]
-  public init(name: Swift.String, identifier: Swift.String, value: [Swift.String : Any])
-  public var description: Swift.String {
-    get
-  }
-  public var language: Swift.String? {
-    get
-  }
-  public var customer: Swift.String? {
-    get
-  }
-  public var product: AtomicTransact.AtomicConfig.ProductType? {
-    get
-  }
-  public var additionalProduct: AtomicTransact.AtomicConfig.ProductType? {
-    get
-  }
-  public var company: Swift.String? {
-    get
-  }
-  public var payroll: Swift.String? {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@_Concurrency.MainActor @preconcurrency public class TransactViewController : AtomicTransact.BaseTransactViewController, WebKit.WKUIDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
+extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.Equatable {}
+extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.Hashable {}
+extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.RawRepresentable {}
+extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Equatable {}
+extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Hashable {}
+extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.RawRepresentable {}
 extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.Theme.ColorScheme : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.Distribution.DistributionType : Swift.Equatable {}
@@ -546,19 +552,13 @@ extension AtomicTransact.AtomicConfig.ScopeType : Swift.RawRepresentable {}
 extension AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy : Swift.Equatable {}
 extension AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy : Swift.Hashable {}
 extension AtomicTransact.AtomicConfig.DeferredPaymentMethodStrategy : Swift.RawRepresentable {}
-extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.Equatable {}
-extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.Hashable {}
-extension AtomicTransact.TransactTaskStatusUpdate.TaskStatus : Swift.RawRepresentable {}
-extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Equatable {}
-extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.Hashable {}
-extension AtomicTransact.TransactTaskStatusUpdate.SwitchData.PaymentMethod.PaymentType : Swift.RawRepresentable {}
 extension AtomicTransact.TransactDataResponse.ValidationErrorType : Swift.Equatable {}
 extension AtomicTransact.TransactDataResponse.ValidationErrorType : Swift.Hashable {}
 extension AtomicTransact.TransactDataResponse.ValidationErrorType : Swift.RawRepresentable {}
+extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Equatable {}
+extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Hashable {}
+extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.RawRepresentable {}
 extension AtomicTransact.TransactSDKEvent : Swift.Equatable {}
 extension AtomicTransact.TransactSDKEvent : Swift.Hashable {}
 extension AtomicTransact.TransactSDKEvent : Swift.RawRepresentable {}
 extension AtomicTransact.TransactActionPresenter : Swift.Sendable {}
-extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Equatable {}
-extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.Hashable {}
-extension AtomicTransact.TransactAuthStatusUpdate.AuthStatus : Swift.RawRepresentable {}
