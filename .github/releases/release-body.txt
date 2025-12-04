@@ -1,14 +1,21 @@
-## 2025-12-03
+## 2025-12-04
 
 ### Changes
 
-- Fixed Cocoapods Trunk deployment
+- Added `apps` option to `Task`
+- Added `app` to `Deeplink`. 
+- Added `App` options for both cases:
+  - `payNow`
+  - `transactions`
+  - `orders`
+  - `suggestions`
+- Added shortcut initializers for adding `Deeplink`
+  - Previously `deeplink: .init(step: ...`
+  - That's still available, but new cleaner option is: `deeplink: .step(...`, or the new `deeplink: .app(...`
 
 ### Products
 
-- Deposit
-- Switch
-- Manage
+- Present
 
 ### Requirements
 
@@ -17,4 +24,4 @@
 | Xcode | >= 16   |
 | iOS   | >= 13   |
 
-**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.25.1...3.25.2
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.25.2...3.26.0

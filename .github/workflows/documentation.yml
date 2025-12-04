@@ -14,3 +14,4 @@ jobs:
       NOTION_API_KEY: ${{ secrets.NOTION_RELEASES_API_KEY }}
       LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
       GITHUB_DEPLOY_KEY: ${{ secrets.NOTIFICATIONS_REPO_PULL_KEY }}
+      GITHUB_RELEASE_PULL_TOKEN: ${{ github.token }}
