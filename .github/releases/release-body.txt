@@ -1,21 +1,17 @@
-## 2025-12-04
+## 2025-12-16
 
 ### Changes
 
-- Added `apps` option to `Task`
-- Added `app` to `Deeplink`. 
-- Added `App` options for both cases:
-  - `payNow`
-  - `transactions`
-  - `orders`
-  - `suggestions`
-- Added shortcut initializers for adding `Deeplink`
-  - Previously `deeplink: .init(step: ...`
-  - That's still available, but new cleaner option is: `deeplink: .step(...`, or the new `deeplink: .app(...`
+- Added option to enable debug mode
+  - Adds additional debug logs
+  - Makes web views inspectable
+  - Call `Atomic.setDebug(isEnabled: true)` before presenting Transact
 
 ### Products
 
-- Present
+- Deposit
+- Switch
+- Manage
 
 ### Requirements
 
@@ -24,4 +20,4 @@
 | Xcode | >= 16   |
 | iOS   | >= 13   |
 
-**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.25.2...3.26.0
+**Full Changelog**: https://github.com/atomicfi/ios-sdk/compare/3.26.0...3.26.1
