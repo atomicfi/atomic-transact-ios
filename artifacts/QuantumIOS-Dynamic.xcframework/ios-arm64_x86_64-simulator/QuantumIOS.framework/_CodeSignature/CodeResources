@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ci1NzMTwPHf9FAYlq+ABx5tjoSI=
+		Dvzcl+kLQJEE0QjVco5SmYu2bpU=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GPGAUXBJfLtu/x2xObMr7FKDces=
+		j2pCdsvB4KqAeUdnA9xVWzzUrWo=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GPGAUXBJfLtu/x2xObMr7FKDces=
+		j2pCdsvB4KqAeUdnA9xVWzzUrWo=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nZOLiIHgatJV9FbsyCOkIA0J5qM=
+		+b52sLCC/mOnMzM7aVTRmfoB8L0=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ci1NzMTwPHf9FAYlq+ABx5tjoSI=
+		Dvzcl+kLQJEE0QjVco5SmYu2bpU=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KVyQMBj9VboVs7mPRrQWN5nU15o=
+		V/8Ymc28r3it5K8N+IKIsB+WDJk=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KVyQMBj9VboVs7mPRrQWN5nU15o=
+		V/8Ymc28r3it5K8N+IKIsB+WDJk=
 		</data>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iyBAuNHtk3uzdVMkIPqG/WACqQg=
+		05Ckv6jpCQtJcxNpSpFwn8krvr4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NgjC8kIlqUD/ywO8pyCQTSGUm4dYYe8a30xSLn++EEE=
+			anqr2qCL8TFqF4xW5iSZ7ozTkakpK/7ZbrSBY2Syho8=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vfVBdAOFmvGScYDbqfBdlTwum1B4CXZhMnP2oSEWFro=
+			tPU3X/S0hkFg1h2Lad/paGHeRQ/3E9vLQfrmIVhkw1Q=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vfVBdAOFmvGScYDbqfBdlTwum1B4CXZhMnP2oSEWFro=
+			tPU3X/S0hkFg1h2Lad/paGHeRQ/3E9vLQfrmIVhkw1Q=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eoHXfYuqGypC5BjM71ezq9ObsWDxR7fSHUpTjXqIZEk=
+			yq1ld906dBcQEcTotFrcgmUZOf+CInYHnnw//BUUMCk=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NgjC8kIlqUD/ywO8pyCQTSGUm4dYYe8a30xSLn++EEE=
+			anqr2qCL8TFqF4xW5iSZ7ozTkakpK/7ZbrSBY2Syho8=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jrxdeXXHp2libkCGVkg+ERaI0AgTcWOSMy1pRWaLu8I=
+			kKZFutgbFWxFRP5pyiRiqr/+Y2S7ycw0a/geLyg2Y0k=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jrxdeXXHp2libkCGVkg+ERaI0AgTcWOSMy1pRWaLu8I=
+			kKZFutgbFWxFRP5pyiRiqr/+Y2S7ycw0a/geLyg2Y0k=
 			</data>
 		</dict>
 		<key>Modules/QuantumIOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nbltj+U1R3AALPZFhBUiG2eScthrhXLrRBSzVu6vRyI=
+			sL2aEqNop09rt9HgfEfQ+7+O/8PvX6C7ZEIQ2FtzwxI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

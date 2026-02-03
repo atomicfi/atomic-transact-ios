@@ -1,16 +1,15 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "TransactiOSSDK",
-        "repositoryURL": "https://github.com/atomicfi/atomic-transact-ios",
-        "state": {
-          "branch": null,
-          "revision": "69a0dfe1d562a6260457d8d8a03b725ee0bb5b73",
-          "version": "2.0.2"
-        }
+  "originHash" : "91d009882e2c637e5604627b4ccd8581f8457696bae36544fec0823ded1c7023",
+  "pins" : [
+    {
+      "identity" : "atomic-transact-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/atomicfi/atomic-transact-ios.git",
+      "state" : {
+        "revision" : "f64e9115c07d14d8fbb56af5b9527897e46f6e75",
+        "version" : "3.27.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 3
 }

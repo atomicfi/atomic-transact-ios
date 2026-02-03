@@ -66,14 +66,6 @@ struct MainView: View {
 				
 				Section {
 					Button {
-						config.show(product: .verify, scope: .userLink)
-					} label: {
-						Label("Verify employment status", systemImage: "person.crop.circle.badge.checkmark")
-					}
-				}
-				
-				Section {
-					Button {
 						config.show(product: .switch, scope: .payLink)
 					} label: {
 						Label("Switch payment method", systemImage: "creditcard.and.123")
@@ -83,7 +75,7 @@ struct MainView: View {
 			.navigationTitle("Home")
 		}
 		.atomicTransact(
-			isPresented: .constant(true),
+            isPresented: $config.showTransact,
 			config: {
 				AtomicConfig(
 					publicToken: data.publicToken,
@@ -91,7 +83,6 @@ struct MainView: View {
 					tasks: [.init(product: config.productType)],
 					theme: data.theme)
 			},
-			environment: data.transactURL,
 			presentsFullscreen: data.showFullscreen)
 	}
 }

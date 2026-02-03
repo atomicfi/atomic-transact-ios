@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/MuppetIOS.framework/Info.plist</key>
 		<data>
-		e9KoCTAqVvEnJ574Xsxd281QlU8=
+		8c8SvvrKRyMmmhcUwsQDxo1QabQ=
 		</data>
 		<key>ios-arm64/MuppetIOS.framework/Modules/module.modulemap</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Info.plist</key>
 		<data>
-		IP+bbrGQST5WSNVECHF1NTXE57Y=
+		iXlSxTeTJJRMzHNRHRXmFiAJOtQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Modules/module.modulemap</key>
 		<data>
@@ -54,11 +54,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e9KoCTAqVvEnJ574Xsxd281QlU8=
+			8c8SvvrKRyMmmhcUwsQDxo1QabQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1UJ9p1f59LXQBRBcdhvqFjiAMdG6yQFKI3sLFp/qR6Y=
+			phG3KffZEA+7Q/urF0xNn4rbqj/KKmOOZEqmXCHU6zM=
 			</data>
 		</dict>
 		<key>ios-arm64/MuppetIOS.framework/Modules/module.modulemap</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IP+bbrGQST5WSNVECHF1NTXE57Y=
+			iXlSxTeTJJRMzHNRHRXmFiAJOtQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/N+PHoI12NEVY++QKjwX4UWGQn2YwQnJwhZRsQWzohw=
+			bk8TiufxRBLUZE/C49EniPBhxh1zPWfs1/5isvgdzZo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Modules/module.modulemap</key>

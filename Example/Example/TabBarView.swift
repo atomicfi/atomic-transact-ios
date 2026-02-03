@@ -21,9 +21,11 @@ struct TabBarView: View {
 	
 	var body: some View {
 		TabView(selection: $selectedTab) {
-			MainView(data: data)
-				.tabItem({ Label("Home", systemImage: "house") })
-				.tag(Tabs.home)
+            MainView(data: data, switchToSettings: {
+                selectedTab = .settings
+            })
+            .tabItem({ Label("Home", systemImage: "house") })
+            .tag(Tabs.home)
 			
 			TransactSettingsView(data: data)
 				.tabItem({ Label("Settings", systemImage: "gear") })
