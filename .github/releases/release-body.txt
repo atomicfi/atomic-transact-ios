@@ -1,8 +1,16 @@
-## 2026-02-03
+## 2026-03-09
+
+### Impact
+
+If you were seeing warnings in the Xcode console that looked like this:
+
+`Background Task 7 ("Atomic Transact Sync Process"), was created over 30 seconds ago...`
+
+This release will remove those warnings. 
 
 ### Changes
 
-- Added build/version numbers to package plists to fix an issue with Artifactory/App Store validation
+- Improved handling of background tasks
 
 ### Products
 
