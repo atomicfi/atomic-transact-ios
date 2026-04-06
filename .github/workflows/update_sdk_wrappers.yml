@@ -1,0 +1,29 @@
+name: Update SDK Wrappers
+
+on:
+  workflow_run:
+    workflows: ["Create Release"]
+    types:
+      - completed
+
+jobs:
+  get-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+    steps:
+      - name: Get release version
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=$(gh release view --repo ${{ github.repository }} --json tagName -q '.tagName')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+  react-native:
+    needs: get-version
+    uses: atomicfi/atomic-transact-react-native/.github/workflows/update-ios-sdk.yml@master
+    with:
+      version: ${{ needs.get-version.outputs.version }}
+    secrets:
+      token: ${{ secrets.SDK_WRAPPERS_TOKEN }}

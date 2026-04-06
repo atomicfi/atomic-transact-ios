@@ -1,16 +1,36 @@
-## 2026-03-09
+## 2026-04-03
 
 ### Impact
 
-If you were seeing warnings in the Xcode console that looked like this:
+- This release includes major changes to our core Muppet framework. The most noticeable change is a dramatically smaller package size, along with fixes for some small crashes and memory leaks.
+- This release also drops support for iOS 13 and 14. The new minimum deployment target is iOS 15.0. 
 
-`Background Task 7 ("Atomic Transact Sync Process"), was created over 30 seconds ago...`
+### Notices
 
-This release will remove those warnings. 
+- CocoaPods is deprecated. We will continue publishing to the CocoaPods Trunk while we are able to, which ideally is through November, but our deployments to Trunk have become very unreliable and we can't make guarantees we will continue to ship new versions there. We strongly recommend migrating to Swift Package Manager if you have not already. If you must continue to use CocoaPods, we recommend pointing to our git repository directly rather than pulling updates from the CocoaPods Trunk. We also include the artifacts directly on GitHub releases if you would rather manage dependencies manually. https://blog.cocoapods.org/CocoaPods-Specs-Repo/
+- We will continue building our frameworks with Xcode 16.4 until Apple cuts of deploying to the App Store with 16 on April 28th. After that time we'll upgrade our deployments to build with Xcode 26. You can still use any Xcode version ≥16.4 to build against our frameworks even before the cutoff date. https://developer.apple.com/news/upcoming-requirements/?id=02032026a
 
 ### Changes
 
-- Improved handling of background tasks
+- New version of Muppet
+    - Built with modern Swift Concurrency and Swift 6
+    - Reduced framework size
+        - Using Sentry Size Analysis, we're measuring the impact of our SDKs in a released application to be a little under 1 MB, down from 9.6 MB previously with 3.27.2
+        - Note that our artifacts from GitHub will be larger than that as they include more device/simulator support and both static and dynamic copies of the SDKs
+    - Fixed a couple memory leaks when closing browsers
+    - Fixed a couple rare crashes when closing or navigating around browsers
+    - Fixed some UI hangs during heavy processing tasks
+    - Added support for multi-page browsing 
+- Bumped minimum deployment target to iOS 15.0
+- Upgraded all frameworks to build with Swift 6 and strict concurrency internally
+- Added `manage` Product Type
+- Added `coAuth` feature flag override
+- Added `cardType` to `TransactDataResponse`
+- Fixed the linking of our `.xcprivacy` files into each framework target
+- Improved how debug state works internally. The `Atomic.setDebug(isEnabled:)` call is now `async` as a result
+    - This is a breaking change if you were actively debugging with debug enabled
+- Improved bar button tint color handling in the TrueAuth browser
+    - The browser will now detect poor contrast against the bar tint color and fall back to system default colors when needed
 
 ### Products
 
@@ -21,6 +41,6 @@ This release will remove those warnings.
 ### Requirements
 
 | Name  | Version |
-| ----- | ------- |
-| Xcode | >= 16   |
-| iOS   | >= 13   |
+| ------- | ------- |
+| Xcode | >= 16.4 |
+|    iOS   | >= 15.0 |

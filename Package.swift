@@ -1,4 +1,4 @@
-// swift-tools-version:5.10
+// swift-tools-version:6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -14,7 +14,7 @@ let package = Package(
 			targets: ["AtomicTransact", "QuantumIOS", "MuppetIOS"]),
 		.library(
 			name: "AtomicTransact-Dynamic",
-			targets: ["AtomicTransact-Dynamic", "QuantumIOS-Dynamic", "MuppetIOS"])
+			targets: ["AtomicTransact-Dynamic", "QuantumIOS-Dynamic", "MuppetIOS-Dynamic"])
 	],
 	targets: [
 		.binaryTarget(
@@ -31,6 +31,9 @@ let package = Package(
 			path: "artifacts/QuantumIOS-Dynamic.xcframework"),
 		.binaryTarget(
             name: "MuppetIOS",
-            path: "artifacts/MuppetIOS.xcframework")
+            path: "artifacts/MuppetIOS.xcframework"),
+		.binaryTarget(
+            name: "MuppetIOS-Dynamic",
+            path: "artifacts/MuppetIOS-Dynamic.xcframework")
 	]
 )

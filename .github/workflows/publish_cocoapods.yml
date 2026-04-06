@@ -1,0 +1,70 @@
+name: Publish CocoaPods
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to publish (for example 3.5.14)
+        required: false
+        type: string
+
+jobs:
+  publish:
+    name: Publish AtomicSDK Pod
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Resolve publish tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          if [[ -n "${INPUT_TAG}" ]]; then
+            TAG="${INPUT_TAG}"
+          elif [[ -n "${RELEASE_TAG}" ]]; then
+            TAG="${RELEASE_TAG}"
+          else
+            TAG=$(git describe --tags --abbrev=0)
+          fi
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "Using tag: ${TAG}"
+
+      - name: Install CocoaPods
+        run: |
+          gem install cocoapods --no-document
+          pod --version
+
+      - name: Verify podspec version matches release tag
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          PODSPEC_VERSION=$(sed -nE 's/^[[:space:]]*s\.version[[:space:]]*=[[:space:]]*"([^"]+)".*/\1/p' AtomicSDK.podspec)
+          echo "Tag: ${TAG}"
+          echo "Podspec version: ${PODSPEC_VERSION}"
+          if [[ -z "${PODSPEC_VERSION}" ]]; then
+            echo "Could not parse s.version from AtomicSDK.podspec"
+            exit 1
+          fi
+          if [[ "${PODSPEC_VERSION}" != "${TAG}" ]]; then
+            echo "Podspec version does not match release tag"
+            exit 1
+          fi
+
+      - name: Publish to CocoaPods Trunk
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: |
+          pod trunk push AtomicSDK.podspec \
+            --allow-warnings \
+            --skip-import-validation \
+            --skip-tests \
+            --verbose \
+            --synchronous
