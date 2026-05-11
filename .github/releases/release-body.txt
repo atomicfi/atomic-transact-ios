@@ -1,26 +1,15 @@
-## 2026-05-05
+## 2026-05-11
 
 ### Impact
 
-- Added `actionType` to `TransactStatusUpdate` for Manage flows launched with `presentAction` so you can determine which action succeeded or failed. 
-- Fixed a few issues with SwiftUI windowing and Universal Link handling.
-
-### Notices
-
-- Xcode 26.1 is the new minimum Xcode version that can build with Transact. This aligns with App Store tooling requirements which dropped support for 16 at the end of April: https://developer.apple.com/news/upcoming-requirements/?id=02032026a
-- CocoaPods is deprecated. We will continue publishing to the CocoaPods Trunk while we are able to, which ideally is through November, but our deployments to Trunk have become very unreliable and we can't make guarantees we will continue to ship new versions there. We strongly recommend migrating to Swift Package Manager if you have not already. If you must continue to use CocoaPods, we recommend pointing to our git repository directly rather than pulling updates from the CocoaPods Trunk. We also include the artifacts directly on GitHub releases if you would rather manage dependencies manually. https://blog.cocoapods.org/CocoaPods-Specs-Repo/
+- Adds a headless mode for action tasks, letting integrators run an action without presenting Transact UI.
 
 ### Changes
 
-- Updated deployment pipeline to use Xcode 26.1, Swift 6.2, and macOS 26. This changes the minimum required Xcode version to be 26.1.
-- Added `actionType` to `TransactStatusUpdate`.
-- Fixed an issue that prevented Transact from finishing a task when `.hideTransact` is manually called while building with a SwiftUI window lifecycle. This was caused by SwiftUI apps not being able to modify the root view controller in the same way. It did not affect anyone using UIKit for the root window. 
-- Fixed an issue where external app universal links would redirect out of an Uplink login flow.
+- Added a `headless` parameter to `Atomic.presentAction(...)` and `TransactActionPresenter.present(...)`, plus a corresponding `headless` field on `AtomicConfig.Task`. Defaults to `false` so existing call sites are unaffected.
 
 ### Products
 
-- Deposit
-- Switch
 - Manage
 
 ### Requirements
