@@ -1,12 +1,14 @@
-## 2026-05-11
+## 2026-05-15
 
 ### Impact
 
-- Adds a headless mode for action tasks, letting integrators run an action without presenting Transact UI.
+- **Breaking:** Action tasks are now launched through `Atomic.presentTransact(...)` (or the SwiftUI `TransactPresenter`) instead of the dedicated `presentAction` API.
 
 ### Changes
 
-- Added a `headless` parameter to `Atomic.presentAction(...)` and `TransactActionPresenter.present(...)`, plus a corresponding `headless` field on `AtomicConfig.Task`. Defaults to `false` so existing call sites are unaffected.
+- **Breaking:** Removed `Atomic.presentAction(id:...)`. Build an action task with `AtomicConfig.Task.action(actionId:headless:)` and call `Atomic.presentTransact(...)` instead.
+- **Breaking:** Renamed the SwiftUI `TransactActionPresenter` to `TransactPresenter`, its view modifier `View.atomicTransactActionsPresenter(_:)` to `View.atomicTransactPresenter(_:)`, and its method `presentAction(id:...)` to `presentTransact(config:...)`.
+- Added `AtomicConfig.Task.action(actionId:headless:)` initializer for building action tasks.
 
 ### Products
 
