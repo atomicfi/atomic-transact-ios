@@ -1,17 +1,19 @@
-## 2026-05-15
+## 2026-05-21
 
 ### Impact
 
-- **Breaking:** Action tasks are now launched through `Atomic.presentTransact(...)` (or the SwiftUI `TransactPresenter`) instead of the dedicated `presentAction` API.
+- **More language support.** French is now accepted as a language value, and the SDK automatically defaults to French on French-locale devices when no language is provided.
 
 ### Changes
 
-- **Breaking:** Removed `Atomic.presentAction(id:...)`. Build an action task with `AtomicConfig.Task.action(actionId:headless:)` and call `Atomic.presentTransact(...)` instead.
-- **Breaking:** Renamed the SwiftUI `TransactActionPresenter` to `TransactPresenter`, its view modifier `View.atomicTransactActionsPresenter(_:)` to `View.atomicTransactPresenter(_:)`, and its method `presentAction(id:...)` to `presentTransact(config:...)`.
-- Added `AtomicConfig.Task.action(actionId:headless:)` initializer for building action tasks.
+- Added `Config.Deeplink.Step.manualFallback` for routing users directly into the manual setup / fallback experience
+- Added French (`fr`) language support 
+- Removed the `publicToken` from the Transact initialize URL
 
 ### Products
 
+- Deposit
+- Switch
 - Manage
 
 ### Requirements
