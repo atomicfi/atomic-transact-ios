@@ -1,14 +1,18 @@
-## 2026-05-21
+## 2026-06-09
 
 ### Impact
 
-- **More language support.** French is now accepted as a language value, and the SDK automatically defaults to French on French-locale devices when no language is provided.
+- We've swapped out one of our internal frameworks, the new Uplink framework improves our Transact launch time. 
+
+### Notices
+
+- CocoaPods is deprecated. We will continue publishing to the CocoaPods Trunk while we are able to, which ideally is through November, but our deployments to Trunk have become very unreliable and we can't make guarantees we will continue to ship new versions there. We strongly recommend migrating to Swift Package Manager if you have not already. If you must continue to use CocoaPods, we recommend pointing to our git repository directly rather than pulling updates from the CocoaPods Trunk. We also include the artifacts directly on GitHub releases if you would rather manage dependencies manually. <https://blog.cocoapods.org/CocoaPods-Specs-Repo/>
 
 ### Changes
 
-- Added `Config.Deeplink.Step.manualFallback` for routing users directly into the manual setup / fallback experience
-- Added French (`fr`) language support 
-- Removed the `publicToken` from the Transact initialize URL
+- Replaces our internal Quantum framework with our new Uplink framework. Most people will not notice a difference unless you manually download and link our frameworks. Make sure to continue to integrate all three frameworks into your project. SPM and CocoaPods users will not see a change. 
+- Replacing Quantum with Uplink has shaved ~0.4 seconds off the initial Transact loading time.
+- Added `uplinkSessionUrl` to `AtomicConfig` to take control of Uplink sessions after the native authentication flow. 
 
 ### Products
 
@@ -20,5 +24,5 @@
 
 | Name  | Version |
 | ----- | ------- |
-| Xcode | >= 26.1 |
+| Xcode | >= 26.2 |
 | iOS   | >= 15.0 |

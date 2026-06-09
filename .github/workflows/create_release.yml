@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Compress Archives
         run: |
           tar -czf AtomicTransact.xcframework.tar.gz artifacts/AtomicTransact.xcframework
           tar -czf AtomicTransact-Dynamic.xcframework.tar.gz artifacts/AtomicTransact-Dynamic.xcframework
-          tar -czf QuantumIOS.xcframework.tar.gz artifacts/QuantumIOS.xcframework
-          tar -czf QuantumIOS-Dynamic.xcframework.tar.gz artifacts/QuantumIOS-Dynamic.xcframework
+          tar -czf Uplink.xcframework.tar.gz artifacts/Uplink.xcframework
+          tar -czf Uplink-Dynamic.xcframework.tar.gz artifacts/Uplink-Dynamic.xcframework
           tar -czf MuppetIOS.xcframework.tar.gz artifacts/MuppetIOS.xcframework
           tar -czf MuppetIOS-Dynamic.xcframework.tar.gz artifacts/MuppetIOS-Dynamic.xcframework
       - name: Create Release
@@ -27,7 +27,7 @@ jobs:
           files: |
             AtomicTransact.xcframework.tar.gz
             AtomicTransact-Dynamic.xcframework.tar.gz
-            QuantumIOS.xcframework.tar.gz
-            QuantumIOS-Dynamic.xcframework.tar.gz
+            Uplink.xcframework.tar.gz
+            Uplink-Dynamic.xcframework.tar.gz
             MuppetIOS.xcframework.tar.gz
             MuppetIOS-Dynamic.xcframework.tar.gz

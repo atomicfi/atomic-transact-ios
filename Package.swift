@@ -11,10 +11,10 @@ let package = Package(
 		// Products define the executables and libraries a package produces, and make them visible to other packages.
 		.library(
 			name: "AtomicTransact",
-			targets: ["AtomicTransact", "QuantumIOS", "MuppetIOS"]),
+			targets: ["AtomicTransact", "Uplink", "MuppetIOS"]),
 		.library(
 			name: "AtomicTransact-Dynamic",
-			targets: ["AtomicTransact-Dynamic", "QuantumIOS-Dynamic", "MuppetIOS-Dynamic"])
+			targets: ["AtomicTransact-Dynamic", "Uplink-Dynamic", "MuppetIOS-Dynamic"])
 	],
 	targets: [
 		.binaryTarget(
@@ -24,11 +24,11 @@ let package = Package(
 			name: "AtomicTransact-Dynamic",
 			path: "artifacts/AtomicTransact-Dynamic.xcframework"),
 		.binaryTarget(
-			name: "QuantumIOS",
-			path: "artifacts/QuantumIOS.xcframework"),
+			name: "Uplink",
+			path: "artifacts/Uplink.xcframework"),
 		.binaryTarget(
-			name: "QuantumIOS-Dynamic",
-			path: "artifacts/QuantumIOS-Dynamic.xcframework"),
+			name: "Uplink-Dynamic",
+			path: "artifacts/Uplink-Dynamic.xcframework"),
 		.binaryTarget(
             name: "MuppetIOS",
             path: "artifacts/MuppetIOS.xcframework"),
