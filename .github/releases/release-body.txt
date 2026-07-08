@@ -1,12 +1,12 @@
-## 2026-07-01
+## 2026-07-08
 
-### Notices
+### Impact
 
-- CocoaPods is deprecated. We will continue publishing to the CocoaPods Trunk while we are able to, which ideally is through November, but our deployments to Trunk have become very unreliable and we can't make guarantees we will continue to ship new versions there. We strongly recommend migrating to Swift Package Manager if you have not already. If you must continue to use CocoaPods, we recommend pointing to our git repository directly rather than pulling updates from the CocoaPods Trunk. We also include the artifacts directly on GitHub releases if you would rather manage dependencies manually. <https://blog.cocoapods.org/CocoaPods-Specs-Repo/>
+- Fixes an issue where the close button could be invisible in the Uplink browser.
 
 ### Changes
 
-- Modernized the last of our calls to `evaluateJavascript` in our WKWebViews to explicitly pass the `.page` content world. 
+- Fixes an issue where app-wide navigation appearance changes were clashing with our Uplink browser's navigation bar. In some cases the bar button items could be invisible. The navigation bar now controls its own appearance and button tints. 
 
 ### Products
 
