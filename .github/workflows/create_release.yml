@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
       - name: Compress Archives
         run: |
           tar -czf AtomicTransact.xcframework.tar.gz artifacts/AtomicTransact.xcframework
@@ -21,7 +21,7 @@ jobs:
           tar -czf MuppetIOS.xcframework.tar.gz artifacts/MuppetIOS.xcframework
           tar -czf MuppetIOS-Dynamic.xcframework.tar.gz artifacts/MuppetIOS-Dynamic.xcframework
       - name: Create Release
-        uses: mikepenz/action-gh-release@main
+        uses: mikepenz/action-gh-release@2a00e201320fb618d8e705a736286b2e31aa48e2
         with:
           body_path: ${{ github.workspace }}/.github/releases/release-body.txt
           files: |

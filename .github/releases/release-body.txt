@@ -1,12 +1,20 @@
-## 2026-07-08
+## 2026-07-20
 
 ### Impact
 
-- Fixes an issue where the close button could be invisible in the Uplink browser.
+- Apps can now use our SDKs when building with arm64e, enhanced security, and pointer authentication. 
 
 ### Changes
 
-- Fixes an issue where app-wide navigation appearance changes were clashing with our Uplink browser's navigation bar. In some cases the bar button items could be invisible. The navigation bar now controls its own appearance and button tints. 
+- All frameworks now include an arm64e slice so consuming apps can target arm64e features.
+  - arm64e will only be used if your app is configured to add `arm64e` to the list of supported architectures. This will have no effect on apps that do not manually adopt arm64e. 
+  - We have been successfully beta testing these new features by running the following enhanced security features on all internal Atomic apps:
+	- Hardware Memory Tagging
+	- Enhanced Security Typed Allocator
+	- Authenticate Pointers
+	- Read-only Platform Memory
+- New support for our wrapper SDKs (like React Native) to handle asynchronous task callbacks from multiple Transact instances.
+- Added support for the `account` deeplink step with an accompanying `accountId`, allowing apps to deeplink directly to an Account/Merchant page.
 
 ### Products
 
