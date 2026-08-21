@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64_arm64e/MuppetIOS.framework/Info.plist</key>
 		<data>
-		OEcZiom7RpiKuQ1LFssuTOjMWwY=
+		SZfrLBKfpUJz06GKjRJO7DPcPkg=
 		</data>
 		<key>ios-arm64_arm64e/MuppetIOS.framework/Modules/MuppetIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Info.plist</key>
 		<data>
-		Tyj3KFphwIiQSRdyuuBj+vqhTFQ=
+		5gsmGXwOEgEOKbmchOmnsQX63Vk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Modules/MuppetIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/MuppetIOS</key>
 		<data>
-		HDaJd92+Unzc8pGO/Z4h6IQ23HI=
+		J+qdp7Vf0YSHcAxkvxM/LlElycU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/_CodeSignature/CodeResources</key>
 		<data>
-		DGL1m2I3BNOD25BaU4OScjWmpQo=
+		9pAXN7T02zEnpAanUeORbC9I+N4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KGfOR9T/ZGGCgZsHE5D/OtJ28Dj4kLPRYLnqTyP6dAw=
+			pciYpkJJkgBVeMdfu0tCLErxx+IUe8bAnnYE3oX4ew8=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/MuppetIOS.framework/Modules/MuppetIOS.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -180,7 +180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EnlQag/NFg5jb/bRAk5pbPAckyfx/nydXXLNjY88LLU=
+			MNsBB1uTCmVix2dv1mbtFYuDk4PBvwzqHeD4GRTk9MM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/Modules/MuppetIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xAQYzzTo340itTTtdWEGvX7BA4gdtSS3oUIWoFrdiQ8=
+			RBGz7pPGeuRQqEdU1vOsvTknSIPj3SarCZZxF/L7Wys=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MuppetIOS.framework/PrivacyInfo.xcprivacy</key>
@@ -257,7 +257,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QMwnQ+n/aoz17DSkAXpn07Lkr5NSCBER1IhjLxjW36A=
+			8A05+VdXTXEVL3seG0bnL716nmEtT17QGpCD2NE2XEE=
 			</data>
 		</dict>
 	</dict>
