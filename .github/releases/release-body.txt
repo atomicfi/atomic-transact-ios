@@ -1,30 +1,12 @@
-## 2026-08-21
-
-### Impact
-
-This release improves the Transact launch experience for users on slow or unresponsive internet connections. Most users will see no change, but the small percentage of users on slower connections will have a smoother experience, and anyone affected by unresponsive networks will now have a way to leave. We recommend all customers upgrade to benefit from these improvements.  
-
-We also recommend any switch customers using the add-card form update to fix an issue that prevented the form from opening. 
-
-### Important: iOS CocoaPods Publishing
-
-This applies to integrations that consume Atomic's iOS SDK through CocoaPods. CocoaPods is deprecated upstream, and publishing new iOS SDK versions to the ​CocoaPods Trunk has become unreliable. We will continue publishing there while we are able, but cannot guarantee that future releases will be available through the Trunk.
-
-We recommend migrating to Swift Package Manager (SPM), but migration can be gradual: CocoaPods and SPM can be used in parallel. If you must continue using CocoaPods, point your dependency to Atomic's GitHub repository rather than relying on the CocoaPods Trunk. You can also download release artifacts directly from GitHub if you manage dependencies manually <https://blog.cocoapods.org/CocoaPods-Specs-Repo/>
+## 2026-08-31
 
 ### Changes
 
-- Added a delayed loading indicator and cancel button for slower loads.
-- Added a 60 second timeout loading Transact.
-- Fixed a framework export issue that made our Uplink internal framework link as dynamic, even if static was selected. 
-- Fixed an issue preventing the add-card form modal from open correctly.
-- Added `preScreenOnLoad` feature flag override.
+- Fixes an issue that prevented Okta from opening to approve logins for Workday
 
 ### Products
 
 - Deposit
-- Switch
-- Manage
 
 ### Requirements
 

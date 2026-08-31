@@ -21,7 +21,7 @@ jobs:
           tar -czf MuppetIOS.xcframework.tar.gz artifacts/MuppetIOS.xcframework
           tar -czf MuppetIOS-Dynamic.xcframework.tar.gz artifacts/MuppetIOS-Dynamic.xcframework
       - name: Create Release
-        uses: mikepenz/action-gh-release@2a00e201320fb618d8e705a736286b2e31aa48e2
+        uses: mikepenz/action-gh-release@7a1a2d94070db8d22681770f42cdb85a9c38d6ac
         with:
           body_path: ${{ github.workspace }}/.github/releases/release-body.txt
           files: |
