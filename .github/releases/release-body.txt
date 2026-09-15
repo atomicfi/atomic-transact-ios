@@ -1,12 +1,19 @@
-## 2026-08-31
+## 2026-09-15
+
+### Impact
+
+This update is recommended for apps that include Swift 5-built dependencies. It prevents a potential crash during WebKit operations in mixed Swift configurations and fixes login-page buttons being obscured by the toolbar on iOS 26+.
 
 ### Changes
 
-- Fixes an issue that prevented Okta from opening to approve logins for Workday
+- Fixes an issue that hid the bottom button on some login pages below the toolbar on iOS 26+
+- Fixes a crash caused by conflicting compiler-generated Objective-C async bridge symbols when MuppetIOS is linked alongside code built with the Swift 5 language mode.
 
 ### Products
 
 - Deposit
+- Switch
+- Manage
 
 ### Requirements
 
