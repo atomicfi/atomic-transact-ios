@@ -1,13 +1,21 @@
-## 2026-09-28
+## 2026-10-05
 
 ### Impact
 
-- This update improves overall stability and includes additional security hardening across our frameworks
+- These changes are recommended for everyone to improve accessibility support on iOS 27. The removed APIs are unused and have long-standing replacements, so we do not expect this release to require changes in existing integrations. 
+
+### Breaking Changes
+
+- Removed a few public APIs that were previously deprecated:
+    - Removed the old AtomicConfig init that specified a product instead of tasks
+    - Removed the unused demo mode initializer
 
 ### Changes
 
-- Improved the security and isolation of embedded web flows
-- Improved resilience when handling malformed data from web flows
+- Improved, expanded, and fixed the DocC comments for documenting all of our public symbols in AtomicTransact. 
+- Enabled static framework prelinking on our static framework artifacts. This localizes private Swift symbols before consumer linking to prevent incompatible compiler-generated symbols from being coalesced when integrating alongside other SDKs.
+- Fixed an issue with Transact responding to dynamic type sizes on iOS 27. 
+- Fixed an edge case in our memory cleanup that would prevent a full cleanup if transact cancelled immediately (eg, when presented with an invalid token). 
 
 ### Products
 
