@@ -1,8 +1,16 @@
-## 2026-10-13
+## 2026-11-03
+
+### Impact
+
+- **Fixed unresponsive bottom buttons in some embedded pages.** On iOS 26 and 27, buttons near the bottom of some third-party pages, such as Plaid, could highlight when tapped without activating until the user scrolled. Taps now register right away.
+- **Fixed native login hangs when a page navigates mid-step.** If a page navigated while the SDK was running a script on it, that step could wait forever. It now finishes and continues on the new page.
 
 ### Changes
 
-- Fixed some layout issues on the iPhone Duo
+- Added `TransactSession`, a session-based API for presenting Transact with shared configuration and callbacks (#374)
+- Added launch API attribution (`present` vs. `session`) and session-level observability to SDK telemetry, and improved the accuracy of the reported Xcode version (#376)
+- Fixed tappable regions inside the Transact web view being offset by the top bar height (#375)
+- Fixed in-progress page scripts never returning when a navigation replaced the page (#380)
 
 ### Products
 
