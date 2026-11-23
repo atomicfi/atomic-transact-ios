@@ -1,16 +1,22 @@
-## 2026-11-03
+## 2026-11-23
 
 ### Impact
 
-- **Fixed unresponsive bottom buttons in some embedded pages.** On iOS 26 and 27, buttons near the bottom of some third-party pages, such as Plaid, could highlight when tapped without activating until the user scrolled. Taps now register right away.
-- **Fixed native login hangs when a page navigates mid-step.** If a page navigated while the SDK was running a script on it, that step could wait forever. It now finishes and continues on the new page.
+This release introduces a native API client to interface with our SDKs. The initial APIs are for working with Payments Hub data, and make it very easy to directly integrate our API data into your app's interface. 
+
+We are also migrating from our config taking only the language flag (eg, `en` for English),  to taking a full region code (`en-US` for US-based English). Existing integrations using only the language are handled automatically, so there is no need to change anything on this update. If you already handle different locale-based localizations in your app and explicitly pass the language you would like to our config, you can update that to pass the region instead. 
+
+
+### New Features
+
+- **Native Payments Hub API.** `TransactSession.apiClient` can natively fetch accounts and account details, read expenses, payment history and available orders, fetch suggestions, browse or search companies, and execute actions. Calls use typed models and errors.
+- **Portuguese and regional locales.** `AtomicConfig.language` now resolves to `en-US`, `en-CA`, `es-US`, `fr-CA`, or `pt-BR`. Existing config using only the language (eg, `en`) is still accepted and will be mapped to the user's preferred region where available, so no changes are required. An omitted or `null` language now uses the device preference, with `en-US` as the fallback.
 
 ### Changes
 
-- Added `TransactSession`, a session-based API for presenting Transact with shared configuration and callbacks (#374)
-- Added launch API attribution (`present` vs. `session`) and session-level observability to SDK telemetry, and improved the accuracy of the reported Xcode version (#376)
-- Fixed tappable regions inside the Transact web view being offset by the top bar height (#375)
-- Fixed in-progress page scripts never returning when a navigation replaced the page (#380)
+- Added `Codable` conformance to the callback models our wrapper SDKs (React Native, Flutter, Capacitor) need to parse and transform.
+- Improved the handling of hidden web views to keep timers running in the background when we are running automations on a page.
+- Releases now attach zip files of the release artifacts and a checksums file with the list of checksums to use for integrating the artifacts directly into your own SPM Package.swift.
 
 ### Products
 

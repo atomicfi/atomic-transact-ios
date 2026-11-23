@@ -20,6 +20,15 @@ jobs:
           tar -czf Uplink-Dynamic.xcframework.tar.gz artifacts/Uplink-Dynamic.xcframework
           tar -czf MuppetIOS.xcframework.tar.gz artifacts/MuppetIOS.xcframework
           tar -czf MuppetIOS-Dynamic.xcframework.tar.gz artifacts/MuppetIOS-Dynamic.xcframework
+      - name: Create SwiftPM ZIPs and Checksums
+        run: |
+          set -euo pipefail
+          for framework in artifacts/*.xcframework; do
+            name="${framework##*/}"
+            # SwiftPM requires the XCFramework at the archive root. Preserve symlinks.
+            (cd artifacts && zip -qry "../${name}.zip" "$name")
+          done
+          sha256sum -- *.xcframework.zip > checksums.txt
       - name: Create Release
         uses: mikepenz/action-gh-release@7a1a2d94070db8d22681770f42cdb85a9c38d6ac
         with:
@@ -31,3 +40,5 @@ jobs:
             Uplink-Dynamic.xcframework.tar.gz
             MuppetIOS.xcframework.tar.gz
             MuppetIOS-Dynamic.xcframework.tar.gz
+            *.xcframework.zip
+            checksums.txt
